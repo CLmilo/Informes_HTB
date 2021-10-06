@@ -1,0 +1,16 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Informes con \LaTeX }{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Una breve introducción}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Añadiendo tablas}{1}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Aquí un nuevo tema}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Haciendo informes como un profesional}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Otros párrafos más normales}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Ejemplos de inserción de código fuente}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Agregando múltiples imágenes}{5}{subsection.2.4}%
+\contentsline {section}{Más ejemplos}{6}{section*.6}%
+\contentsline {subsection}{Listas y Enumeraciones}{6}{section*.6}%
+\contentsline {subsection}{Otros}{6}{Item.15}%
+\contentsline {section}{Referencias}{7}{section*.7}%
+\contentsline {section}{Anexo \numberline {A}Cálculos realizados}{8}{appendix.1.Alph1}%
+\contentsline {subsection}{\numberline {A.1}Metodología}{8}{subsection.1.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}Resultados}{8}{subsection.1.Alph1.2}%

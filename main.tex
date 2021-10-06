@@ -1,0 +1,70 @@
+% Template:     Informe LaTeX
+% Documento:    Archivo principal
+% Versión:      7.4.1 (01/09/2021)
+% Codificación: UTF-8
+%
+
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[letterpaper,oneside]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\titulodelinforme {Informe de Máquinas de la plataforma HackTheBox}
+\def\subtituloinforme {}
+\def\temaatratar {Tema a tratar}
+
+\def\autordeldocumento {Nombre del autor}
+\def\nombredelcurso {Curso}
+\def\codigodelcurso {CO-1234}
+
+\def\nombreuniversidad {Universidad Nacional de Ingeniería}
+\def\nombrefacultad {Facultad de Ingeniería Industrial y de Sistemas}
+\def\departamentouniversidad {Grupo CiberSecFIIS}
+\def\imagendepartamento {CiberSecFIIS.png}
+\def\imagendepartamentoparams {height=1.57cm}
+\def\localizacionuniversidad {Lima,Perú}
+
+% INTEGRANTES, PROFESORES Y FECHAS
+\def\tablaintegrantes {
+\begin{tabular}{ll}
+	Integrantes:
+	& \begin{tabular}[t]{l}
+		Mottoccanche Tantaruna, Joseph Alan \\
+		Alfonso Suárez, Luis \\
+		Chi Jon Lau
+	\end{tabular} \\
+	& \\
+	\multicolumn{2}{l}{Fecha de realización: \today} \\
+	\multicolumn{2}{l}{\localizacionuniversidad}
+\end{tabular}}{
+}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+	
+% PORTADA
+\templatePortrait
+
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% RESUMEN O ABSTRACT
+\begin{resumen}
+	\lipsum[1] % Párrafo ejemplo, se puede borrar
+\end{resumen}
+
+% TABLA DE CONTENIDOS - ÍNDICE
+\templateIndex
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+\input{example} % Ejemplo, se puede borrar
+
+% FIN DEL DOCUMENTO
+\end{document}
