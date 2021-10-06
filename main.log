@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  6 OCT 2021 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  6 OCT 2021 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -102,108 +102,6 @@ Package: fancyhdr 2021/01/04 v4.0 Extensive control of page headers and footers
 \f@nch@O@erf=\skip55
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
-) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-Package: blindtext 2012/01/06 V2.0 blindtext-Package
- (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-\c@blindtext=\count192
-\c@Blindtext=\count193
-\c@blind@countparstart=\count194
-\blind@countxx=\count195
-\blindtext@numBlindtext=\count196
-\blind@countyy=\count197
-\c@blindlist=\count198
-\c@blindlistlevel=\count199
-\c@blindlist@level=\count266
-\blind@listitem=\count267
-\c@blind@listcount=\count268
-\c@blind@levelcount=\count269
-\blind@mathformula=\count270
-\blind@Mathformula=\count271
-\c@blind@randomcount=\count272
-\c@blind@randommax=\count273
-\c@blind@pangramcount=\count274
-\c@blind@pangrammax=\count275
-) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2021/01/09 v0.5r Insert pages of external PDF documents (AM)
- (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count276
-\calc@Bcount=\count277
-\calc@Adimen=\dimen150
-\calc@Bdimen=\dimen151
-\calc@Askip=\skip58
-\calc@Bskip=\skip59
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count278
-\calc@Cskip=\skip60
-) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen152
-\ESO@tempdimb=\dimen153
- (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-))
-\AM@pagewidth=\dimen154
-\AM@pageheight=\dimen155
- (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2021/01/09 v0.5r Pdfpages driver for pdfTeX (AM)
-)
-\pdfpages@includegraphics@status=\count279
-\AM@pagebox=\box47
-\AM@global@opts=\toks18
-\AM@pagecnt=\count280
-\AM@toc@title=\toks19
-\c@AM@survey=\count281
-\AM@templatesizebox=\box48
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count282
-\rotFPtop=\skip61
-\rotFPbot=\skip62
-\rot@float@box=\box49
-\rot@mess@toks=\toks20
-) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2020/09/26 v1.10
-
-Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
-Package textpos Info: choosing support for LaTeX3 on input line 61.
-\TP@textbox=\box50
-\TP@holdbox=\box51
-\TPHorizModule=\dimen156
-\TPVertModule=\dimen157
-\TP@margin=\dimen158
-\TP@absmargin=\dimen159
-Grid set 16 x 16 = 37.34424pt x 52.81541pt
-\TPboxrulesize=\dimen160
-\TP@ox=\dimen161
-\TP@oy=\dimen162
-\TP@tbargs=\toks21
-TextBlockOrigin set to 0pt x 0pt
 ) (/usr/share/texlive/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2020/09/21 v3.32 KOMA-Script package (type area)
  (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -295,12 +193,12 @@ LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
  (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrlogo.sty
 Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
 )))))
-\ta@bcor=\skip63
-\ta@div=\count283
-\ta@hblk=\skip64
-\ta@vblk=\skip65
-\ta@temp=\skip66
-\footheight=\skip67
+\ta@bcor=\skip58
+\ta@div=\count192
+\ta@hblk=\skip59
+\ta@vblk=\skip60
+\ta@temp=\skip61
+\footheight=\skip62
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 8
 (typearea)             BCOR = 0.0pt
@@ -318,6 +216,108 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
 (typearea)              on input line 1740.
+) (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count193
+\c@Blindtext=\count194
+\c@blind@countparstart=\count195
+\blind@countxx=\count196
+\blindtext@numBlindtext=\count197
+\blind@countyy=\count198
+\c@blindlist=\count199
+\c@blindlistlevel=\count266
+\c@blindlist@level=\count267
+\blind@listitem=\count268
+\c@blind@listcount=\count269
+\c@blind@levelcount=\count270
+\blind@mathformula=\count271
+\blind@Mathformula=\count272
+\c@blind@randomcount=\count273
+\c@blind@randommax=\count274
+\c@blind@pangramcount=\count275
+\c@blind@pangrammax=\count276
+) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2021/01/09 v0.5r Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count279
+\calc@Cskip=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen152
+\ESO@tempdimb=\dimen153
+ (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen154
+\AM@pageheight=\dimen155
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2021/01/09 v0.5r Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count280
+\AM@pagebox=\box47
+\AM@global@opts=\toks18
+\AM@pagecnt=\count281
+\AM@toc@title=\toks19
+\c@AM@survey=\count282
+\AM@templatesizebox=\box48
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count283
+\rotFPtop=\skip66
+\rotFPbot=\skip67
+\rot@float@box=\box49
+\rot@mess@toks=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2020/09/26 v1.10
+
+Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
+Package textpos Info: choosing support for LaTeX3 on input line 61.
+\TP@textbox=\box50
+\TP@holdbox=\box51
+\TPHorizModule=\dimen156
+\TPVertModule=\dimen157
+\TP@margin=\dimen158
+\TP@absmargin=\dimen159
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen160
+\TP@ox=\dimen161
+\TP@oy=\dimen162
+\TP@tbargs=\toks21
+TextBlockOrigin set to 0pt x 0pt
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
  (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -418,22 +418,22 @@ LaTeX Info: Redefining \% on input line 26.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -445,13 +445,13 @@ LaTeX Font Info:    ... okay on input line 30.
 * modes: 
 * h-part:(L,W,R)=(81.94394pt, 433.62pt, 81.94394pt)
 * v-part:(T,H,B)=(77.84674pt, 650.43pt, 116.77011pt)
-* \paperwidth=597.50793pt
-* \paperheight=845.04694pt
-* \textwidth=373.44246pt
-* \textheight=538.0pt
-* \oddsidemargin=39.76274pt
-* \evensidemargin=39.76274pt
-* \topmargin=0.36087pt
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=650.43pt
+* \oddsidemargin=9.67395pt
+* \evensidemargin=9.67395pt
+* \topmargin=-27.42325pt
 * \headheight=30.2pt
 * \headsep=30.0pt
 * \topskip=10.0pt
@@ -469,8 +469,8 @@ LaTeX Font Info:    ... okay on input line 30.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 30.
-LaTeX Info: Redefining \% on input line 30.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
@@ -490,7 +490,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 30.
+Package hyperref Info: Link coloring OFF on input line 31.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -500,9 +500,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
  (/home/jmt/HTB/Informes_HTB/main.out) (/home/jmt/HTB/Informes_HTB/main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -510,11 +510,11 @@ LaTeX Info: Redefining \nameref on input line 30.
 \openout2 = `caratula/Caratula.aux'.
 
  (/home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-<images/CiberSecFIIS.png, id=4, 512.66531pt x 438.8897pt>
+<images/CiberSecFIIS.png, id=76, 512.66531pt x 438.8897pt>
 File: images/CiberSecFIIS.png Graphic file (type png)
 <use images/CiberSecFIIS.png>
 Package pdftex.def Info: images/CiberSecFIIS.png  used on input line 11.
-(pdftex.def)             Requested size: 149.3747pt x 127.87747pt.
+(pdftex.def)             Requested size: 173.44534pt x 148.48386pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -529,38 +529,53 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 \clearpage
+l.36 \clearpage
                 [1
 
 
+
+]
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [2
+
+]
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
+ [3
+
+]
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+ [4
 
 ] (/home/jmt/HTB/Informes_HTB/main.aux (/home/jmt/HTB/Informes_HTB/caratula/Caratula.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 042FF3AD41E355E532B29E47D6B0465B;1132.
  ) 
 Here is how much of TeX's memory you used:
- 9619 strings out of 479304
- 147419 string characters out of 5869780
- 529175 words of memory out of 5000000
- 26629 multiletter control sequences out of 15000+600000
- 405599 words of font info for 34 fonts, out of 8000000 for 9000
+ 9661 strings out of 479304
+ 147970 string characters out of 5869780
+ 534178 words of memory out of 5000000
+ 26649 multiletter control sequences out of 15000+600000
+ 405907 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,12n,116p,545b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on /home/jmt/HTB/Informes_HTB/main.pdf (2 pages, 81972 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
+Output written on /home/jmt/HTB/Informes_HTB/main.pdf (5 pages, 108880 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
