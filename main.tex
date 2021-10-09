@@ -47,8 +47,56 @@
 % ----------------------------REMOTE-----------------------------------
 \section{Remote}
 \subsection{Reconocimiento}
+Lo primero a hacer en este caso es un escaneo de nmap, para encontrar algunos puertos abiertos y servicios corriendo, en este caso se encontraron los puertos 21, 80 y 445 abiertos principalmente.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/remote/nmap_remote.png}
+	\caption{nmap remote}
+\end{figure}
+ 
 \subsection{Escaneo de Vulnerabilidades}
+
+Como primer escaneo de vulnerabilidades se intenta con el mismo nmap, con la opción "--script vuln", esto probará as vulnerabilidades más comunes en el server.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.7\textwidth]{images/remote/nmap_vuln.png}
+	\caption{vulnerabilidades por nmap}
+\end{figure}
 \subsection{Enumeración}
+
+Luego de ver los puertos, nmap no nos bota una vulnerabilidad por FTP, pero de todos modos nunca está de más probar si encontramos algo, sin embargo en esta ocasión no encontramos nada relevante.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/ftp.png}
+	\caption{logueo anónimo por FTP}
+\end{figure}
+
+Intentamos luego con la página ubicada en el puerto 80, a ver si encontramos algo, y efectivamente encontramos una página que tiene diferentes apartados para revisar, buscamos info en los cuadros y en toda la página pero es solo texto generado de relleno, así que no hay información relevante en estas páginas para diccionarios.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/index_pagina.png}
+	\caption{logueo anónimo por FTP}
+\end{figure}
+
+\clearpage
+
+Entre todas las páginas encontramos un apartado de login, está en el mismo servidor así que se ve bastante interesante junto a que el framework es de umbraco según el wappalizer.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/wappalizer.png}
+	\caption{logueo anónimo por FTP}
+\end{figure}
+
+Intentamos un escaneo con dirb para escanear los posibles directorios ocultos, donde se encontraron muchos directorios que de forma normal hubieran sido localizados y otros que hacen referencia a redirecciones, algunos que mostraron un error de configuración pero no grave.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/dirb.png}
+	\caption{logueo anónimo por FTP}
+\end{figure}
+
+
 \subsection{Explotación}
 \subsection{Post Explotación}
 

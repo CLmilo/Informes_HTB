@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  6 OCT 2021 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  9 OCT 2021 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,7 +514,7 @@ LaTeX Info: Redefining \nameref on input line 31.
 File: images/CiberSecFIIS.png Graphic file (type png)
 <use images/CiberSecFIIS.png>
 Package pdftex.def Info: images/CiberSecFIIS.png  used on input line 11.
-(pdftex.def)             Requested size: 173.44534pt x 148.48386pt.
+(pdftex.def)             Requested size: 195.12767pt x 167.04768pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -547,14 +547,56 @@ LaTeX Info: Redefining \% on input line 46.
  [2
 
 ]
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
+<images/remote/nmap_remote.png, id=115, 768.8725pt x 329.23pt>
+File: images/remote/nmap_remote.png Graphic file (type png)
+<use images/remote/nmap_remote.png>
+Package pdftex.def Info: images/remote/nmap_remote.png  used on input line 54.
+(pdftex.def)             Requested size: 346.89731pt x 148.54396pt.
+<images/remote/nmap_vuln.png, id=116, 561.09625pt x 497.86pt>
+File: images/remote/nmap_vuln.png Graphic file (type png)
+<use images/remote/nmap_vuln.png>
+Package pdftex.def Info: images/remote/nmap_vuln.png  used on input line 64.
+(pdftex.def)             Requested size: 303.53267pt x 269.31898pt.
+<images/remote/ftp.png, id=117, 787.94376pt x 248.93pt>
+File: images/remote/ftp.png Graphic file (type png)
+<use images/remote/ftp.png>
+Package pdftex.def Info: images/remote/ftp.png  used on input line 72.
+(pdftex.def)             Requested size: 346.89731pt x 109.5903pt.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
  [3
 
-]
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
- [4
+ </home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png> </home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png>]
+<images/remote/index_pagina.png, id=126, 1324.95pt x 537.00626pt>
+File: images/remote/index_pagina.png Graphic file (type png)
+<use images/remote/index_pagina.png>
+Package pdftex.def Info: images/remote/index_pagina.png  used on input line 79.
+(pdftex.def)             Requested size: 346.89731pt x 140.59341pt.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+LaTeX Info: Redefining \. on input line 83.
+LaTeX Info: Redefining \% on input line 83.
+ [4 </home/jmt/HTB/Informes_HTB/images/remote/ftp.png> </home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png>]
+<images/remote/wappalizer.png, id=135, 1035.87pt x 577.15625pt>
+File: images/remote/wappalizer.png Graphic file (type png)
+<use images/remote/wappalizer.png>
+Package pdftex.def Info: images/remote/wappalizer.png  used on input line 88.
+(pdftex.def)             Requested size: 346.89731pt x 193.28029pt.
+<images/remote/dirb.png, id=136, 480.79625pt x 291.0875pt>
+File: images/remote/dirb.png Graphic file (type png)
+<use images/remote/dirb.png>
+Package pdftex.def Info: images/remote/dirb.png  used on input line 95.
+(pdftex.def)             Requested size: 346.89731pt x 210.027pt.
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
+ [5
+
+ </home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png> </home/jmt/HTB/Informes_HTB/images/remote/dirb.png>]
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+ [6
 
 ] (/home/jmt/HTB/Informes_HTB/main.aux (/home/jmt/HTB/Informes_HTB/caratula/Caratula.aux)
 LaTeX Info: Redefining \. on input line 26.
@@ -564,18 +606,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 042FF3AD41E355E532B29E47D6B0465B;1132.
  ) 
 Here is how much of TeX's memory you used:
- 9661 strings out of 479304
- 147970 string characters out of 5869780
+ 9714 strings out of 479304
+ 149113 string characters out of 5869780
  534178 words of memory out of 5000000
- 26649 multiletter control sequences out of 15000+600000
+ 26687 multiletter control sequences out of 15000+600000
  405907 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,12n,116p,545b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on /home/jmt/HTB/Informes_HTB/main.pdf (5 pages, 108880 bytes).
+Output written on /home/jmt/HTB/Informes_HTB/main.pdf (7 pages, 2074284 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
