@@ -86,16 +86,58 @@ Entre todas las páginas encontramos un apartado de login, está en el mismo ser
 \begin{figure}[h]
 	\center 
 	\includegraphics[width=0.8\textwidth]{images/remote/wappalizer.png}
-	\caption{logueo anónimo por FTP}
+	\caption{Resultados de wappalizer}
 \end{figure}
 
 Intentamos un escaneo con dirb para escanear los posibles directorios ocultos, donde se encontraron muchos directorios que de forma normal hubieran sido localizados y otros que hacen referencia a redirecciones, algunos que mostraron un error de configuración pero no grave.
 \begin{figure}[h]
 	\center 
 	\includegraphics[width=0.8\textwidth]{images/remote/dirb.png}
-	\caption{logueo anónimo por FTP}
+	\caption{Escaneo con la herramienta dirb}
 \end{figure}
 
+\clearpage
+
+Luego para tratar de buscar por los archivos compartidos se usa el comando llamado showmonts, que viene en la herramienta nfs-common.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.6\textwidth]{images/remote/nfs.png}
+	\caption{Obtención del backup}
+\end{figure}
+
+Luego creando una carpeta para guardar el contenido extraído con el comando "mount -t nfs 10.10.10.180:/site\_backups".
+\\ una vez copiado esto tenemos carpetas interesantes, nuestro objetivo parecen ser credenciales de la base de datos para por medio de esas acceder al servidor original, entonces primero buscamos un poco.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/backup.png}
+	\caption{Revisado del backup}
+\end{figure}
+Entonces encontramos una password en hash dentro de "App\_Data/Umbraco.sdf"
+La obtuvimos mediante el comando strings probando en diferentes archivos de configuración grepeando pass, luego de encontrarla en esta ruta vimos que grepeando pass no nos daba mucha información adicional al correo de login, así que probamos otro filtro.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/strings_pass.png}
+	\caption{Encontrando el fichero con la contraseña}
+\end{figure}
+
+\clearpage
+
+Entonces probando el filtro "admin" en base a los resultados anteriors, y encontramos un hash, el cual mediante hash-identifier pudimos comprobar su naturaleza SHA1.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/strings_admin.png}
+	\caption{Encontrando la contraseña cifrada}
+\end{figure}
+
+Ahora posteriormente lo que sigue es intentar el crackeo de esta contraseña cifrada en SHA1, para nuestra suerte este tipo de cifrado es completamente obsoleto al poseer posiblidad de colisiones en su algoritmo.
+Por lo cual en diferentes sitios online se pueden encontrar formas de crackear la contraseña, y el resultado es la obtención de la contraseña "baconandcheese".
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/remote/sha1.png}
+	\caption{Encontrando la contraseña en texto claro}
+\end{figure}
+
+\clearpage
 
 \subsection{Explotación}
 \subsection{Post Explotación}

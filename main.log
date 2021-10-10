@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  9 OCT 2021 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  9 OCT 2021 19:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,16 +587,62 @@ File: images/remote/dirb.png Graphic file (type png)
 <use images/remote/dirb.png>
 Package pdftex.def Info: images/remote/dirb.png  used on input line 95.
 (pdftex.def)             Requested size: 346.89731pt x 210.027pt.
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
  [5
 
  </home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png> </home/jmt/HTB/Informes_HTB/images/remote/dirb.png>]
-LaTeX Info: Redefining \. on input line 112.
-LaTeX Info: Redefining \% on input line 112.
+<images/remote/nfs.png, id=145, 245.91875pt x 58.2175pt>
+File: images/remote/nfs.png Graphic file (type png)
+<use images/remote/nfs.png>
+Package pdftex.def Info: images/remote/nfs.png  used on input line 104.
+(pdftex.def)             Requested size: 260.17464pt x 61.59476pt.
+<images/remote/backup.png, id=146, 630.355pt x 89.33376pt>
+File: images/remote/backup.png Graphic file (type png)
+<use images/remote/backup.png>
+Package pdftex.def Info: images/remote/backup.png  used on input line 112.
+(pdftex.def)             Requested size: 346.89731pt x 49.16232pt.
+<images/remote/strings_pass.png, id=147, 668.4975pt x 280.04625pt>
+File: images/remote/strings_pass.png Graphic file (type png)
+<use images/remote/strings_pass.png>
+Package pdftex.def Info: images/remote/strings_pass.png  used on input line 119.
+(pdftex.def)             Requested size: 346.89731pt x 145.32576pt.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
  [6
+
+ </home/jmt/HTB/Informes_HTB/images/remote/nfs.png> </home/jmt/HTB/Informes_HTB/images/remote/backup.png> </home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png>]
+<images/remote/strings_admin.png, id=160, 674.52pt x 322.20375pt>
+File: images/remote/strings_admin.png Graphic file (type png)
+<use images/remote/strings_admin.png>
+Package pdftex.def Info: images/remote/strings_admin.png  used on input line 128.
+(pdftex.def)             Requested size: 346.89731pt x 165.70816pt.
+<images/remote/sha1.png, id=161, 586.19pt x 315.1775pt>
+File: images/remote/sha1.png Graphic file (type png)
+<use images/remote/sha1.png>
+Package pdftex.def Info: images/remote/sha1.png  used on input line 136.
+(pdftex.def)             Requested size: 346.89731pt x 186.5158pt.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+LaTeX Info: Redefining \. on input line 140.
+LaTeX Info: Redefining \% on input line 140.
+ [7
+
+ </home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png> </home/jmt/HTB/Informes_HTB/images/remote/sha1.png>]
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
+ [8
+
+]
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
+ [9
 
 ] (/home/jmt/HTB/Informes_HTB/main.aux (/home/jmt/HTB/Informes_HTB/caratula/Caratula.aux)
 LaTeX Info: Redefining \. on input line 26.
@@ -606,18 +652,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 042FF3AD41E355E532B29E47D6B0465B;1132.
  ) 
 Here is how much of TeX's memory you used:
- 9714 strings out of 479304
- 149113 string characters out of 5869780
- 534178 words of memory out of 5000000
- 26687 multiletter control sequences out of 15000+600000
+ 9758 strings out of 479304
+ 150052 string characters out of 5869780
+ 534180 words of memory out of 5000000
+ 26718 multiletter control sequences out of 15000+600000
  405907 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  111i,12n,116p,545b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on /home/jmt/HTB/Informes_HTB/main.pdf (7 pages, 2074284 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
+Output written on /home/jmt/HTB/Informes_HTB/main.pdf (10 pages, 2555521 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
