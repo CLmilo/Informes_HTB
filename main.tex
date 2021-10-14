@@ -85,14 +85,14 @@ Intentamos luego con la página ubicada en el puerto 80, a ver si encontramos al
 Entre todas las páginas encontramos un apartado de login, está en el mismo servidor así que se ve bastante interesante junto a que el framework es de umbraco según el wappalizer.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/wappalizer.png}
+	\includegraphics[width=0.9\textwidth]{images/remote/wappalizer.png}
 	\caption{Resultados de wappalizer}
 \end{figure}
 
 Intentamos un escaneo con dirb para escanear los posibles directorios ocultos, donde se encontraron muchos directorios que de forma normal hubieran sido localizados y otros que hacen referencia a redirecciones, algunos que mostraron un error de configuración pero no grave.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/dirb.png}
+	\includegraphics[width=0.9\textwidth]{images/remote/dirb.png}
 	\caption{Escaneo con la herramienta dirb}
 \end{figure}
 
@@ -109,14 +109,14 @@ Luego creando una carpeta para guardar el contenido extraído con el comando "mo
 \\ una vez copiado esto tenemos carpetas interesantes, nuestro objetivo parecen ser credenciales de la base de datos para por medio de esas acceder al servidor original, entonces primero buscamos un poco.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/backup.png}
+	\includegraphics[width=0.95\textwidth]{images/remote/backup.png}
 	\caption{Revisado del backup}
 \end{figure}
 Entonces encontramos una password en hash dentro de "App\_Data/Umbraco.sdf"
 La obtuvimos mediante el comando strings probando en diferentes archivos de configuración grepeando pass, luego de encontrarla en esta ruta vimos que grepeando pass no nos daba mucha información adicional al correo de login, así que probamos otro filtro.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/strings_pass.png}
+	\includegraphics[width=0.95\textwidth]{images/remote/strings_pass.png}
 	\caption{Encontrando el fichero con la contraseña}
 \end{figure}
 
@@ -125,7 +125,7 @@ La obtuvimos mediante el comando strings probando en diferentes archivos de conf
 Entonces probando el filtro "admin" en base a los resultados anteriors, y encontramos un hash, el cual mediante hash-identifier pudimos comprobar su naturaleza SHA1.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/strings_admin.png}
+	\includegraphics[width=\textwidth]{images/remote/strings_admin.png}
 	\caption{Encontrando la contraseña cifrada}
 \end{figure}
 
@@ -133,13 +133,147 @@ Ahora posteriormente lo que sigue es intentar el crackeo de esta contraseña cif
 Por lo cual en diferentes sitios online se pueden encontrar formas de crackear la contraseña, y el resultado es la obtención de la contraseña "baconandcheese".
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/sha1.png}
+	\includegraphics[width=0.95\textwidth]{images/remote/sha1.png}
 	\caption{Encontrando la contraseña en texto claro}
 \end{figure}
 
 \clearpage
 
+Probando ya tenemos acceso a la página de administrador dentro de la página, donde se permite el subido de imágenes, lo cual nos hace dar una idea de una posible inyección o ejecución remota de comandos, para lo cual primero buscaremos si existe algún exploit que aproveche esta vulerabilidad en github.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=\textwidth]{images/remote/admin-panel.png}
+	\caption{Encontrando la contraseña en texto claro}
+\end{figure}
+
+
 \subsection{Explotación}
+\subsubsection{Obtención de Acceso como usuario}
+Entonces comenzamos con la búsqueda del script en github, para lo cual nos encontramos el siguiente. \textbf{\href{https://github.com/noraj/Umbraco-RCE}{https://github.com/noraj/Umbraco-RCE}}
+Descargando el exploit y ejecutándolo obtenemos una ejecución remota de comandos mediante powershell.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=\textwidth]{images/remote/script-1.png}
+	\caption{Probando Ejecución Remota de Comandos}
+\end{figure}
+
+\clearpage
+
+Una vez con esto tenemos que encontrar la forma de abrir una reverse shell para trabajar cómodos y explorar el sistema, entonces usarmos primero:
+\begin{enumerate}
+	\item Un Comando que permita la reverse shell que evite que crashee la terminal. Este lo obtenemos de diferentes payloads de \textbf{\href{https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology\%20and\%20Resources/Reverse\%20Shell\%20Cheatsheet.md\#powershell}{https://github.com/swisskyrepo/PayloadsAllTheThings.}}
+	\begin{figure}[h]
+		\center
+		\includegraphics[width=0.9\textwidth]{images/remote/exploit.png}
+		\caption{Comando del exploit}
+	\end{figure}
+	\item Levantamos un servidor en python3 para poder subir el payload al sistema y crear el backdoor.
+	\begin{figure}[h]
+		\center
+		\includegraphics[width=0.9\textwidth]{images/remote/server-python.png}
+		\caption{Server de Python3 en escucha}
+	\end{figure}
+	\item Un payload para establecer la conexión, este lo obtenemos de \textbf{\href{https://github.com/ivan-sincek/powershell-reverse-tcp/blob/master/src/powershell_bind_tcp.ps1}{https://github.com/ivan-sincek/powershell-reverse-tcp.}}.
+	\begin{figure}[h]
+		\center
+		\includegraphics[width=0.9\textwidth]{images/remote/payload.png}
+		\caption{Imagen del payload modificado con nuestra dirección}
+	\end{figure}
+\clearpage
+	\item Tener escuchando con netcat un puerto para establecer la conexión por el payload.
+	\begin{figure}[h]
+		\center
+		\includegraphics[width=0.78\textwidth]{images/remote/netcat.png}
+		\caption{Estableciendo contacto con el netcat}
+	\end{figure}
+	\item Por último solo quedaría acceder a la carpeta del usuario y abrir el user.txt 
+	\begin{figure}[h]
+		\center
+		\includegraphics[width=0.78\textwidth]{images/remote/flag-usuario.png}
+		\caption{Observando en texto claro la flag}
+	\end{figure}
+
+\end{enumerate}
+
+\clearpage
+
+\subsubsection{Escalamiento de Privilegios}
+Para el escalamiento de privilegios lo primero que hice fue fijarme en los permisos que tenía con mi usuario actual, esto se puede hacer mediante el comando "whoami /priv".
+\begin{figure}[h]
+	\center
+	\includegraphics[width=\textwidth]{images/remote/privilegios.png}
+	\caption{Verificando Privilegios}
+\end{figure}
+Luego de esto, había que averiguar la versión del sistema para poder empezar a buscar algún exploit relacionado a los permisos habilitados.
+\begin{figure}[h]
+	\center
+	\includegraphics[width=\textwidth]{images/remote/systeminfo.png}
+	\caption{Información del Sistema}
+\end{figure}
+
+\clearpage
+
+Entonces encontramos un github que hablaba sobre el abuso del permiso \textbf{SeImpersonatePrivilege} en servidores 2016-2019, entonces mediante el script encontrado en : \\ \textbf{\href{https://github.com/itm4n/PrintSpoofer/tree/v1.0}{https://github.com/itm4n/PrintSpoofer/tree/v1.0}} 
+\\ Luego de pasar el script a la máquina víctima mediante el uso de un servidor local en python3 y el comando en powershell invoke-webrequest que sirve a modo de wget para obtener una descarga de otro servidor.
+el script llamado exploit.exe y el netcat llamado nc.exe son necesarios para poder levantar la reverse shell con permisos elevados.
+
+\begin{figure}[h]
+	\center
+	\includegraphics[width=\textwidth]{images/remote/fallo-exploit.png}
+	\caption{Ejecutando el script de elevación.}
+\end{figure}
+Aparentemente funciona pero luego no detecta nada en el puerto de escucha, se hizo una corroboración por md5 a ver si el archivo era exactamente el mismo, pero debido a ciertas circunstancias esta forma no se dejó.
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.4\textwidth]{images/remote/fallo-escucha.png}
+	\caption{Fallo en la escucha}
+\end{figure}
+Entonces al fallar esta forma empecé a ver los procesos del sistema a ver si había alguna pista sobre cómo escalar privilegios, encontré todos los procesos no terminados del exploit que estaban corriendo en background.
+y entonces encontré un proceso de TeamViewer7 corriendo.
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.7\textwidth]{images/remote/proceso-encontrado.png}
+	\caption{Proceso de TeamViewer}
+\end{figure}
+Buscando un poco sobre algún exploit relacionado a la versión 7, encontré una forma de dumpear las claves de registro que se encuentran en ciertas rutas, un poco más de la documentación se encuentra en : 
+\textbf{\href{https://whynotsecurity.com/blog/teamviewer/}{https://whynotsecurity.com/blog/teamviewer/}}
+
+\clearpage
+
+Entonces nos dirigimos a la ruta en cuestión para poder dumpear la clave de registro.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.7\textwidth]{images/remote/confirmación-hash.png}
+	\caption{Verificando llave disponible}
+\end{figure}
+
+Ya averiguamos de qué parámetro tenemos que buscar la llave, googleando un poco encontramos la ruta y es la siguiente, entonces solo tocaría dumpear.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.43\textwidth]{images/remote/dumpeo-hash.png}
+	\caption{Dumpeando la clave}
+\end{figure}
+
+\clearpage
+
+Ahora lo que sigue es crackear esta contraseña, según vimos en la vulnerabilidad usa un cifrado AES-128-CBC con la llave 0602000000a400005253413100040000, encontré un script que se usaba para dumpear las credenciales de este exploit específicamente y es el siguiente.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=\textwidth]{images/remote/script-python-hash.png}
+	\caption{Script de Python para decifrar la clave}
+\end{figure}
+
+Con esto obtuvimos la contraseña que era \textbf{!R3m0te!}, ya con esta clave obtenida podemos usar algún impacket para acceder a la máquina, en este caso usamos el psexec.py ubicando el github \textbf{\href{https://github.com/SecureAuthCorp/impacket/blob/master/examples/psexec.py}{https://github.com/SecureAuthCorp/}}.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=\textwidth]{images/remote/exito-administrator.png}
+	\caption{entrando como NT Authority System}
+\end{figure}
+
+Con esto ya podríamos obtener la bandera root en C:\textbackslash Users\textbackslash Administrator\textbackslash Desktop\textbackslash root.txt.
+Y así finalizaría el acceso completo a la máquina Remote, con los máximos privilegios se puede hacer de todo, así que con esto en mente lo que sigue ahora es la parte de post explotación, en la cual principalmente se hará el hardening de las vulnerabilidades para que no haya problemas críticos en la seguridad.
+\clearpage
+
 \subsection{Post Explotación}
 
 \clearpage

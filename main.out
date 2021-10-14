@@ -9,10 +9,12 @@
 \BOOKMARK [2][-]{subsection.2.2}{Escaneo de Vulnerabilidades}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.3}{Enumeraci\363n}{section.2}% 10
 \BOOKMARK [2][-]{subsection.2.4}{Explotaci\363n}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.5}{Post Explotaci\363n}{section.2}% 12
-\BOOKMARK [1][-]{section.3}{Fuse}{}% 13
-\BOOKMARK [2][-]{subsection.3.1}{Reconocimiento}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.2}{Escaneo de Vulnerabilidades}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.3}{Enumeraci\363n}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.4}{Explotaci\363n}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.5}{Post Explotaci\363n}{section.3}% 18
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Obtenci\363n de Acceso como usuario}{subsection.2.4}% 12
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Escalamiento de Privilegios}{subsection.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.5}{Post Explotaci\363n}{section.2}% 14
+\BOOKMARK [1][-]{section.3}{Fuse}{}% 15
+\BOOKMARK [2][-]{subsection.3.1}{Reconocimiento}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Escaneo de Vulnerabilidades}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.3}{Enumeraci\363n}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Explotaci\363n}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.5}{Post Explotaci\363n}{section.3}% 20

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  9 OCT 2021 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.9.7)  13 OCT 2021 20:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -510,7 +510,7 @@ LaTeX Info: Redefining \nameref on input line 31.
 \openout2 = `caratula/Caratula.aux'.
 
  (/home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-<images/CiberSecFIIS.png, id=76, 512.66531pt x 438.8897pt>
+<images/CiberSecFIIS.png, id=84, 512.66531pt x 438.8897pt>
 File: images/CiberSecFIIS.png Graphic file (type png)
 <use images/CiberSecFIIS.png>
 Package pdftex.def Info: images/CiberSecFIIS.png  used on input line 11.
@@ -547,17 +547,17 @@ LaTeX Info: Redefining \% on input line 46.
  [2
 
 ]
-<images/remote/nmap_remote.png, id=115, 768.8725pt x 329.23pt>
+<images/remote/nmap_remote.png, id=125, 768.8725pt x 329.23pt>
 File: images/remote/nmap_remote.png Graphic file (type png)
 <use images/remote/nmap_remote.png>
 Package pdftex.def Info: images/remote/nmap_remote.png  used on input line 54.
 (pdftex.def)             Requested size: 346.89731pt x 148.54396pt.
-<images/remote/nmap_vuln.png, id=116, 561.09625pt x 497.86pt>
+<images/remote/nmap_vuln.png, id=126, 561.09625pt x 497.86pt>
 File: images/remote/nmap_vuln.png Graphic file (type png)
 <use images/remote/nmap_vuln.png>
 Package pdftex.def Info: images/remote/nmap_vuln.png  used on input line 64.
 (pdftex.def)             Requested size: 303.53267pt x 269.31898pt.
-<images/remote/ftp.png, id=117, 787.94376pt x 248.93pt>
+<images/remote/ftp.png, id=127, 787.94376pt x 248.93pt>
 File: images/remote/ftp.png Graphic file (type png)
 <use images/remote/ftp.png>
 Package pdftex.def Info: images/remote/ftp.png  used on input line 72.
@@ -567,7 +567,7 @@ LaTeX Info: Redefining \% on input line 75.
  [3
 
  </home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png> </home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png>]
-<images/remote/index_pagina.png, id=126, 1324.95pt x 537.00626pt>
+<images/remote/index_pagina.png, id=136, 1324.95pt x 537.00626pt>
 File: images/remote/index_pagina.png Graphic file (type png)
 <use images/remote/index_pagina.png>
 Package pdftex.def Info: images/remote/index_pagina.png  used on input line 79.
@@ -577,93 +577,237 @@ LaTeX Info: Redefining \% on input line 83.
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
  [4 </home/jmt/HTB/Informes_HTB/images/remote/ftp.png> </home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png>]
-<images/remote/wappalizer.png, id=135, 1035.87pt x 577.15625pt>
+<images/remote/wappalizer.png, id=145, 1035.87pt x 577.15625pt>
 File: images/remote/wappalizer.png Graphic file (type png)
 <use images/remote/wappalizer.png>
 Package pdftex.def Info: images/remote/wappalizer.png  used on input line 88.
-(pdftex.def)             Requested size: 346.89731pt x 193.28029pt.
-<images/remote/dirb.png, id=136, 480.79625pt x 291.0875pt>
+(pdftex.def)             Requested size: 390.25534pt x 217.43701pt.
+<images/remote/dirb.png, id=146, 480.79625pt x 291.0875pt>
 File: images/remote/dirb.png Graphic file (type png)
 <use images/remote/dirb.png>
 Package pdftex.def Info: images/remote/dirb.png  used on input line 95.
-(pdftex.def)             Requested size: 346.89731pt x 210.027pt.
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [5
+(pdftex.def)             Requested size: 390.25534pt x 236.27704pt.
 
- </home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png> </home/jmt/HTB/Informes_HTB/images/remote/dirb.png>]
-<images/remote/nfs.png, id=145, 245.91875pt x 58.2175pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[5
+
+ </home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png>]
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [6 </home/jmt/HTB/Informes_HTB/images/remote/dirb.png>]
+<images/remote/nfs.png, id=160, 245.91875pt x 58.2175pt>
 File: images/remote/nfs.png Graphic file (type png)
 <use images/remote/nfs.png>
 Package pdftex.def Info: images/remote/nfs.png  used on input line 104.
 (pdftex.def)             Requested size: 260.17464pt x 61.59476pt.
-<images/remote/backup.png, id=146, 630.355pt x 89.33376pt>
+<images/remote/backup.png, id=161, 630.355pt x 89.33376pt>
 File: images/remote/backup.png Graphic file (type png)
 <use images/remote/backup.png>
 Package pdftex.def Info: images/remote/backup.png  used on input line 112.
-(pdftex.def)             Requested size: 346.89731pt x 49.16232pt.
-<images/remote/strings_pass.png, id=147, 668.4975pt x 280.04625pt>
+(pdftex.def)             Requested size: 411.93767pt x 58.37976pt.
+<images/remote/strings_pass.png, id=162, 668.4975pt x 280.04625pt>
 File: images/remote/strings_pass.png Graphic file (type png)
 <use images/remote/strings_pass.png>
 Package pdftex.def Info: images/remote/strings_pass.png  used on input line 119.
-(pdftex.def)             Requested size: 346.89731pt x 145.32576pt.
+(pdftex.def)             Requested size: 411.93767pt x 172.5714pt.
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
 LaTeX Info: Redefining \. on input line 123.
 LaTeX Info: Redefining \% on input line 123.
- [6
+ [7
 
  </home/jmt/HTB/Informes_HTB/images/remote/nfs.png> </home/jmt/HTB/Informes_HTB/images/remote/backup.png> </home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png>]
-<images/remote/strings_admin.png, id=160, 674.52pt x 322.20375pt>
+<images/remote/strings_admin.png, id=175, 674.52pt x 322.20375pt>
 File: images/remote/strings_admin.png Graphic file (type png)
 <use images/remote/strings_admin.png>
 Package pdftex.def Info: images/remote/strings_admin.png  used on input line 128.
-(pdftex.def)             Requested size: 346.89731pt x 165.70816pt.
-<images/remote/sha1.png, id=161, 586.19pt x 315.1775pt>
+(pdftex.def)             Requested size: 433.62pt x 207.13397pt.
+<images/remote/sha1.png, id=176, 586.19pt x 315.1775pt>
 File: images/remote/sha1.png Graphic file (type png)
 <use images/remote/sha1.png>
 Package pdftex.def Info: images/remote/sha1.png  used on input line 136.
-(pdftex.def)             Requested size: 346.89731pt x 186.5158pt.
+(pdftex.def)             Requested size: 411.93767pt x 221.48358pt.
 LaTeX Info: Redefining \. on input line 140.
 LaTeX Info: Redefining \% on input line 140.
 LaTeX Info: Redefining \. on input line 140.
 LaTeX Info: Redefining \% on input line 140.
- [7
-
- </home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png> </home/jmt/HTB/Informes_HTB/images/remote/sha1.png>]
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
-LaTeX Info: Redefining \. on input line 145.
-LaTeX Info: Redefining \% on input line 145.
  [8
 
-]
-LaTeX Info: Redefining \. on input line 154.
-LaTeX Info: Redefining \% on input line 154.
+ </home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png> </home/jmt/HTB/Informes_HTB/images/remote/sha1.png>]
+<images/remote/admin-panel.png, id=186, 1353.055pt x 558.085pt>
+File: images/remote/admin-panel.png Graphic file (type png)
+<use images/remote/admin-panel.png>
+Package pdftex.def Info: images/remote/admin-panel.png  used on input line 145.
+(pdftex.def)             Requested size: 433.62pt x 178.85483pt.
+<images/remote/script-1.png, id=188, 817.0525pt x 436.63126pt>
+File: images/remote/script-1.png Graphic file (type png)
+<use images/remote/script-1.png>
+Package pdftex.def Info: images/remote/script-1.png  used on input line 156.
+(pdftex.def)             Requested size: 433.62pt x 231.7266pt.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
  [9
+
+ </home/jmt/HTB/Informes_HTB/images/remote/admin-panel.png> </home/jmt/HTB/Informes_HTB/images/remote/script-1.png>]
+<images/remote/exploit.png, id=198, 846.16125pt x 214.8025pt>
+File: images/remote/exploit.png Graphic file (type png)
+<use images/remote/exploit.png>
+Package pdftex.def Info: images/remote/exploit.png  used on input line 167.
+(pdftex.def)             Requested size: 390.25534pt x 99.066pt.
+<images/remote/server-python.png, id=199, 723.70375pt x 177.66376pt>
+File: images/remote/server-python.png Graphic file (type png)
+<use images/remote/server-python.png>
+Package pdftex.def Info: images/remote/server-python.png  used on input line 173.
+(pdftex.def)             Requested size: 390.25534pt x 95.80415pt.
+<images/remote/payload.png, id=201, 559.08875pt x 277.035pt>
+File: images/remote/payload.png Graphic file (type png)
+<use images/remote/payload.png>
+Package pdftex.def Info: images/remote/payload.png  used on input line 179.
+(pdftex.def)             Requested size: 390.25534pt x 193.38208pt.
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+ [10
+
+ </home/jmt/HTB/Informes_HTB/images/remote/exploit.png> </home/jmt/HTB/Informes_HTB/images/remote/server-python.png> </home/jmt/HTB/Informes_HTB/images/remote/payload.png>]
+<images/remote/netcat.png, id=216, 643.40375pt x 391.4625pt>
+File: images/remote/netcat.png Graphic file (type png)
+<use images/remote/netcat.png>
+Package pdftex.def Info: images/remote/netcat.png  used on input line 186.
+(pdftex.def)             Requested size: 338.22305pt x 205.78967pt.
+<images/remote/flag-usuario.png, id=217, 491.8375pt x 326.21875pt>
+File: images/remote/flag-usuario.png Graphic file (type png)
+<use images/remote/flag-usuario.png>
+Package pdftex.def Info: images/remote/flag-usuario.png  used on input line 192.
+(pdftex.def)             Requested size: 338.22305pt x 224.33954pt.
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+ [11
+
+ </home/jmt/HTB/Informes_HTB/images/remote/netcat.png> </home/jmt/HTB/Informes_HTB/images/remote/flag-usuario.png>]
+<images/remote/privilegios.png, id=228, 655.44875pt x 242.9075pt>
+File: images/remote/privilegios.png Graphic file (type png)
+<use images/remote/privilegios.png>
+Package pdftex.def Info: images/remote/privilegios.png  used on input line 204.
+(pdftex.def)             Requested size: 433.62pt x 160.6975pt.
+<images/remote/systeminfo.png, id=229, 758.835pt x 357.335pt>
+File: images/remote/systeminfo.png Graphic file (type png)
+<use images/remote/systeminfo.png>
+Package pdftex.def Info: images/remote/systeminfo.png  used on input line 210.
+(pdftex.def)             Requested size: 433.62pt x 204.19559pt.
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 214.
+LaTeX Info: Redefining \% on input line 214.
+ [12
+
+ </home/jmt/HTB/Informes_HTB/images/remote/privilegios.png> </home/jmt/HTB/Informes_HTB/images/remote/systeminfo.png>]
+<images/remote/fallo-exploit.png, id=240, 840.13875pt x 97.36375pt>
+File: images/remote/fallo-exploit.png Graphic file (type png)
+<use images/remote/fallo-exploit.png>
+Package pdftex.def Info: images/remote/fallo-exploit.png  used on input line 222.
+(pdftex.def)             Requested size: 433.62pt x 50.25208pt.
+<images/remote/fallo-escucha.png, id=241, 312.16624pt x 84.315pt>
+File: images/remote/fallo-escucha.png Graphic file (type png)
+<use images/remote/fallo-escucha.png>
+Package pdftex.def Info: images/remote/fallo-escucha.png  used on input line 228.
+(pdftex.def)             Requested size: 173.44534pt x 46.84811pt.
+<images/remote/proceso-encontrado.png, id=242, 554.07pt x 189.70876pt>
+File: images/remote/proceso-encontrado.png Graphic file (type png)
+<use images/remote/proceso-encontrado.png>
+Package pdftex.def Info: images/remote/proceso-encontrado.png  used on input line 235.
+(pdftex.def)             Requested size: 303.53267pt x 103.92618pt.
+LaTeX Info: Redefining \. on input line 241.
+LaTeX Info: Redefining \% on input line 241.
+LaTeX Info: Redefining \. on input line 241.
+LaTeX Info: Redefining \% on input line 241.
+ [13
+
+ </home/jmt/HTB/Informes_HTB/images/remote/fallo-exploit.png> </home/jmt/HTB/Informes_HTB/images/remote/fallo-escucha.png> </home/jmt/HTB/Informes_HTB/images/remote/proceso-encontrado.png>]
+<images/remote/confirmación-hash.png, id=254, 840.13875pt x 532.99126pt>
+File: images/remote/confirmación-hash.png Graphic file (type png)
+<use images/remote/confirmación-hash.png>
+Package pdftex.def Info: images/remote/confirmación-hash.png  used on input line 246.
+(pdftex.def)             Requested size: 303.53267pt x 192.55986pt.
+<images/remote/dumpeo-hash.png, id=255, 400.49625pt x 522.95375pt>
+File: images/remote/dumpeo-hash.png Graphic file (type png)
+<use images/remote/dumpeo-hash.png>
+Package pdftex.def Info: images/remote/dumpeo-hash.png  used on input line 253.
+(pdftex.def)             Requested size: 186.45341pt x 243.46622pt.
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+ [14
+
+ </home/jmt/HTB/Informes_HTB/images/remote/confirmación-hash.png> </home/jmt/HTB/Informes_HTB/images/remote/dumpeo-hash.png>]
+<images/remote/script-python-hash.png, id=264, 840.13875pt x 299.1175pt>
+File: images/remote/script-python-hash.png Graphic file (type png)
+<use images/remote/script-python-hash.png>
+Package pdftex.def Info: images/remote/script-python-hash.png  used on input line 262.
+(pdftex.def)             Requested size: 433.62pt x 154.38269pt.
+<images/remote/exito-administrator.png, id=266, 963.6pt x 322.20375pt>
+File: images/remote/exito-administrator.png Graphic file (type png)
+<use images/remote/exito-administrator.png>
+Package pdftex.def Info: images/remote/exito-administrator.png  used on input line 269.
+(pdftex.def)             Requested size: 433.62pt x 144.99034pt.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 273.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 273.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [15
+
+ </home/jmt/HTB/Informes_HTB/images/remote/script-python-hash.png> </home/jmt/HTB/Informes_HTB/images/remote/exito-administrator.png>]
+LaTeX Info: Redefining \. on input line 279.
+LaTeX Info: Redefining \% on input line 279.
+LaTeX Info: Redefining \. on input line 279.
+LaTeX Info: Redefining \% on input line 279.
+ [16
+
+]
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+ [17
 
 ] (/home/jmt/HTB/Informes_HTB/main.aux (/home/jmt/HTB/Informes_HTB/caratula/Caratula.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 042FF3AD41E355E532B29E47D6B0465B;1132.
+(rerunfilecheck)             Checksum: 6AE7941A0531715EBE7B1190F76629AC;1314.
  ) 
 Here is how much of TeX's memory you used:
- 9758 strings out of 479304
- 150052 string characters out of 5869780
- 534180 words of memory out of 5000000
- 26718 multiletter control sequences out of 15000+600000
+ 9907 strings out of 479304
+ 153667 string characters out of 5869780
+ 535183 words of memory out of 5000000
+ 26817 multiletter control sequences out of 15000+600000
  405907 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 111i,12n,116p,545b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb>
-Output written on /home/jmt/HTB/Informes_HTB/main.pdf (10 pages, 2555521 bytes).
+ 111i,12n,116p,545b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /home/jmt/HTB/Informes_HTB/main.pdf (18 pages, 5154561 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
