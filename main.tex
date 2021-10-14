@@ -16,7 +16,19 @@
 \usepackage{rotating}
 \usepackage{etoolbox}
 \usepackage[absolute]{textpos}
+\usepackage{listings}
 
+\lstdefinestyle{customc}{
+  language=C++,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstset{escapechar=@,style=customc}
 
 \newcommand{\tabitem}{%
   	\usebeamertemplate{itemize item}\hspace*{\labelsep}}
@@ -69,14 +81,14 @@ Como primer escaneo de vulnerabilidades se intenta con el mismo nmap, con la opc
 Luego de ver los puertos, nmap no nos bota una vulnerabilidad por FTP, pero de todos modos nunca está de más probar si encontramos algo, sin embargo en esta ocasión no encontramos nada relevante.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/ftp.png}
+	\includegraphics[width=0.95\textwidth]{images/remote/ftp.png}
 	\caption{logueo anónimo por FTP}
 \end{figure}
 
 Intentamos luego con la página ubicada en el puerto 80, a ver si encontramos algo, y efectivamente encontramos una página que tiene diferentes apartados para revisar, buscamos info en los cuadros y en toda la página pero es solo texto generado de relleno, así que no hay información relevante en estas páginas para diccionarios.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.8\textwidth]{images/remote/index_pagina.png}
+	\includegraphics[width=0.95\textwidth]{images/remote/index_pagina.png}
 	\caption{logueo anónimo por FTP}
 \end{figure}
 
@@ -85,14 +97,14 @@ Intentamos luego con la página ubicada en el puerto 80, a ver si encontramos al
 Entre todas las páginas encontramos un apartado de login, está en el mismo servidor así que se ve bastante interesante junto a que el framework es de umbraco según el wappalizer.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.9\textwidth]{images/remote/wappalizer.png}
+	\includegraphics[width=0.85\textwidth]{images/remote/wappalizer.png}
 	\caption{Resultados de wappalizer}
 \end{figure}
 
 Intentamos un escaneo con dirb para escanear los posibles directorios ocultos, donde se encontraron muchos directorios que de forma normal hubieran sido localizados y otros que hacen referencia a redirecciones, algunos que mostraron un error de configuración pero no grave.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.9\textwidth]{images/remote/dirb.png}
+	\includegraphics[width=0.85\textwidth]{images/remote/dirb.png}
 	\caption{Escaneo con la herramienta dirb}
 \end{figure}
 
@@ -274,7 +286,47 @@ Con esto ya podríamos obtener la bandera root en C:\textbackslash Users\textbac
 Y así finalizaría el acceso completo a la máquina Remote, con los máximos privilegios se puede hacer de todo, así que con esto en mente lo que sigue ahora es la parte de post explotación, en la cual principalmente se hará el hardening de las vulnerabilidades para que no haya problemas críticos en la seguridad.
 \clearpage
 
-\subsection{Post Explotación}
+\subsection{Hardening}
+
+\subsubsection{Umbraco}
+
+Para evitar el ingreso por el vector de umbraco se requiere una actualización, pero debido a que pasar de Umbraco 7 al 8 o 9 no es tan sencillo, gracias a la incompatibilidad de código que hay entre versiones, la única solución que quedaría sería netamente pasar el contenido de forma manual de una versión a otra.
+Esta es la solución oficial que nos dan en la documentación de Umbraco, sin embargo esta versión es completamente obsoleta así que solo quedaría hacer la migración manual como sugieren.
+De hecho gracias a la versión que se tiene en el servidor, que es la 7.12.4, no tiene forma de migrar.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=0.3\textwidth]{images/remote/umbraco-version.png}
+	\caption{Solución Oficial de Umbraco}
+\end{figure}
+\\ Entonces la única solución sería instalar una nueva versión de Umbraco 9 y configurar el servidor desde esa base.
+
+\subsubsection{Permisos Powershell}
+
+También se tuvo un problema con los permisos o privilegios que tenía el usuario con el que se escaló privilegios, debido a la versión 2019 de servidor que se usaban era necesario verificar que el permiso \textbf{SeImpersonatePrivilege}-
+Para lo cual se tiene que deshabilitar mediante un script referenciado en 
+
+
+\begin{lstlisting}
+	function Add-ServiceLogonRight([string] $Username) {
+		Write-Host "Enable ServiceLogonRight for $Username"
+	
+		$tmp = New-TemporaryFile
+		secedit /export /cfg "$tmp.inf" | Out-Null
+		(gc -Encoding ascii "$tmp.inf") -replace '^SeServiceLogonRight .+
+		', " `$0,$Username" | sc -Encoding ascii "$tmp.inf"
+		secedit /import /cfg "$tmp.inf" /db "$tmp.sdb" | Out-Null
+		secedit /configure /db "$tmp.sdb" /cfg "$tmp.inf" | Out-Null
+		rm $tmp* -ea 0
+	}
+\end{lstlisting}	
+
+Con esto ya evitaría que se pueda escalar privilegios mediante el exploit en Windows Server 2019.
+
+\subsubsection{TeamViewer7}
+
+Para instalar esto se necesitaría o eliminar el proceso o actualizar la versión a la más nueva, pero desde cmd o powershell no se puede actualizar de forma sencilla los programas debido a la forma en la que están hechos y el funcionamiento de la terminal en windows.
+De todos modos se podría actualizar luego de instalar un programa llamado winget ubicado en \textbf{\href{https://github.com/microsoft/winget-cli/releases}{https://github.com/microsoft/winget-cli/releases}}
+
 
 \clearpage
 % ----------------------------FUSE-----------------------------------

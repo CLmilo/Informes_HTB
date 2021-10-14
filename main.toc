@@ -9,13 +9,16 @@
 \contentsline {subsection}{\numberline {2.1}Reconocimiento}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Escaneo de Vulnerabilidades}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Enumeración}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Explotación}{9}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Obtención de Acceso como usuario}{9}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Escalamiento de Privilegios}{12}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}Post Explotación}{16}{subsection.2.5}%
-\contentsline {section}{\numberline {3}Fuse}{17}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Reconocimiento}{17}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Escaneo de Vulnerabilidades}{17}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Enumeración}{17}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Explotación}{17}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Post Explotación}{17}{subsection.3.5}%
+\contentsline {subsection}{\numberline {2.4}Explotación}{8}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Obtención de Acceso como usuario}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Escalamiento de Privilegios}{11}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Hardening}{15}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Umbraco}{15}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Permisos Powershell}{15}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}TeamViewer7}{15}{subsubsection.2.5.3}%
+\contentsline {section}{\numberline {3}Fuse}{16}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Reconocimiento}{16}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Escaneo de Vulnerabilidades}{16}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Enumeración}{16}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Explotación}{16}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Post Explotación}{16}{subsection.3.5}%

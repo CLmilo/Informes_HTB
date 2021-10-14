@@ -11,10 +11,13 @@
 \BOOKMARK [2][-]{subsection.2.4}{Explotaci\363n}{section.2}% 11
 \BOOKMARK [3][-]{subsubsection.2.4.1}{Obtenci\363n de Acceso como usuario}{subsection.2.4}% 12
 \BOOKMARK [3][-]{subsubsection.2.4.2}{Escalamiento de Privilegios}{subsection.2.4}% 13
-\BOOKMARK [2][-]{subsection.2.5}{Post Explotaci\363n}{section.2}% 14
-\BOOKMARK [1][-]{section.3}{Fuse}{}% 15
-\BOOKMARK [2][-]{subsection.3.1}{Reconocimiento}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.2}{Escaneo de Vulnerabilidades}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.3}{Enumeraci\363n}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.4}{Explotaci\363n}{section.3}% 19
-\BOOKMARK [2][-]{subsection.3.5}{Post Explotaci\363n}{section.3}% 20
+\BOOKMARK [2][-]{subsection.2.5}{Hardening}{section.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Umbraco}{subsection.2.5}% 15
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Permisos Powershell}{subsection.2.5}% 16
+\BOOKMARK [3][-]{subsubsection.2.5.3}{TeamViewer7}{subsection.2.5}% 17
+\BOOKMARK [1][-]{section.3}{Fuse}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{Reconocimiento}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{Escaneo de Vulnerabilidades}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Enumeraci\363n}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.4}{Explotaci\363n}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.5}{Post Explotaci\363n}{section.3}% 23
