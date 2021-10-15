@@ -5,7 +5,6 @@
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
-\usepackage{typearea}
 \geometry{total={6in, 9in}}
 \usepackage{blindtext} % no sé 
 \usepackage{makeidx} % no sé 
@@ -15,8 +14,8 @@
 \usepackage{pdfpages}
 \usepackage{rotating}
 \usepackage{etoolbox}
-\usepackage[absolute]{textpos}
 \usepackage{listings}
+\usepackage{float}
 
 \lstdefinestyle{customc}{
   language=C++,
@@ -79,32 +78,32 @@ Como primer escaneo de vulnerabilidades se intenta con el mismo nmap, con la opc
 \subsection{Enumeración}
 
 Luego de ver los puertos, nmap no nos bota una vulnerabilidad por FTP, pero de todos modos nunca está de más probar si encontramos algo, sin embargo en esta ocasión no encontramos nada relevante.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\center 
-	\includegraphics[width=0.95\textwidth]{images/remote/ftp.png}
+	\includegraphics[width=\textwidth]{images/remote/ftp.png}
 	\caption{logueo anónimo por FTP}
 \end{figure}
 
 Intentamos luego con la página ubicada en el puerto 80, a ver si encontramos algo, y efectivamente encontramos una página que tiene diferentes apartados para revisar, buscamos info en los cuadros y en toda la página pero es solo texto generado de relleno, así que no hay información relevante en estas páginas para diccionarios.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\center 
-	\includegraphics[width=0.95\textwidth]{images/remote/index_pagina.png}
+	\includegraphics[width=\textwidth]{images/remote/index_pagina.png}
 	\caption{logueo anónimo por FTP}
 \end{figure}
 
 \clearpage
 
 Entre todas las páginas encontramos un apartado de login, está en el mismo servidor así que se ve bastante interesante junto a que el framework es de umbraco según el wappalizer.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\center 
-	\includegraphics[width=0.85\textwidth]{images/remote/wappalizer.png}
+	\includegraphics[width=0.9\textwidth]{images/remote/wappalizer.png}
 	\caption{Resultados de wappalizer}
 \end{figure}
 
 Intentamos un escaneo con dirb para escanear los posibles directorios ocultos, donde se encontraron muchos directorios que de forma normal hubieran sido localizados y otros que hacen referencia a redirecciones, algunos que mostraron un error de configuración pero no grave.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\center 
-	\includegraphics[width=0.85\textwidth]{images/remote/dirb.png}
+	\includegraphics[width=0.9\textwidth]{images/remote/dirb.png}
 	\caption{Escaneo con la herramienta dirb}
 \end{figure}
 
@@ -121,14 +120,14 @@ Luego creando una carpeta para guardar el contenido extraído con el comando "mo
 \\ una vez copiado esto tenemos carpetas interesantes, nuestro objetivo parecen ser credenciales de la base de datos para por medio de esas acceder al servidor original, entonces primero buscamos un poco.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.95\textwidth]{images/remote/backup.png}
+	\includegraphics[width=\textwidth]{images/remote/backup.png}
 	\caption{Revisado del backup}
 \end{figure}
 Entonces encontramos una password en hash dentro de "App\_Data/Umbraco.sdf"
 La obtuvimos mediante el comando strings probando en diferentes archivos de configuración grepeando pass, luego de encontrarla en esta ruta vimos que grepeando pass no nos daba mucha información adicional al correo de login, así que probamos otro filtro.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.95\textwidth]{images/remote/strings_pass.png}
+	\includegraphics[width=\textwidth]{images/remote/strings_pass.png}
 	\caption{Encontrando el fichero con la contraseña}
 \end{figure}
 
@@ -143,9 +142,9 @@ Entonces probando el filtro "admin" en base a los resultados anteriors, y encont
 
 Ahora posteriormente lo que sigue es intentar el crackeo de esta contraseña cifrada en SHA1, para nuestra suerte este tipo de cifrado es completamente obsoleto al poseer posiblidad de colisiones en su algoritmo.
 Por lo cual en diferentes sitios online se pueden encontrar formas de crackear la contraseña, y el resultado es la obtención de la contraseña "baconandcheese".
-\begin{figure}[h]
+\begin{figure}[h!]
 	\center 
-	\includegraphics[width=0.95\textwidth]{images/remote/sha1.png}
+	\includegraphics[width=\textwidth]{images/remote/sha1.png}
 	\caption{Encontrando la contraseña en texto claro}
 \end{figure}
 
@@ -155,7 +154,7 @@ Probando ya tenemos acceso a la página de administrador dentro de la página, d
 \begin{figure}[h]
 	\center 
 	\includegraphics[width=\textwidth]{images/remote/admin-panel.png}
-	\caption{Encontrando la contraseña en texto claro}
+	\caption{Entrando al admin de Umbraco}
 \end{figure}
 
 
@@ -193,15 +192,15 @@ Una vez con esto tenemos que encontrar la forma de abrir una reverse shell para 
 	\end{figure}
 \clearpage
 	\item Tener escuchando con netcat un puerto para establecer la conexión por el payload.
-	\begin{figure}[h]
+	\begin{figure}[h!]
 		\center
-		\includegraphics[width=0.78\textwidth]{images/remote/netcat.png}
+		\includegraphics[width=0.9\textwidth]{images/remote/netcat.png}
 		\caption{Estableciendo contacto con el netcat}
 	\end{figure}
 	\item Por último solo quedaría acceder a la carpeta del usuario y abrir el user.txt 
-	\begin{figure}[h]
+	\begin{figure}[h!]
 		\center
-		\includegraphics[width=0.78\textwidth]{images/remote/flag-usuario.png}
+		\includegraphics[width=0.9\textwidth]{images/remote/flag-usuario.png}
 		\caption{Observando en texto claro la flag}
 	\end{figure}
 
@@ -255,14 +254,14 @@ Buscando un poco sobre algún exploit relacionado a la versión 7, encontré una
 Entonces nos dirigimos a la ruta en cuestión para poder dumpear la clave de registro.
 \begin{figure}[h]
 	\center 
-	\includegraphics[width=0.7\textwidth]{images/remote/confirmación-hash.png}
+	\includegraphics[width=0.8\textwidth]{images/remote/confirmación-hash.png}
 	\caption{Verificando llave disponible}
 \end{figure}
 
 Ya averiguamos de qué parámetro tenemos que buscar la llave, googleando un poco encontramos la ruta y es la siguiente, entonces solo tocaría dumpear.
-\begin{figure}[h]
+\begin{figure}[h!]
 	\center 
-	\includegraphics[width=0.43\textwidth]{images/remote/dumpeo-hash.png}
+	\includegraphics[width=0.5\textwidth]{images/remote/dumpeo-hash.png}
 	\caption{Dumpeando la clave}
 \end{figure}
 
@@ -336,5 +335,147 @@ De todos modos se podría actualizar luego de instalar un programa llamado winge
 \subsection{Enumeración}
 \subsection{Explotación}
 \subsection{Post Explotación}
+
+\clearpage
+% ----------------------------MAGIC-----------------------------------
+\section{MAGIC}
+\subsection{Reconocimiento}
+Lo primero a hacer en este caso es un escaneo de nmap, para encontrar algunos puertos abiertos y servicios corriendo, en este caso se encontraron los puertos 22 y 80. Esto nos da una idea de que todo se hace netamente por el acceso a página web del puerto 80, porque es muy raro encontrar vulnerabilidades del puerto 22.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/nmap.png}
+	\caption{Escaneo de Puertos con Nmap}
+\end{figure}
+Entonces vemos en el puerto 80 existe una página, decidimos escanear directorios mediante \textbf{Wfuzz} y al mismo tiempo vamos a observar la página.
+\begin{figure}[h]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/wfuzz.png}
+	\caption{Escaneo de Directorios con Wfuzz}
+\end{figure}
+
+\clearpage
+
+Entonces entrando a la máquina podemos ver la página principal en el índice, vemos que hay muchas imágenes subidas y en caso de poder loguearnos nos dejaría subir unas cuantas más.
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/index.png}
+	\caption{Index de la página principal}
+\end{figure}
+Vemos aquí el apartado de login, este es algo simple y parece funcionar debido a que bota un error de contraseña incorrecta.
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/login.png}
+	\caption{Login de la página web}
+\end{figure}
+
+\clearpage
+
+\subsection{Escaneo de Vulnerabilidades}
+
+Llegó el momento de intentar encontrar vectores de ataque, con el mismo nmap dejamos corriendo un análisis de vulnerabilidades a los puertos 80 y 22 pero no encontró nada muy útil.
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/nmap-vuln.png}
+	\caption{Escaneo de Vulnerabilidades con nmap}
+\end{figure}
+
+Luego de esto fui al login y me di cuenta que el ataque de tipo Inyección SQL era muy sencillo, probando \textbf{' or 1=1 --}. Esta es la inyección más básica de toda la vida así que no hubo mucha complicación.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/login-existoso.png}
+	\caption{Login existoso en la página web}
+\end{figure}
+
+\clearpage
+
+Entonces vemos claramente una forma de subir una reverse shell con formato de imagen, probaremos primero subiendo una revershe shell en .php a ver si hay algún problema.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/fallo-subida-php.png}
+	\caption{Fallo subiendo un php}
+\end{figure}
+
+Imaginaba que no iba a ser tan fácil así que abrí el burpsuite y traté de hacerlo pasar como imagen para luego borrar la extensión y ejecutarlo dentro del servidor.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/intento-burpsuit.png}
+	\caption{Intento con Burpsuite}
+\end{figure}
+
+\clearpage
+
+Luego intentando la subida también falló como se puede ver, este mensaje es diferente y nos hace sospechar que se tiene otro medio de verificar, por lo cual ahora intentaré con los bits mágicos de los archivos, los cuales podemos encontrar más información aquí: \\ 
+\textbf{\href{https://en.wikipedia.org/wiki/List_of_file_signatures}{https://en.wikipedia.org/wiki/List\_of\_file\_signatures}}.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/fallo-burpsuite.png}
+	\caption{Fallo con Burpsuite}
+\end{figure}
+
+Primero mostramos los bits mágicos que tenemos por defecto en nuestro archivo para verificar que es de un php convencional.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/muestra-bits.png}
+	\caption{Bits previo al cambio}
+\end{figure}
+
+\clearpage
+
+Entonces cambiamos los bits de inicio a los de un jpg, y luego editamos encima usando una revershe shell que está en el siguiente github: \textbf{\href{https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php}{https://github.com/pentestmonkey/php-reverse-shell}}
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/cambio-bits.png}
+	\caption{Cambio de los bits del inicio}
+\end{figure}
+
+Luego de esto solo queda subir el archivo a ver esta vez no tenemos problemas, y efectivamente este se sube satisfactoriamente ya sin necesidad de editar nada en burpsuite.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/subida-exitosa.png}
+	\caption{Subida de reverse shell exitosa}
+\end{figure}
+
+Ahora solo queda apuntar a la dirección donde se suben, felizmente para esto pudimos encontrar la ubicación con el fuzzeo anterior.
+
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/apuntando-reverse1.png}
+	\caption{Apuntando a nuestra reverse shell}
+\end{figure}
+
+
+\clearpage
+
+Entonces si abrimos nuestro netcat escuchando por el puerto 1234, obtenemos respuesta y ganamos acceso al servidor.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/acceso-maquina.png}
+	\caption{Acceso a la Máquina por netcat}
+\end{figure}
+
+Pero nos damos con la sorpresa de no poder ver la bandera de usuario.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.7\textwidth]{images/magic/fallo-lectura-flag.png}
+	\caption{Fallo de lectura de la flag}
+\end{figure}
+
+\subsection{Enumeración}
+
+Ahora entonces lo que tenemos que hacer es un movimiento lateral para obtener un acceso a otro usuario.
+
+
+\subsection{Explotación}
+\subsection{Hardening}
 
 \end{document}

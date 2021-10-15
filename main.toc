@@ -22,3 +22,9 @@
 \contentsline {subsection}{\numberline {3.3}Enumeración}{16}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Explotación}{16}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Post Explotación}{16}{subsection.3.5}%
+\contentsline {section}{\numberline {4}MAGIC}{17}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Reconocimiento}{17}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Escaneo de Vulnerabilidades}{19}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Enumeración}{23}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Explotación}{23}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Hardening}{23}{subsection.4.5}%
