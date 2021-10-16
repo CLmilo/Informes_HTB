@@ -53,14 +53,14 @@ Realizando el escaneo de puertos abiertos encontramos el servicio HTTP en el pue
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/1-escaneo.png}
-	\caption{}
+	\caption{Escaneo}
 \end{figure}
 
 Accediendo a la página web comprobamos que efectivamente esta máquina está un servidor Apache2. Por lo tanto, hacemos una búsqueda de directorio con dirb, entonramos /artwork/, /music/, y /ona.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/2-paginaweb.png}
-	\caption{}
+	\caption{Página Web del puerto 80}
 \end{figure}
 
 Inspeccionando las rutas y su contenido no observamos nada interesante excepto /ona. Observamos que es OpenNetAdmin, googleando encontramos con esta descripción del servicio: “OpenNetAdmin proporciona un inventario administrado de base de datos de su red IP”.
@@ -92,7 +92,7 @@ Buscando vulnerabilidades de este servicio, observamos en su página que es la v
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/6-exploit.png}
-	\caption{}
+	\caption{Exploit del OpenNetAdmin v18.1.1}
 \end{figure}
 
 \subsection{Explotación}
@@ -101,7 +101,7 @@ Utilizando el script proporcionado logramos obtener acceso al servidor y observa
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/7-script.png}
-	\caption{}
+	\caption{Script del exploit}
 \end{figure}
 
 \subsubsection{Obtención de Acceso como usuario jimmy}
@@ -110,21 +110,21 @@ Inspeccionando los archivos de configuración del servicio ONA, encontramos una 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/8-credencialesjimmy.png}
-	\caption{}
+	\caption{archivo de configuración}
 \end{figure}
 
 Además, encontramos que en /var/www hay una carpeta llamada internal que solo puede ser accedida por jimmy.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/9-usuariosycarpetas.png}
-	\caption{}
+	\caption{Usuarios y carpetas en /var/www}
 \end{figure}
 
 Procedemos a probar la contraseña encontrada anteriormente mediante ssh y vemos que funciona para el usuario jimmy y no joanna.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/10-sshjimmy.png}
-	\caption{}
+	\caption{Conexión SSH a jimmy}
 \end{figure}
 
 Revisando el contenido de /home/jimmy observamos que no se encuentra el archivo con la flag del usuario por lo que sugiere que el usuario que debemos tener control es joanna.
@@ -132,7 +132,7 @@ Utilizando la herramienta LinEnum, el cual es un script que realiza enumeración
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/11-tcp.png}
-	\caption{}
+	\caption{Conexiones TCP}
 \end{figure}
 
 \subsubsection{Obtención de Acceso como usuario joanna}
@@ -141,26 +141,26 @@ Realizamos curl http://127.0.0.1:52846 para ver el contenido de la página web y
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/12-indexphp.png}
-	\caption{}
+	\caption{index.php}
 \end{figure}
 
 Utilizando crackstation o John the Ripper se puede crackear el hash y el resultado es `Revealed'. El cual podemos utilizarlo para logearnos. Una vez logeado nos muestra una llave SSH encriptada que podría ser utilizada para alguna conexión ssh el cual podría ser la de joanna. Esto lo comprobamos al revisar el archivo main.php que ejecuta el comando `cat /home/joanna/.ssh/id\_rsa'.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/13-crackstation.png}
-	\caption{}
+	\caption{Crackeo del hash}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/14-mainphp.png}
-	\caption{}
+	\caption{index.php}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/15-joannarsa.png}
-	\caption{}
+	\caption{Llave RSA de joanna}
 \end{figure}
 
 Utilizando ssh2john y john logramos encontrar que la contraseña del hash es: bloodninjas
@@ -168,26 +168,26 @@ Como ya tenemos la contraseña y la llave RSA podemos establecer una conexión S
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/16-sshjoanna.png}
-	\caption{}
+	\caption{Conexión SSH con el usuario joanna}
 \end{figure}
 
 Aunque como tenemos acceso a los archivos de la página web podemos simplemente agregar una reverse Shell y de esta forma obtener acceso a la máquina como el usuario joanna. Y esta vez vemos que tiene el archivo user.txt que es la flag del user
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa.png}
-	\caption{}
+	\caption{main.php}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa2.png}
-	\caption{}
+	\caption{Llave RSA de joanna}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa3.png}
-	\caption{}
+	\caption{Flag del usuario}
 \end{figure}
 
 \subsection{Escalamiento de privilegios}
@@ -196,21 +196,21 @@ Una vez obtenido el acceso como joanna procederemos a revisar qué comandos pode
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/18-sudol.png}
-	\caption{}
+	\caption{Comandos que puede ejecutar como root}
 \end{figure}
 
 Observamos que podemos ejecutar /bin/nano /opt/priv. Revisando GTFOBins, encontramos que podemos utilizar los siguientes comandos para generar un Shell de sistema interactivo mediante nano.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/19-gtfobins.png}
-	\caption{}
+	\caption{Exploit mediante sudo nano}
 \end{figure}
 
 Y de esta forma logramos obtener la flag del usuario root.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/20-privilegio.png}
-	\caption{}
+	\caption{Obtención del flag root}
 \end{figure}
 
 \subsection{Post Explotación}
