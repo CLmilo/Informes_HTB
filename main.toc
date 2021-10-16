@@ -25,6 +25,8 @@
 \contentsline {section}{\numberline {4}MAGIC}{17}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Reconocimiento}{17}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Escaneo de Vulnerabilidades}{19}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Enumeración}{23}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Explotación}{23}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Hardening}{23}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.3}Explotación}{19}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Obtención de Acceso a la máquina}{19}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Obtención de Acceso como Usuario}{24}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Escalamiento de Privilegios a root}{27}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Hardening}{27}{subsection.4.4}%

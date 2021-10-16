@@ -24,6 +24,8 @@
 \BOOKMARK [1][-]{section.4}{MAGIC}{}% 24
 \BOOKMARK [2][-]{subsection.4.1}{Reconocimiento}{section.4}% 25
 \BOOKMARK [2][-]{subsection.4.2}{Escaneo de Vulnerabilidades}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.3}{Enumeraci\363n}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.4}{Explotaci\363n}{section.4}% 28
-\BOOKMARK [2][-]{subsection.4.5}{Hardening}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.3}{Explotaci\363n}{section.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Obtenci\363n de Acceso a la m\341quina}{subsection.4.3}% 28
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Obtenci\363n de Acceso como Usuario}{subsection.4.3}% 29
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Escalamiento de Privilegios a root}{subsection.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.4}{Hardening}{section.4}% 31

@@ -379,6 +379,9 @@ Llegó el momento de intentar encontrar vectores de ataque, con el mismo nmap de
 	\caption{Escaneo de Vulnerabilidades con nmap}
 \end{figure}
 
+
+\subsection{Explotación}
+\subsubsection{Obtención de Acceso a la máquina}
 Luego de esto fui al login y me di cuenta que el ataque de tipo Inyección SQL era muy sencillo, probando \textbf{' or 1=1 --}. Esta es la inyección más básica de toda la vida así que no hubo mucha complicación.
 
 \begin{figure}[h!]
@@ -470,12 +473,85 @@ Pero nos damos con la sorpresa de no poder ver la bandera de usuario.
 	\caption{Fallo de lectura de la flag}
 \end{figure}
 
-\subsection{Enumeración}
+\clearpage
+
+\subsubsection{Obtención de Acceso como Usuario}
 
 Ahora entonces lo que tenemos que hacer es un movimiento lateral para obtener un acceso a otro usuario.
 
+Algo que nos impide ver los permisos sudo que tenemos es que no contamos con la contraseña, entonces exploramos un poco por el servidor pero encontramos un archivo curioso llamado \textbf{db.php5}.
 
-\subsection{Explotación}
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.9\textwidth]{images/magic/credenciales-mysql.png}
+	\caption{Credenciales del MySQL}
+\end{figure}
+
+Aquí encontramos las credenciales del MySQL, entonces intentamos conectarnos a este pero nos indica que no existe MySQL como comando, lo que significa que no existe el cliente con el cual nos podríamos conectar mediante consola, pero vemos en los procesos y sí está corriendo \textbf{mysqld}, entonces sabemos que el servicio está activo, esto nos deja con una opción, redirigir este servicio corriendo por un puerto hacia otro puerto.
+Por lo cual haremos uso del programa \textbf{\href{https://github.com/jpillora/chisel}{chisel}}, este programa tendremos que correrlo tanto en la máquina server como cliente.
+Levantamos un servidor con python por el puerto 8001 y lo descargamos con wget en la máquina remota.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.9\textwidth]{images/magic/descargar-chisel.png}
+	\caption{Descarga de Chisel}
+\end{figure}
+
+\clearpage
+
+Primero pondremos en escucha por el puerto 8000 a nuestra máquina.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/chisel-server.png}
+	\caption{Chisel en escucha}
+\end{figure}
+
+Luego corremos el chisel en el servidor, la descarga la hicimos en /temp/jmt para que deje descargar.
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/chisel-cliente.png}
+	\caption{Chisel reenvíando flujo de puertos}
+\end{figure}
+
+Ya luego de haber hecho esto, podemos finalmente loguearnos al MySQL, con el comando respectivo y las credenciales obtenidas del \textbf{db.php5}.
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/conexion-mysql.png}
+	\caption{Conexión al MySQL}
+\end{figure}
+
+Tenemos de este mismo db.php5 el nombre de la database, pero no es necesario porque igual podemos obtenerlo de la siguiente forma.
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.4\textwidth]{images/magic/mostrando-tablas.png}
+	\caption{Mostrando Database}
+\end{figure}
+
+\clearpage
+
+Obtenemos las credenciales con un simple Select a la tabla en el database "Magic".
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.5\textwidth]{images/magic/obtención-credenciales.png}
+	\caption{Obteniendo credenciales en texto claro}
+\end{figure}
+
+Y con esto podemos acceder al Usuario "theseus", pero para esto tenemos que tratar un poco la terminal con el siguiente comando en python:
+\begin{lstlisting}
+python3 -c "import pty; pty.spawn('/bin/bash');"
+\end{lstlisting}
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.7\textwidth]{images/magic/ingreso-existoso.png}
+	\caption{Ingreso como theseus}
+\end{figure}
+
+\clearpage
+
+\subsubsection{Escalamiento de Privilegios a root}
+
 \subsection{Hardening}
 
 \end{document}
