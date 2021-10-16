@@ -1,32 +1,33 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}OpenAdmin}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Reconocimiento}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Escaneo de Vulnerabilidades}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Enumeración}{2}{subsection.1.3}%
-\contentsline {subsection}{\numberline {1.4}Explotación}{2}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}Post Explotación}{2}{subsection.1.5}%
-\contentsline {section}{\numberline {2}Remote}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Reconocimiento}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Escaneo de Vulnerabilidades}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Enumeración}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Explotación}{8}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Obtención de Acceso como usuario}{8}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Escalamiento de Privilegios}{11}{subsubsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.5}Hardening}{15}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Umbraco}{15}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Permisos Powershell}{15}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}TeamViewer7}{15}{subsubsection.2.5.3}%
-\contentsline {section}{\numberline {3}Fuse}{16}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Reconocimiento}{16}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Escaneo de Vulnerabilidades}{16}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Enumeración}{16}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Explotación}{16}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Post Explotación}{16}{subsection.3.5}%
-\contentsline {section}{\numberline {4}MAGIC}{17}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Reconocimiento}{17}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Escaneo de Vulnerabilidades}{19}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Explotación}{19}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Obtención de Acceso a la máquina}{19}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Obtención de Acceso como Usuario}{24}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Escalamiento de Privilegios a root}{27}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Hardening}{27}{subsection.4.4}%
+\contentsline {subsection}{\numberline {1.1}Enumeración}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Explotación}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Obtención de Acceso como usuario jimmy}{3}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Obtención de Acceso como usuario joanna}{4}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Escalamiento de privilegios}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Post Explotación}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Remote}{11}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Reconocimiento}{11}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Escaneo de Vulnerabilidades}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Enumeración}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Explotación}{16}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Obtención de Acceso como usuario}{16}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Escalamiento de Privilegios}{19}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Hardening}{23}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Umbraco}{23}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Permisos Powershell}{23}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}TeamViewer7}{23}{subsubsection.2.5.3}%
+\contentsline {section}{\numberline {3}Fuse}{24}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Reconocimiento}{24}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Escaneo de Vulnerabilidades}{24}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Enumeración}{24}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Explotación}{24}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Post Explotación}{24}{subsection.3.5}%
+\contentsline {section}{\numberline {4}MAGIC}{25}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Reconocimiento}{25}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Escaneo de Vulnerabilidades}{27}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Explotación}{27}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Obtención de Acceso a la máquina}{27}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Obtención de Acceso como Usuario}{32}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Escalamiento de Privilegios a root}{35}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Hardening}{35}{subsection.4.4}%
