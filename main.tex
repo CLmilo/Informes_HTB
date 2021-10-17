@@ -235,6 +235,13 @@ Procederemos a borrar nuestras huellas, limpiando los logs el cual podremos hace
 	\caption{Limpieza de logs con covermyass}
 \end{figure}
 
+\subsection{Hardening}
+\begin{itemize}
+	\item Cambiar los permisos para que solo los usuarios permitidos puedan leer los archivos de configuración.
+	\item Evitar hardcodear las contraseñas para el login y utilizar una base de datos para almacenar las credenciales.
+	\item Remover de sudoers la capacidad de utilizar ese comando con permisos de root si no es necesario.
+\end{itemize}
+
 \clearpage
 % ----------------------------REMOTE-----------------------------------
 \section{Remote}
