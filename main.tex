@@ -16,6 +16,8 @@
 \usepackage{etoolbox}
 \usepackage{listings}
 \usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \lstdefinestyle{customc}{
   language=C++,
@@ -50,46 +52,43 @@
 \subsection{Enumeración}
 
 Realizando el escaneo de puertos abiertos encontramos el servicio HTTP en el puerto 80 y SSH, en el puerto 22. El sistema operativo de la máquina observamos que es Linux.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/1-escaneo.png}
 	\caption{Escaneo}
 \end{figure}
 
 Accediendo a la página web comprobamos que efectivamente esta máquina está un servidor Apache2. Por lo tanto, hacemos una búsqueda de directorio con dirb, entonramos /artwork/, /music/, y /ona.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/2-paginaweb.png}
 	\caption{Página Web del puerto 80}
-\end{figure}
+\end{figure}	
 
 Inspeccionando las rutas y su contenido no observamos nada interesante excepto /ona. Observamos que es OpenNetAdmin, googleando encontramos con esta descripción del servicio: “OpenNetAdmin proporciona un inventario administrado de base de datos de su red IP”.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
-	\includegraphics[width=0.8\textwidth]{images/openadmin/3-artwork.png}
-	\caption{/artwork}
+	\begin{tabular}[c]{cc}
+		\begin{subfigure}[c]{\linewidth}
+		\includegraphics[width=0.5\textwidth]{images/openadmin/3-artwork.png}
+		\hfill
+		\includegraphics[width=0.5\textwidth]{images/openadmin/4-music.png}
+		\end{subfigure}\par\medskip
+	\end{tabular}
+	\caption{De izquierda a derecha: /artwork, /music}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
-	\includegraphics[width=0.8\textwidth]{images/openadmin/4-music.png}
-	\caption{/music}
-\end{figure}
-
-\begin{figure}[h]
-	\center
-	\includegraphics[width=0.8\textwidth]{images/openadmin/4-musicdetalles.png}
-	\caption{/music}
-\end{figure}
-
-\begin{figure}[h]
-	\center
-	\includegraphics[width=0.8\textwidth]{images/openadmin/5-ona.png}
-	\caption{/ona}
+	\begin{subfigure}[c]{\linewidth}
+	\includegraphics[width=0.5\textwidth]{images/openadmin/4-musicdetalles.png}
+	\includegraphics[width=0.5\textwidth]{images/openadmin/5-ona.png}
+	\end{subfigure}
+	\caption{De izquierda a derecha: /music, /ona}
 \end{figure}
 
 Buscando vulnerabilidades de este servicio, observamos en su página que es la versión v18.1.1. Utilizando searchsploit y Google encontramos que tiene una vulnerabilidad por parte de xajax que permite ejecución de código remoto.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/6-exploit.png}
 	\caption{Exploit del OpenNetAdmin v18.1.1}
@@ -214,6 +213,28 @@ Y de esta forma logramos obtener la flag del usuario root.
 \end{figure}
 
 \subsection{Post Explotación}
+
+Utilizamos perl para lograr una Shell reversa en nuestra máquina ya que es limitado y difícil de manejar en nano.
+La Shell que obtenemos mediante la vulnerabilidad de sudo nano es simple por lo que es limitado y difícil de manejar. Por lo tanto, mediante una reverse Shell vamos a obtener la conexión en nuestra máquina configurando el puerto en escucha con NetCat. En este caso utilizaremos la reverse Shell de Perl.
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/openadmin/21-reverseshellperl.png}
+	\caption{Código de la reverse shell con Perl}
+\end{figure}
+
+Una vez obtenida la Shell, podemos utilizar Python para mejorar la Shell a una completamente interactiva.
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/openadmin/22-conexionreverse}
+	\caption{Mejora de la shell con python}
+\end{figure}
+
+Procederemos a borrar nuestras huellas, limpiando los logs el cual podremos hacerlo manualmente o un script como por ejemplo “Cover my ass tool” (https://github.com/sundowndev/covermyass) que nos facilita la limpieza. Principalmente el log que buscamos limpiar es el auth.log el cual contiene los registros de todas las actividades que implican un proceso de autenticación.
+\begin{figure}[h]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/openadmin/23-covermyass}
+	\caption{Limpieza de logs con covermyass}
+\end{figure}
 
 \clearpage
 % ----------------------------REMOTE-----------------------------------
