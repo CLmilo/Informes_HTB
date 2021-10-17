@@ -1,32 +1,33 @@
-\BOOKMARK [1][-]{section.1}{OpenAdmin}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Enumeraci\363n}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Explotaci\363n}{section.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Obtenci\363n de Acceso como usuario jimmy}{subsection.1.2}% 4
-\BOOKMARK [3][-]{subsubsection.1.2.2}{Obtenci\363n de Acceso como usuario joanna}{subsection.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.3}{Escalamiento de privilegios}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.4}{Post Explotaci\363n}{section.1}% 7
-\BOOKMARK [1][-]{section.2}{Remote}{}% 8
-\BOOKMARK [2][-]{subsection.2.1}{Reconocimiento}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.2}{Escaneo de Vulnerabilidades}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.3}{Enumeraci\363n}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.4}{Explotaci\363n}{section.2}% 12
-\BOOKMARK [3][-]{subsubsection.2.4.1}{Obtenci\363n de Acceso como usuario}{subsection.2.4}% 13
-\BOOKMARK [3][-]{subsubsection.2.4.2}{Escalamiento de Privilegios}{subsection.2.4}% 14
-\BOOKMARK [2][-]{subsection.2.5}{Hardening}{section.2}% 15
-\BOOKMARK [3][-]{subsubsection.2.5.1}{Umbraco}{subsection.2.5}% 16
-\BOOKMARK [3][-]{subsubsection.2.5.2}{Permisos Powershell}{subsection.2.5}% 17
-\BOOKMARK [3][-]{subsubsection.2.5.3}{TeamViewer7}{subsection.2.5}% 18
-\BOOKMARK [1][-]{section.3}{Fuse}{}% 19
-\BOOKMARK [2][-]{subsection.3.1}{Reconocimiento}{section.3}% 20
-\BOOKMARK [2][-]{subsection.3.2}{Escaneo de Vulnerabilidades}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.3}{Enumeraci\363n}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.4}{Explotaci\363n}{section.3}% 23
-\BOOKMARK [2][-]{subsection.3.5}{Post Explotaci\363n}{section.3}% 24
-\BOOKMARK [1][-]{section.4}{MAGIC}{}% 25
-\BOOKMARK [2][-]{subsection.4.1}{Reconocimiento}{section.4}% 26
-\BOOKMARK [2][-]{subsection.4.2}{Escaneo de Vulnerabilidades}{section.4}% 27
-\BOOKMARK [2][-]{subsection.4.3}{Explotaci\363n}{section.4}% 28
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Obtenci\363n de Acceso a la m\341quina}{subsection.4.3}% 29
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Obtenci\363n de Acceso como Usuario}{subsection.4.3}% 30
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Escalamiento de Privilegios a root}{subsection.4.3}% 31
-\BOOKMARK [2][-]{subsection.4.4}{Hardening}{section.4}% 32
+\BOOKMARK [1][-]{section.1}{\376\377\000O\000p\000e\000n\000A\000d\000m\000i\000n}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{\376\377\000E\000n\000u\000m\000e\000r\000a\000c\000i\000\363\000n}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{\376\377\000E\000x\000p\000l\000o\000t\000a\000c\000i\000\363\000n}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{\376\377\000O\000b\000t\000e\000n\000c\000i\000\363\000n\000\040\000d\000e\000\040\000A\000c\000c\000e\000s\000o\000\040\000c\000o\000m\000o\000\040\000u\000s\000u\000a\000r\000i\000o\000\040\000j\000i\000m\000m\000y}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{\376\377\000O\000b\000t\000e\000n\000c\000i\000\363\000n\000\040\000d\000e\000\040\000A\000c\000c\000e\000s\000o\000\040\000c\000o\000m\000o\000\040\000u\000s\000u\000a\000r\000i\000o\000\040\000j\000o\000a\000n\000n\000a}{subsection.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.3}{\376\377\000E\000s\000c\000a\000l\000a\000m\000i\000e\000n\000t\000o\000\040\000d\000e\000\040\000p\000r\000i\000v\000i\000l\000e\000g\000i\000o\000s}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.4}{\376\377\000P\000o\000s\000t\000\040\000E\000x\000p\000l\000o\000t\000a\000c\000i\000\363\000n}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{\376\377\000R\000e\000m\000o\000t\000e}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{\376\377\000R\000e\000c\000o\000n\000o\000c\000i\000m\000i\000e\000n\000t\000o}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{\376\377\000E\000s\000c\000a\000n\000e\000o\000\040\000d\000e\000\040\000V\000u\000l\000n\000e\000r\000a\000b\000i\000l\000i\000d\000a\000d\000e\000s}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{\376\377\000E\000n\000u\000m\000e\000r\000a\000c\000i\000\363\000n}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.4}{\376\377\000E\000x\000p\000l\000o\000t\000a\000c\000i\000\363\000n}{section.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.4.1}{\376\377\000O\000b\000t\000e\000n\000c\000i\000\363\000n\000\040\000d\000e\000\040\000A\000c\000c\000e\000s\000o\000\040\000c\000o\000m\000o\000\040\000u\000s\000u\000a\000r\000i\000o}{subsection.2.4}% 13
+\BOOKMARK [3][-]{subsubsection.2.4.2}{\376\377\000E\000s\000c\000a\000l\000a\000m\000i\000e\000n\000t\000o\000\040\000d\000e\000\040\000P\000r\000i\000v\000i\000l\000e\000g\000i\000o\000s}{subsection.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.5}{\376\377\000H\000a\000r\000d\000e\000n\000i\000n\000g}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.5.1}{\376\377\000U\000m\000b\000r\000a\000c\000o}{subsection.2.5}% 16
+\BOOKMARK [3][-]{subsubsection.2.5.2}{\376\377\000P\000e\000r\000m\000i\000s\000o\000s\000\040\000P\000o\000w\000e\000r\000s\000h\000e\000l\000l}{subsection.2.5}% 17
+\BOOKMARK [3][-]{subsubsection.2.5.3}{\376\377\000T\000e\000a\000m\000V\000i\000e\000w\000e\000r\0007}{subsection.2.5}% 18
+\BOOKMARK [1][-]{section.3}{\376\377\000F\000u\000s\000e}{}% 19
+\BOOKMARK [2][-]{subsection.3.1}{\376\377\000R\000e\000c\000o\000n\000o\000c\000i\000m\000i\000e\000n\000t\000o}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.2}{\376\377\000E\000s\000c\000a\000n\000e\000o\000\040\000d\000e\000\040\000V\000u\000l\000n\000e\000r\000a\000b\000i\000l\000i\000d\000a\000d\000e\000s}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.3}{\376\377\000E\000n\000u\000m\000e\000r\000a\000c\000i\000\363\000n}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.4}{\376\377\000E\000x\000p\000l\000o\000t\000a\000c\000i\000\363\000n}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.5}{\376\377\000P\000o\000s\000t\000\040\000E\000x\000p\000l\000o\000t\000a\000c\000i\000\363\000n}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.6}{\376\377\000R\000e\000c\000o\000m\000e\000n\000d\000a\000c\000i\000o\000n\000e\000s}{section.3}% 25
+\BOOKMARK [1][-]{section.4}{\376\377\000M\000A\000G\000I\000C}{}% 26
+\BOOKMARK [2][-]{subsection.4.1}{\376\377\000R\000e\000c\000o\000n\000o\000c\000i\000m\000i\000e\000n\000t\000o}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.2}{\376\377\000E\000s\000c\000a\000n\000e\000o\000\040\000d\000e\000\040\000V\000u\000l\000n\000e\000r\000a\000b\000i\000l\000i\000d\000a\000d\000e\000s}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.3}{\376\377\000E\000x\000p\000l\000o\000t\000a\000c\000i\000\363\000n}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.3.1}{\376\377\000O\000b\000t\000e\000n\000c\000i\000\363\000n\000\040\000d\000e\000\040\000A\000c\000c\000e\000s\000o\000\040\000a\000\040\000l\000a\000\040\000m\000\341\000q\000u\000i\000n\000a}{subsection.4.3}% 30
+\BOOKMARK [3][-]{subsubsection.4.3.2}{\376\377\000O\000b\000t\000e\000n\000c\000i\000\363\000n\000\040\000d\000e\000\040\000A\000c\000c\000e\000s\000o\000\040\000c\000o\000m\000o\000\040\000U\000s\000u\000a\000r\000i\000o}{subsection.4.3}% 31
+\BOOKMARK [3][-]{subsubsection.4.3.3}{\376\377\000E\000s\000c\000a\000l\000a\000m\000i\000e\000n\000t\000o\000\040\000d\000e\000\040\000P\000r\000i\000v\000i\000l\000e\000g\000i\000o\000s\000\040\000a\000\040\000r\000o\000o\000t}{subsection.4.3}% 32
+\BOOKMARK [2][-]{subsection.4.4}{\376\377\000H\000a\000r\000d\000e\000n\000i\000n\000g}{section.4}% 33

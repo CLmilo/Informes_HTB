@@ -1,1126 +1,1456 @@
-PWD /home/jmt/HTB/Informes_HTB
-INPUT /etc/texmf/web2c/texmf.cnf
-INPUT /usr/share/texmf/web2c/texmf.cnf
-INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
-INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/jmt/HTB/Informes_HTB/main.tex
-OUTPUT /home/jmt/HTB/Informes_HTB/main.log
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /home/jmt/HTB/Informes_HTB/main.aux
-INPUT /home/jmt/HTB/Informes_HTB/main.aux
-INPUT /home/jmt/HTB/Informes_HTB/main.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-OUTPUT /home/jmt/HTB/Informes_HTB/main.aux
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-OUTPUT /home/jmt/HTB/Informes_HTB/main.pdf
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-OUTPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-OUTPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/jmt/HTB/Informes_HTB/images/CiberSecFIIS.png
-INPUT /home/jmt/HTB/Informes_HTB/images/CiberSecFIIS.png
-INPUT /home/jmt/HTB/Informes_HTB/images/CiberSecFIIS.png
-INPUT /home/jmt/HTB/Informes_HTB/images/CiberSecFIIS.png
-INPUT /home/jmt/HTB/Informes_HTB/images/CiberSecFIIS.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/jmt/HTB/Informes_HTB/main.toc
-INPUT /home/jmt/HTB/Informes_HTB/main.toc
-INPUT /home/jmt/HTB/Informes_HTB/main.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
-OUTPUT /home/jmt/HTB/Informes_HTB/main.toc
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/1-escaneo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/1-escaneo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/1-escaneo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/1-escaneo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/1-escaneo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/2-paginaweb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/2-paginaweb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/2-paginaweb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/2-paginaweb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/2-paginaweb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/3-artwork.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/3-artwork.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/3-artwork.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/3-artwork.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/3-artwork.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-music.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-music.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-music.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-music.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-music.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-musicdetalles.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-musicdetalles.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-musicdetalles.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-musicdetalles.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/4-musicdetalles.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/5-ona.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/5-ona.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/5-ona.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/5-ona.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/5-ona.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/6-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/6-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/6-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/6-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/6-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/7-script.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/7-script.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/7-script.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/7-script.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/7-script.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/8-credencialesjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/8-credencialesjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/8-credencialesjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/8-credencialesjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/8-credencialesjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/9-usuariosycarpetas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/9-usuariosycarpetas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/9-usuariosycarpetas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/9-usuariosycarpetas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/9-usuariosycarpetas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/10-sshjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/10-sshjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/10-sshjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/10-sshjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/10-sshjimmy.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/11-tcp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/11-tcp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/11-tcp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/11-tcp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/11-tcp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/12-indexphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/12-indexphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/12-indexphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/12-indexphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/12-indexphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/13-crackstation.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/13-crackstation.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/13-crackstation.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/13-crackstation.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/13-crackstation.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/14-mainphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/14-mainphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/14-mainphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/14-mainphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/14-mainphp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/15-joannarsa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/15-joannarsa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/15-joannarsa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/15-joannarsa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/15-joannarsa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/16-sshjoanna.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/16-sshjoanna.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/16-sshjoanna.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/16-sshjoanna.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/16-sshjoanna.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa2.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa2.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa2.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa2.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa2.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa3.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa3.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa3.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa3.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/17-alternativa3.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/18-sudol.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/18-sudol.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/18-sudol.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/18-sudol.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/18-sudol.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/19-gtfobins.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/19-gtfobins.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/19-gtfobins.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/19-gtfobins.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/19-gtfobins.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/20-privilegio.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/20-privilegio.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/20-privilegio.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/20-privilegio.png
-INPUT /home/jmt/HTB/Informes_HTB/images/openadmin/20-privilegio.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_remote.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nmap_vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/ftp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/ftp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/ftp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/ftp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/ftp.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/index_pagina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/wappalizer.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dirb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dirb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dirb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dirb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dirb.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nfs.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nfs.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nfs.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nfs.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/nfs.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/backup.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/backup.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/backup.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/backup.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/backup.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_pass.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/strings_admin.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/sha1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/sha1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/sha1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/sha1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/sha1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/admin-panel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/admin-panel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/admin-panel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/admin-panel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/admin-panel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/server-python.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/server-python.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/server-python.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/server-python.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/server-python.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/payload.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/payload.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/payload.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/payload.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/payload.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/netcat.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/netcat.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/netcat.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/netcat.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/netcat.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/flag-usuario.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/flag-usuario.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/flag-usuario.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/flag-usuario.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/flag-usuario.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/privilegios.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/privilegios.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/privilegios.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/privilegios.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/privilegios.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/systeminfo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/systeminfo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/systeminfo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/systeminfo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/systeminfo.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-exploit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-escucha.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-escucha.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-escucha.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-escucha.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/fallo-escucha.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/proceso-encontrado.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/proceso-encontrado.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/proceso-encontrado.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/proceso-encontrado.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/proceso-encontrado.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/confirmación-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/confirmación-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/confirmación-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/confirmación-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/confirmación-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dumpeo-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dumpeo-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dumpeo-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dumpeo-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/dumpeo-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-python-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-python-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-python-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-python-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/script-python-hash.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exito-administrator.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exito-administrator.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exito-administrator.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exito-administrator.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/exito-administrator.png
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/umbraco-version.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/umbraco-version.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/umbraco-version.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/umbraco-version.png
-INPUT /home/jmt/HTB/Informes_HTB/images/remote/umbraco-version.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tctt0800.tfm
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/wfuzz.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/wfuzz.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/wfuzz.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/wfuzz.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/wfuzz.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/index.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/index.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/index.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/index.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/index.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap-vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap-vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap-vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap-vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/nmap-vuln.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/login-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-subida-php.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-subida-php.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-subida-php.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-subida-php.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-subida-php.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/intento-burpsuit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/intento-burpsuit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/intento-burpsuit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/intento-burpsuit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/intento-burpsuit.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-burpsuite.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-burpsuite.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-burpsuite.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-burpsuite.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-burpsuite.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/muestra-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/muestra-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/muestra-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/muestra-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/muestra-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/cambio-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/cambio-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/cambio-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/cambio-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/cambio-bits.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/subida-exitosa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/subida-exitosa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/subida-exitosa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/subida-exitosa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/subida-exitosa.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/apuntando-reverse1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/apuntando-reverse1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/apuntando-reverse1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/apuntando-reverse1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/apuntando-reverse1.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/acceso-maquina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/acceso-maquina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/acceso-maquina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/acceso-maquina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/acceso-maquina.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-lectura-flag.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-lectura-flag.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-lectura-flag.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-lectura-flag.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/fallo-lectura-flag.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/credenciales-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/credenciales-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/credenciales-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/credenciales-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/credenciales-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/descargar-chisel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/descargar-chisel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/descargar-chisel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/descargar-chisel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/descargar-chisel.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-server.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-server.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-server.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-server.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-server.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-cliente.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-cliente.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-cliente.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-cliente.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/chisel-cliente.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/conexion-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/conexion-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/conexion-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/conexion-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/conexion-mysql.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/mostrando-tablas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/mostrando-tablas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/mostrando-tablas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/mostrando-tablas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/mostrando-tablas.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/obtención-credenciales.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/obtención-credenciales.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/obtención-credenciales.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/obtención-credenciales.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/obtención-credenciales.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/ingreso-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/ingreso-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/ingreso-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/ingreso-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/images/magic/ingreso-existoso.png
-INPUT /home/jmt/HTB/Informes_HTB/main.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-INPUT /home/jmt/HTB/Informes_HTB/caratula/Caratula.aux
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /home/jmt/HTB/Informes_HTB/main.out
-INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb
-INPUT /usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb
+PWD d:\Desarrollo\LaTeX\Informes_HTB
+INPUT C:\Users\Alfonso Suarez\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT d:\Desarrollo\LaTeX\Informes_HTB\main.tex
+OUTPUT main.log
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\babel-spanish\spanish.ldf
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\parskip\parskip.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\makeidx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pdfpages.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\letltxmacro\letltxmacro.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\auxhook\auxhook.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref-langpatches.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\etexcmds\etexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\atbegshi\atbegshi.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atbegshi-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\atveryend-ltx.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\atveryend\atveryend.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\main.aux
+INPUT main.aux
+INPUT main.aux
+INPUT .\caratula\Caratula.aux
+INPUT caratula\Caratula.aux
+INPUT caratula\Caratula.aux
+OUTPUT main.aux
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+INPUT .\main.out
+INPUT main.out
+OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
+INPUT .\caratula\Caratula.tex
+OUTPUT caratula\Caratula.aux
+INPUT .\caratula\Caratula.tex
+INPUT .\caratula\Caratula.tex
+INPUT .\caratula\Caratula.tex
+INPUT .\caratula\Caratula.tex
+INPUT caratula\Caratula.tex
+INPUT .\caratula\Caratula.tex
+INPUT caratula\Caratula.tex
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\images\CiberSecFIIS.png
+INPUT .\images\CiberSecFIIS.png
+INPUT images\CiberSecFIIS.png
+INPUT .\images\CiberSecFIIS.png
+INPUT .\images\CiberSecFIIS.png
+INPUT .\images\CiberSecFIIS.png
+INPUT .\images\CiberSecFIIS.png
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\MiKTeX\pdftex\config\pdftex.map
+INPUT .\main.toc
+INPUT main.toc
+INPUT main.toc
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+OUTPUT main.toc
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl10.tfm
+INPUT .\images\openadmin\1-escaneo.png
+INPUT .\images\openadmin\1-escaneo.png
+INPUT images\openadmin\1-escaneo.png
+INPUT .\images\openadmin\1-escaneo.png
+INPUT .\images\openadmin\1-escaneo.png
+INPUT .\images\openadmin\1-escaneo.png
+INPUT .\images\openadmin\1-escaneo.png
+INPUT .\images\openadmin\2-paginaweb.png
+INPUT .\images\openadmin\2-paginaweb.png
+INPUT images\openadmin\2-paginaweb.png
+INPUT .\images\openadmin\2-paginaweb.png
+INPUT .\images\openadmin\2-paginaweb.png
+INPUT .\images\openadmin\2-paginaweb.png
+INPUT .\images\openadmin\2-paginaweb.png
+INPUT .\images\openadmin\3-artwork.png
+INPUT .\images\openadmin\3-artwork.png
+INPUT images\openadmin\3-artwork.png
+INPUT .\images\openadmin\3-artwork.png
+INPUT .\images\openadmin\3-artwork.png
+INPUT .\images\openadmin\3-artwork.png
+INPUT .\images\openadmin\3-artwork.png
+INPUT .\images\openadmin\4-music.png
+INPUT .\images\openadmin\4-music.png
+INPUT images\openadmin\4-music.png
+INPUT .\images\openadmin\4-music.png
+INPUT .\images\openadmin\4-music.png
+INPUT .\images\openadmin\4-music.png
+INPUT .\images\openadmin\4-music.png
+INPUT .\images\openadmin\4-musicdetalles.png
+INPUT .\images\openadmin\4-musicdetalles.png
+INPUT images\openadmin\4-musicdetalles.png
+INPUT .\images\openadmin\4-musicdetalles.png
+INPUT .\images\openadmin\4-musicdetalles.png
+INPUT .\images\openadmin\4-musicdetalles.png
+INPUT .\images\openadmin\4-musicdetalles.png
+INPUT .\images\openadmin\5-ona.png
+INPUT .\images\openadmin\5-ona.png
+INPUT images\openadmin\5-ona.png
+INPUT .\images\openadmin\5-ona.png
+INPUT .\images\openadmin\5-ona.png
+INPUT .\images\openadmin\5-ona.png
+INPUT .\images\openadmin\5-ona.png
+INPUT .\images\openadmin\6-exploit.png
+INPUT .\images\openadmin\6-exploit.png
+INPUT images\openadmin\6-exploit.png
+INPUT .\images\openadmin\6-exploit.png
+INPUT .\images\openadmin\6-exploit.png
+INPUT .\images\openadmin\6-exploit.png
+INPUT .\images\openadmin\6-exploit.png
+INPUT .\images\openadmin\7-script.png
+INPUT .\images\openadmin\7-script.png
+INPUT images\openadmin\7-script.png
+INPUT .\images\openadmin\7-script.png
+INPUT .\images\openadmin\7-script.png
+INPUT .\images\openadmin\7-script.png
+INPUT .\images\openadmin\7-script.png
+INPUT .\images\openadmin\8-credencialesjimmy.png
+INPUT .\images\openadmin\8-credencialesjimmy.png
+INPUT images\openadmin\8-credencialesjimmy.png
+INPUT .\images\openadmin\8-credencialesjimmy.png
+INPUT .\images\openadmin\8-credencialesjimmy.png
+INPUT .\images\openadmin\8-credencialesjimmy.png
+INPUT .\images\openadmin\8-credencialesjimmy.png
+INPUT .\images\openadmin\9-usuariosycarpetas.png
+INPUT .\images\openadmin\9-usuariosycarpetas.png
+INPUT images\openadmin\9-usuariosycarpetas.png
+INPUT .\images\openadmin\9-usuariosycarpetas.png
+INPUT .\images\openadmin\9-usuariosycarpetas.png
+INPUT .\images\openadmin\9-usuariosycarpetas.png
+INPUT .\images\openadmin\9-usuariosycarpetas.png
+INPUT .\images\openadmin\10-sshjimmy.png
+INPUT .\images\openadmin\10-sshjimmy.png
+INPUT images\openadmin\10-sshjimmy.png
+INPUT .\images\openadmin\10-sshjimmy.png
+INPUT .\images\openadmin\10-sshjimmy.png
+INPUT .\images\openadmin\10-sshjimmy.png
+INPUT .\images\openadmin\10-sshjimmy.png
+INPUT .\images\openadmin\11-tcp.png
+INPUT .\images\openadmin\11-tcp.png
+INPUT images\openadmin\11-tcp.png
+INPUT .\images\openadmin\11-tcp.png
+INPUT .\images\openadmin\11-tcp.png
+INPUT .\images\openadmin\11-tcp.png
+INPUT .\images\openadmin\11-tcp.png
+INPUT .\images\openadmin\12-indexphp.png
+INPUT .\images\openadmin\12-indexphp.png
+INPUT images\openadmin\12-indexphp.png
+INPUT .\images\openadmin\12-indexphp.png
+INPUT .\images\openadmin\12-indexphp.png
+INPUT .\images\openadmin\12-indexphp.png
+INPUT .\images\openadmin\12-indexphp.png
+INPUT .\images\openadmin\13-crackstation.png
+INPUT .\images\openadmin\13-crackstation.png
+INPUT images\openadmin\13-crackstation.png
+INPUT .\images\openadmin\13-crackstation.png
+INPUT .\images\openadmin\13-crackstation.png
+INPUT .\images\openadmin\13-crackstation.png
+INPUT .\images\openadmin\13-crackstation.png
+INPUT .\images\openadmin\14-mainphp.png
+INPUT .\images\openadmin\14-mainphp.png
+INPUT images\openadmin\14-mainphp.png
+INPUT .\images\openadmin\14-mainphp.png
+INPUT .\images\openadmin\14-mainphp.png
+INPUT .\images\openadmin\14-mainphp.png
+INPUT .\images\openadmin\14-mainphp.png
+INPUT .\images\openadmin\15-joannarsa.png
+INPUT .\images\openadmin\15-joannarsa.png
+INPUT images\openadmin\15-joannarsa.png
+INPUT .\images\openadmin\15-joannarsa.png
+INPUT .\images\openadmin\15-joannarsa.png
+INPUT .\images\openadmin\15-joannarsa.png
+INPUT .\images\openadmin\15-joannarsa.png
+INPUT .\images\openadmin\16-sshjoanna.png
+INPUT .\images\openadmin\16-sshjoanna.png
+INPUT images\openadmin\16-sshjoanna.png
+INPUT .\images\openadmin\16-sshjoanna.png
+INPUT .\images\openadmin\16-sshjoanna.png
+INPUT .\images\openadmin\16-sshjoanna.png
+INPUT .\images\openadmin\16-sshjoanna.png
+INPUT .\images\openadmin\17-alternativa.png
+INPUT .\images\openadmin\17-alternativa.png
+INPUT images\openadmin\17-alternativa.png
+INPUT .\images\openadmin\17-alternativa.png
+INPUT .\images\openadmin\17-alternativa.png
+INPUT .\images\openadmin\17-alternativa.png
+INPUT .\images\openadmin\17-alternativa.png
+INPUT .\images\openadmin\17-alternativa2.png
+INPUT .\images\openadmin\17-alternativa2.png
+INPUT images\openadmin\17-alternativa2.png
+INPUT .\images\openadmin\17-alternativa2.png
+INPUT .\images\openadmin\17-alternativa2.png
+INPUT .\images\openadmin\17-alternativa2.png
+INPUT .\images\openadmin\17-alternativa2.png
+INPUT .\images\openadmin\17-alternativa3.png
+INPUT .\images\openadmin\17-alternativa3.png
+INPUT images\openadmin\17-alternativa3.png
+INPUT .\images\openadmin\17-alternativa3.png
+INPUT .\images\openadmin\17-alternativa3.png
+INPUT .\images\openadmin\17-alternativa3.png
+INPUT .\images\openadmin\17-alternativa3.png
+INPUT .\images\openadmin\18-sudol.png
+INPUT .\images\openadmin\18-sudol.png
+INPUT images\openadmin\18-sudol.png
+INPUT .\images\openadmin\18-sudol.png
+INPUT .\images\openadmin\18-sudol.png
+INPUT .\images\openadmin\18-sudol.png
+INPUT .\images\openadmin\18-sudol.png
+INPUT .\images\openadmin\19-gtfobins.png
+INPUT .\images\openadmin\19-gtfobins.png
+INPUT images\openadmin\19-gtfobins.png
+INPUT .\images\openadmin\19-gtfobins.png
+INPUT .\images\openadmin\19-gtfobins.png
+INPUT .\images\openadmin\19-gtfobins.png
+INPUT .\images\openadmin\19-gtfobins.png
+INPUT .\images\openadmin\20-privilegio.png
+INPUT .\images\openadmin\20-privilegio.png
+INPUT images\openadmin\20-privilegio.png
+INPUT .\images\openadmin\20-privilegio.png
+INPUT .\images\openadmin\20-privilegio.png
+INPUT .\images\openadmin\20-privilegio.png
+INPUT .\images\openadmin\20-privilegio.png
+INPUT .\images\remote\nmap_remote.png
+INPUT .\images\remote\nmap_remote.png
+INPUT images\remote\nmap_remote.png
+INPUT .\images\remote\nmap_remote.png
+INPUT .\images\remote\nmap_remote.png
+INPUT .\images\remote\nmap_remote.png
+INPUT .\images\remote\nmap_remote.png
+INPUT .\images\remote\nmap_vuln.png
+INPUT .\images\remote\nmap_vuln.png
+INPUT images\remote\nmap_vuln.png
+INPUT .\images\remote\nmap_vuln.png
+INPUT .\images\remote\nmap_vuln.png
+INPUT .\images\remote\nmap_vuln.png
+INPUT .\images\remote\nmap_vuln.png
+INPUT .\images\remote\ftp.png
+INPUT .\images\remote\ftp.png
+INPUT images\remote\ftp.png
+INPUT .\images\remote\ftp.png
+INPUT .\images\remote\ftp.png
+INPUT .\images\remote\ftp.png
+INPUT .\images\remote\ftp.png
+INPUT .\images\remote\index_pagina.png
+INPUT .\images\remote\index_pagina.png
+INPUT images\remote\index_pagina.png
+INPUT .\images\remote\index_pagina.png
+INPUT .\images\remote\index_pagina.png
+INPUT .\images\remote\index_pagina.png
+INPUT .\images\remote\index_pagina.png
+INPUT .\images\remote\wappalizer.png
+INPUT .\images\remote\wappalizer.png
+INPUT images\remote\wappalizer.png
+INPUT .\images\remote\wappalizer.png
+INPUT .\images\remote\wappalizer.png
+INPUT .\images\remote\wappalizer.png
+INPUT .\images\remote\wappalizer.png
+INPUT .\images\remote\dirb.png
+INPUT .\images\remote\dirb.png
+INPUT images\remote\dirb.png
+INPUT .\images\remote\dirb.png
+INPUT .\images\remote\dirb.png
+INPUT .\images\remote\dirb.png
+INPUT .\images\remote\dirb.png
+INPUT .\images\remote\nfs.png
+INPUT .\images\remote\nfs.png
+INPUT images\remote\nfs.png
+INPUT .\images\remote\nfs.png
+INPUT .\images\remote\nfs.png
+INPUT .\images\remote\nfs.png
+INPUT .\images\remote\nfs.png
+INPUT .\images\remote\backup.png
+INPUT .\images\remote\backup.png
+INPUT images\remote\backup.png
+INPUT .\images\remote\backup.png
+INPUT .\images\remote\backup.png
+INPUT .\images\remote\backup.png
+INPUT .\images\remote\backup.png
+INPUT .\images\remote\strings_pass.png
+INPUT .\images\remote\strings_pass.png
+INPUT images\remote\strings_pass.png
+INPUT .\images\remote\strings_pass.png
+INPUT .\images\remote\strings_pass.png
+INPUT .\images\remote\strings_pass.png
+INPUT .\images\remote\strings_pass.png
+INPUT .\images\remote\strings_admin.png
+INPUT .\images\remote\strings_admin.png
+INPUT images\remote\strings_admin.png
+INPUT .\images\remote\strings_admin.png
+INPUT .\images\remote\strings_admin.png
+INPUT .\images\remote\strings_admin.png
+INPUT .\images\remote\strings_admin.png
+INPUT .\images\remote\sha1.png
+INPUT .\images\remote\sha1.png
+INPUT images\remote\sha1.png
+INPUT .\images\remote\sha1.png
+INPUT .\images\remote\sha1.png
+INPUT .\images\remote\sha1.png
+INPUT .\images\remote\sha1.png
+INPUT .\images\remote\admin-panel.png
+INPUT .\images\remote\admin-panel.png
+INPUT images\remote\admin-panel.png
+INPUT .\images\remote\admin-panel.png
+INPUT .\images\remote\admin-panel.png
+INPUT .\images\remote\admin-panel.png
+INPUT .\images\remote\admin-panel.png
+INPUT .\images\remote\script-1.png
+INPUT .\images\remote\script-1.png
+INPUT images\remote\script-1.png
+INPUT .\images\remote\script-1.png
+INPUT .\images\remote\script-1.png
+INPUT .\images\remote\script-1.png
+INPUT .\images\remote\script-1.png
+INPUT .\images\remote\exploit.png
+INPUT .\images\remote\exploit.png
+INPUT images\remote\exploit.png
+INPUT .\images\remote\exploit.png
+INPUT .\images\remote\exploit.png
+INPUT .\images\remote\exploit.png
+INPUT .\images\remote\exploit.png
+INPUT .\images\remote\server-python.png
+INPUT .\images\remote\server-python.png
+INPUT images\remote\server-python.png
+INPUT .\images\remote\server-python.png
+INPUT .\images\remote\server-python.png
+INPUT .\images\remote\server-python.png
+INPUT .\images\remote\server-python.png
+INPUT .\images\remote\payload.png
+INPUT .\images\remote\payload.png
+INPUT images\remote\payload.png
+INPUT .\images\remote\payload.png
+INPUT .\images\remote\payload.png
+INPUT .\images\remote\payload.png
+INPUT .\images\remote\payload.png
+INPUT .\images\remote\netcat.png
+INPUT .\images\remote\netcat.png
+INPUT images\remote\netcat.png
+INPUT .\images\remote\netcat.png
+INPUT .\images\remote\netcat.png
+INPUT .\images\remote\netcat.png
+INPUT .\images\remote\netcat.png
+INPUT .\images\remote\flag-usuario.png
+INPUT .\images\remote\flag-usuario.png
+INPUT images\remote\flag-usuario.png
+INPUT .\images\remote\flag-usuario.png
+INPUT .\images\remote\flag-usuario.png
+INPUT .\images\remote\flag-usuario.png
+INPUT .\images\remote\flag-usuario.png
+INPUT .\images\remote\privilegios.png
+INPUT .\images\remote\privilegios.png
+INPUT images\remote\privilegios.png
+INPUT .\images\remote\privilegios.png
+INPUT .\images\remote\privilegios.png
+INPUT .\images\remote\privilegios.png
+INPUT .\images\remote\privilegios.png
+INPUT .\images\remote\systeminfo.png
+INPUT .\images\remote\systeminfo.png
+INPUT images\remote\systeminfo.png
+INPUT .\images\remote\systeminfo.png
+INPUT .\images\remote\systeminfo.png
+INPUT .\images\remote\systeminfo.png
+INPUT .\images\remote\systeminfo.png
+INPUT .\images\remote\fallo-exploit.png
+INPUT .\images\remote\fallo-exploit.png
+INPUT images\remote\fallo-exploit.png
+INPUT .\images\remote\fallo-exploit.png
+INPUT .\images\remote\fallo-exploit.png
+INPUT .\images\remote\fallo-exploit.png
+INPUT .\images\remote\fallo-exploit.png
+INPUT .\images\remote\fallo-escucha.png
+INPUT .\images\remote\fallo-escucha.png
+INPUT images\remote\fallo-escucha.png
+INPUT .\images\remote\fallo-escucha.png
+INPUT .\images\remote\fallo-escucha.png
+INPUT .\images\remote\fallo-escucha.png
+INPUT .\images\remote\fallo-escucha.png
+INPUT .\images\remote\proceso-encontrado.png
+INPUT .\images\remote\proceso-encontrado.png
+INPUT images\remote\proceso-encontrado.png
+INPUT .\images\remote\proceso-encontrado.png
+INPUT .\images\remote\proceso-encontrado.png
+INPUT .\images\remote\proceso-encontrado.png
+INPUT .\images\remote\proceso-encontrado.png
+INPUT .\images\remote\confirmación-hash.png
+INPUT .\images\remote\confirmación-hash.png
+INPUT images\remote\confirmación-hash.png
+INPUT .\images\remote\confirmación-hash.png
+INPUT .\images\remote\confirmación-hash.png
+INPUT .\images\remote\confirmación-hash.png
+INPUT .\images\remote\confirmación-hash.png
+INPUT .\images\remote\dumpeo-hash.png
+INPUT .\images\remote\dumpeo-hash.png
+INPUT images\remote\dumpeo-hash.png
+INPUT .\images\remote\dumpeo-hash.png
+INPUT .\images\remote\dumpeo-hash.png
+INPUT .\images\remote\dumpeo-hash.png
+INPUT .\images\remote\dumpeo-hash.png
+INPUT .\images\remote\script-python-hash.png
+INPUT .\images\remote\script-python-hash.png
+INPUT images\remote\script-python-hash.png
+INPUT .\images\remote\script-python-hash.png
+INPUT .\images\remote\script-python-hash.png
+INPUT .\images\remote\script-python-hash.png
+INPUT .\images\remote\script-python-hash.png
+INPUT .\images\remote\exito-administrator.png
+INPUT .\images\remote\exito-administrator.png
+INPUT images\remote\exito-administrator.png
+INPUT .\images\remote\exito-administrator.png
+INPUT .\images\remote\exito-administrator.png
+INPUT .\images\remote\exito-administrator.png
+INPUT .\images\remote\exito-administrator.png
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
+INPUT .\images\remote\umbraco-version.png
+INPUT .\images\remote\umbraco-version.png
+INPUT images\remote\umbraco-version.png
+INPUT .\images\remote\umbraco-version.png
+INPUT .\images\remote\umbraco-version.png
+INPUT .\images\remote\umbraco-version.png
+INPUT .\images\remote\umbraco-version.png
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt8.tfm
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex\latex\base\ts1cmtt.fd
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tctt0800.tfm
+INPUT .\images\fuse\fuse_logo.png
+INPUT .\images\fuse\fuse_logo.png
+INPUT images\fuse\fuse_logo.png
+INPUT .\images\fuse\fuse_logo.png
+INPUT .\images\fuse\fuse_logo.png
+INPUT .\images\fuse\fuse_logo.png
+INPUT .\images\fuse\fuse_logo.png
+INPUT .\images\fuse\services.png
+INPUT .\images\fuse\services.png
+INPUT images\fuse\services.png
+INPUT .\images\fuse\services.png
+INPUT .\images\fuse\services.png
+INPUT .\images\fuse\services.png
+INPUT .\images\fuse\services.png
+INPUT .\images\fuse\image2.png
+INPUT .\images\fuse\image2.png
+INPUT images\fuse\image2.png
+INPUT .\images\fuse\image2.png
+INPUT .\images\fuse\image2.png
+INPUT .\images\fuse\image2.png
+INPUT .\images\fuse\image2.png
+INPUT .\images\fuse\image3.png
+INPUT .\images\fuse\image3.png
+INPUT images\fuse\image3.png
+INPUT .\images\fuse\image3.png
+INPUT .\images\fuse\image3.png
+INPUT .\images\fuse\image3.png
+INPUT .\images\fuse\image3.png
+INPUT .\images\fuse\image4.png
+INPUT .\images\fuse\image4.png
+INPUT images\fuse\image4.png
+INPUT .\images\fuse\image4.png
+INPUT .\images\fuse\image4.png
+INPUT .\images\fuse\image4.png
+INPUT .\images\fuse\image4.png
+INPUT .\images\fuse\image5.png
+INPUT .\images\fuse\image5.png
+INPUT images\fuse\image5.png
+INPUT .\images\fuse\image5.png
+INPUT .\images\fuse\image5.png
+INPUT .\images\fuse\image5.png
+INPUT .\images\fuse\image5.png
+INPUT .\images\fuse\image6.png
+INPUT .\images\fuse\image6.png
+INPUT images\fuse\image6.png
+INPUT .\images\fuse\image6.png
+INPUT .\images\fuse\image6.png
+INPUT .\images\fuse\image6.png
+INPUT .\images\fuse\image6.png
+INPUT .\images\fuse\image7.png
+INPUT .\images\fuse\image7.png
+INPUT images\fuse\image7.png
+INPUT .\images\fuse\image7.png
+INPUT .\images\fuse\image7.png
+INPUT .\images\fuse\image7.png
+INPUT .\images\fuse\image7.png
+INPUT .\images\fuse\image8.png
+INPUT .\images\fuse\image8.png
+INPUT images\fuse\image8.png
+INPUT .\images\fuse\image8.png
+INPUT .\images\fuse\image8.png
+INPUT .\images\fuse\image8.png
+INPUT .\images\fuse\image8.png
+INPUT .\images\fuse\image9.png
+INPUT .\images\fuse\image9.png
+INPUT images\fuse\image9.png
+INPUT .\images\fuse\image9.png
+INPUT .\images\fuse\image9.png
+INPUT .\images\fuse\image9.png
+INPUT .\images\fuse\image9.png
+INPUT .\images\fuse\image10.png
+INPUT .\images\fuse\image10.png
+INPUT images\fuse\image10.png
+INPUT .\images\fuse\image10.png
+INPUT .\images\fuse\image10.png
+INPUT .\images\fuse\image10.png
+INPUT .\images\fuse\image10.png
+INPUT .\images\fuse\image11.png
+INPUT .\images\fuse\image11.png
+INPUT images\fuse\image11.png
+INPUT .\images\fuse\image11.png
+INPUT .\images\fuse\image11.png
+INPUT .\images\fuse\image11.png
+INPUT .\images\fuse\image11.png
+INPUT .\images\fuse\image12.png
+INPUT .\images\fuse\image12.png
+INPUT images\fuse\image12.png
+INPUT .\images\fuse\image12.png
+INPUT .\images\fuse\image12.png
+INPUT .\images\fuse\image12.png
+INPUT .\images\fuse\image12.png
+INPUT .\images\fuse\image13.png
+INPUT .\images\fuse\image13.png
+INPUT images\fuse\image13.png
+INPUT .\images\fuse\image13.png
+INPUT .\images\fuse\image13.png
+INPUT .\images\fuse\image13.png
+INPUT .\images\fuse\image13.png
+INPUT .\images\fuse\image14.png
+INPUT .\images\fuse\image14.png
+INPUT images\fuse\image14.png
+INPUT .\images\fuse\image14.png
+INPUT .\images\fuse\image14.png
+INPUT .\images\fuse\image14.png
+INPUT .\images\fuse\image14.png
+INPUT .\images\fuse\image15.png
+INPUT .\images\fuse\image15.png
+INPUT images\fuse\image15.png
+INPUT .\images\fuse\image15.png
+INPUT .\images\fuse\image15.png
+INPUT .\images\fuse\image15.png
+INPUT .\images\fuse\image15.png
+INPUT .\images\fuse\image16.png
+INPUT .\images\fuse\image16.png
+INPUT images\fuse\image16.png
+INPUT .\images\fuse\image16.png
+INPUT .\images\fuse\image16.png
+INPUT .\images\fuse\image16.png
+INPUT .\images\fuse\image16.png
+INPUT .\images\fuse\image17.png
+INPUT .\images\fuse\image17.png
+INPUT images\fuse\image17.png
+INPUT .\images\fuse\image17.png
+INPUT .\images\fuse\image17.png
+INPUT .\images\fuse\image17.png
+INPUT .\images\fuse\image17.png
+INPUT .\images\fuse\image18.png
+INPUT .\images\fuse\image18.png
+INPUT images\fuse\image18.png
+INPUT .\images\fuse\image18.png
+INPUT .\images\fuse\image18.png
+INPUT .\images\fuse\image18.png
+INPUT .\images\fuse\image18.png
+INPUT .\images\fuse\image19.png
+INPUT .\images\fuse\image19.png
+INPUT images\fuse\image19.png
+INPUT .\images\fuse\image19.png
+INPUT .\images\fuse\image19.png
+INPUT .\images\fuse\image19.png
+INPUT .\images\fuse\image19.png
+INPUT .\images\fuse\image20.png
+INPUT .\images\fuse\image20.png
+INPUT images\fuse\image20.png
+INPUT .\images\fuse\image20.png
+INPUT .\images\fuse\image20.png
+INPUT .\images\fuse\image20.png
+INPUT .\images\fuse\image20.png
+INPUT .\images\fuse\image21.png
+INPUT .\images\fuse\image21.png
+INPUT images\fuse\image21.png
+INPUT .\images\fuse\image21.png
+INPUT .\images\fuse\image21.png
+INPUT .\images\fuse\image21.png
+INPUT .\images\fuse\image21.png
+INPUT .\images\fuse\sam.png
+INPUT .\images\fuse\sam.png
+INPUT images\fuse\sam.png
+INPUT .\images\fuse\sam.png
+INPUT .\images\fuse\sam.png
+INPUT .\images\fuse\sam.png
+INPUT .\images\fuse\sam.png
+INPUT .\images\magic\nmap.png
+INPUT .\images\magic\nmap.png
+INPUT images\magic\nmap.png
+INPUT .\images\magic\nmap.png
+INPUT .\images\magic\nmap.png
+INPUT .\images\magic\nmap.png
+INPUT .\images\magic\nmap.png
+INPUT .\images\magic\wfuzz.png
+INPUT .\images\magic\wfuzz.png
+INPUT images\magic\wfuzz.png
+INPUT .\images\magic\wfuzz.png
+INPUT .\images\magic\wfuzz.png
+INPUT .\images\magic\wfuzz.png
+INPUT .\images\magic\wfuzz.png
+INPUT .\images\magic\index.png
+INPUT .\images\magic\index.png
+INPUT images\magic\index.png
+INPUT .\images\magic\index.png
+INPUT .\images\magic\index.png
+INPUT .\images\magic\index.png
+INPUT .\images\magic\index.png
+INPUT .\images\magic\login.png
+INPUT .\images\magic\login.png
+INPUT images\magic\login.png
+INPUT .\images\magic\login.png
+INPUT .\images\magic\login.png
+INPUT .\images\magic\login.png
+INPUT .\images\magic\login.png
+INPUT .\images\magic\nmap-vuln.png
+INPUT .\images\magic\nmap-vuln.png
+INPUT images\magic\nmap-vuln.png
+INPUT .\images\magic\nmap-vuln.png
+INPUT .\images\magic\nmap-vuln.png
+INPUT .\images\magic\nmap-vuln.png
+INPUT .\images\magic\nmap-vuln.png
+INPUT .\images\magic\login-existoso.png
+INPUT .\images\magic\login-existoso.png
+INPUT images\magic\login-existoso.png
+INPUT .\images\magic\login-existoso.png
+INPUT .\images\magic\login-existoso.png
+INPUT .\images\magic\login-existoso.png
+INPUT .\images\magic\login-existoso.png
+INPUT .\images\magic\fallo-subida-php.png
+INPUT .\images\magic\fallo-subida-php.png
+INPUT images\magic\fallo-subida-php.png
+INPUT .\images\magic\fallo-subida-php.png
+INPUT .\images\magic\fallo-subida-php.png
+INPUT .\images\magic\fallo-subida-php.png
+INPUT .\images\magic\fallo-subida-php.png
+INPUT .\images\magic\intento-burpsuit.png
+INPUT .\images\magic\intento-burpsuit.png
+INPUT images\magic\intento-burpsuit.png
+INPUT .\images\magic\intento-burpsuit.png
+INPUT .\images\magic\intento-burpsuit.png
+INPUT .\images\magic\intento-burpsuit.png
+INPUT .\images\magic\intento-burpsuit.png
+INPUT .\images\magic\fallo-burpsuite.png
+INPUT .\images\magic\fallo-burpsuite.png
+INPUT images\magic\fallo-burpsuite.png
+INPUT .\images\magic\fallo-burpsuite.png
+INPUT .\images\magic\fallo-burpsuite.png
+INPUT .\images\magic\fallo-burpsuite.png
+INPUT .\images\magic\fallo-burpsuite.png
+INPUT .\images\magic\muestra-bits.png
+INPUT .\images\magic\muestra-bits.png
+INPUT images\magic\muestra-bits.png
+INPUT .\images\magic\muestra-bits.png
+INPUT .\images\magic\muestra-bits.png
+INPUT .\images\magic\muestra-bits.png
+INPUT .\images\magic\muestra-bits.png
+INPUT .\images\magic\cambio-bits.png
+INPUT .\images\magic\cambio-bits.png
+INPUT images\magic\cambio-bits.png
+INPUT .\images\magic\cambio-bits.png
+INPUT .\images\magic\cambio-bits.png
+INPUT .\images\magic\cambio-bits.png
+INPUT .\images\magic\cambio-bits.png
+INPUT .\images\magic\subida-exitosa.png
+INPUT .\images\magic\subida-exitosa.png
+INPUT images\magic\subida-exitosa.png
+INPUT .\images\magic\subida-exitosa.png
+INPUT .\images\magic\subida-exitosa.png
+INPUT .\images\magic\subida-exitosa.png
+INPUT .\images\magic\subida-exitosa.png
+INPUT .\images\magic\apuntando-reverse1.png
+INPUT .\images\magic\apuntando-reverse1.png
+INPUT images\magic\apuntando-reverse1.png
+INPUT .\images\magic\apuntando-reverse1.png
+INPUT .\images\magic\apuntando-reverse1.png
+INPUT .\images\magic\apuntando-reverse1.png
+INPUT .\images\magic\apuntando-reverse1.png
+INPUT .\images\magic\acceso-maquina.png
+INPUT .\images\magic\acceso-maquina.png
+INPUT images\magic\acceso-maquina.png
+INPUT .\images\magic\acceso-maquina.png
+INPUT .\images\magic\acceso-maquina.png
+INPUT .\images\magic\acceso-maquina.png
+INPUT .\images\magic\acceso-maquina.png
+INPUT .\images\magic\fallo-lectura-flag.png
+INPUT .\images\magic\fallo-lectura-flag.png
+INPUT images\magic\fallo-lectura-flag.png
+INPUT .\images\magic\fallo-lectura-flag.png
+INPUT .\images\magic\fallo-lectura-flag.png
+INPUT .\images\magic\fallo-lectura-flag.png
+INPUT .\images\magic\fallo-lectura-flag.png
+INPUT .\images\magic\credenciales-mysql.png
+INPUT .\images\magic\credenciales-mysql.png
+INPUT images\magic\credenciales-mysql.png
+INPUT .\images\magic\credenciales-mysql.png
+INPUT .\images\magic\credenciales-mysql.png
+INPUT .\images\magic\credenciales-mysql.png
+INPUT .\images\magic\credenciales-mysql.png
+INPUT .\images\magic\descargar-chisel.png
+INPUT .\images\magic\descargar-chisel.png
+INPUT images\magic\descargar-chisel.png
+INPUT .\images\magic\descargar-chisel.png
+INPUT .\images\magic\descargar-chisel.png
+INPUT .\images\magic\descargar-chisel.png
+INPUT .\images\magic\descargar-chisel.png
+INPUT .\images\magic\chisel-server.png
+INPUT .\images\magic\chisel-server.png
+INPUT images\magic\chisel-server.png
+INPUT .\images\magic\chisel-server.png
+INPUT .\images\magic\chisel-server.png
+INPUT .\images\magic\chisel-server.png
+INPUT .\images\magic\chisel-server.png
+INPUT .\images\magic\chisel-cliente.png
+INPUT .\images\magic\chisel-cliente.png
+INPUT images\magic\chisel-cliente.png
+INPUT .\images\magic\chisel-cliente.png
+INPUT .\images\magic\chisel-cliente.png
+INPUT .\images\magic\chisel-cliente.png
+INPUT .\images\magic\chisel-cliente.png
+INPUT .\images\magic\conexion-mysql.png
+INPUT .\images\magic\conexion-mysql.png
+INPUT images\magic\conexion-mysql.png
+INPUT .\images\magic\conexion-mysql.png
+INPUT .\images\magic\conexion-mysql.png
+INPUT .\images\magic\conexion-mysql.png
+INPUT .\images\magic\conexion-mysql.png
+INPUT .\images\magic\mostrando-tablas.png
+INPUT .\images\magic\mostrando-tablas.png
+INPUT images\magic\mostrando-tablas.png
+INPUT .\images\magic\mostrando-tablas.png
+INPUT .\images\magic\mostrando-tablas.png
+INPUT .\images\magic\mostrando-tablas.png
+INPUT .\images\magic\mostrando-tablas.png
+INPUT .\images\magic\obtención-credenciales.png
+INPUT .\images\magic\obtención-credenciales.png
+INPUT images\magic\obtención-credenciales.png
+INPUT .\images\magic\obtención-credenciales.png
+INPUT .\images\magic\obtención-credenciales.png
+INPUT .\images\magic\obtención-credenciales.png
+INPUT .\images\magic\obtención-credenciales.png
+INPUT .\images\magic\ingreso-existoso.png
+INPUT .\images\magic\ingreso-existoso.png
+INPUT images\magic\ingreso-existoso.png
+INPUT .\images\magic\ingreso-existoso.png
+INPUT .\images\magic\ingreso-existoso.png
+INPUT .\images\magic\ingreso-existoso.png
+INPUT .\images\magic\ingreso-existoso.png
+INPUT main.aux
+INPUT .\caratula\Caratula.aux
+INPUT caratula\Caratula.aux
+INPUT caratula\Caratula.aux
+INPUT .\main.out
+INPUT .\main.out
+INPUT C:\Users\Alfonso Suarez\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tctt0800.pk
+INPUT C:\Users\Alfonso Suarez\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tctt0800.pk
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsl10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb
+INPUT C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt8.pfb

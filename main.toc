@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}OpenAdmin}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Enumeración}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Explotación}{3}{subsection.1.2}%
@@ -20,14 +20,15 @@
 \contentsline {section}{\numberline {3}Fuse}{24}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Reconocimiento}{24}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Escaneo de Vulnerabilidades}{24}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Enumeración}{24}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Explotación}{24}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Post Explotación}{24}{subsection.3.5}%
-\contentsline {section}{\numberline {4}MAGIC}{25}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Reconocimiento}{25}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Escaneo de Vulnerabilidades}{27}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Explotación}{27}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Obtención de Acceso a la máquina}{27}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Obtención de Acceso como Usuario}{32}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Escalamiento de Privilegios a root}{35}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Hardening}{35}{subsection.4.4}%
+\contentsline {subsection}{\numberline {3.3}Enumeración}{25}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Explotación}{26}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Post Explotación}{31}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Recomendaciones}{31}{subsection.3.6}%
+\contentsline {section}{\numberline {4}MAGIC}{32}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Reconocimiento}{32}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Escaneo de Vulnerabilidades}{34}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Explotación}{34}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Obtención de Acceso a la máquina}{34}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Obtención de Acceso como Usuario}{39}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Escalamiento de Privilegios a root}{42}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Hardening}{42}{subsection.4.4}%
