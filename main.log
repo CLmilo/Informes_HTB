@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.16)  17 OCT 2021 04:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.16)  17 OCT 2021 04:42
 entering extended mode
 **d:/Desarrollo/LaTeX/Informes_HTB/main.tex
 (d:/Desarrollo/LaTeX/Informes_HTB/main.tex
@@ -220,6 +220,28 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box55
 \@float@everytoks=\toks24
 \@floatcapt=\box56
+) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen161
+\captionmargin@=\dimen162
+\captionwidth=\dimen163
+\caption@tempdima=\dimen164
+\caption@indent=\dimen165
+\caption@parindent=\dimen166
+\caption@hangindent=\dimen167
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count299
+\c@subtable=\count300
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
@@ -247,9 +269,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen161
-\Hy@linkcounter=\count297
-\Hy@pagecounter=\count298
+\@linkdim=\dimen168
+\Hy@linkcounter=\count301
+\Hy@pagecounter=\count302
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -261,7 +283,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count299
+\Hy@SavedSpaceFactor=\count303
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -274,21 +296,21 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count300
+\c@Hy@tempcnt=\count304
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen162
+\XeTeXLinkMargin=\dimen169
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count301
-\Field@Width=\dimen163
-\Fld@charsize=\dimen164
+\Fld@menulength=\count305
+\Field@Width=\dimen170
+\Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -302,9 +324,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count302
-\c@Item=\count303
-\c@Hfootnote=\count304
+\Hy@abspage=\count306
+\c@Item=\count307
+\c@Hfootnote=\count308
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -313,8 +335,8 @@ File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count305
-\c@bookmark@seq@number=\count306
+\Fld@listcount=\count309
+\c@bookmark@seq@number=\count310
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -325,7 +347,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip63
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count307
+\l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box57
 ) (main.aux (caratula/Caratula.aux)
 LaTeX Info: Redefining \. on input line 26.
@@ -333,24 +355,24 @@ LaTeX Info: Redefining \% on input line 26.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -386,20 +408,20 @@ LaTeX Font Info:    ... okay on input line 42.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
 (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen165
+\scratchcounter=\count312
+\scratchdimen=\dimen172
 \scratchbox=\box58
-\nofMPsegments=\count309
-\nofMParguments=\count310
+\nofMPsegments=\count313
+\nofMParguments=\count314
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen166
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
+\MPscratchCnt=\count315
+\MPscratchDim=\dimen173
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
 \everyMPtoPDFconversion=\toks26
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -407,8 +429,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count314
-Package hyperref Info: Link coloring OFF on input line 42.
+\c@lstlisting=\count318
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 44.
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -416,11 +441,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count315
+\c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
-LaTeX Info: Redefining \nameref on input line 42.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -447,835 +472,854 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 49.
+LaTeX Info: Redefining \% on input line 49.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.47 \clearpage
+l.49 \clearpage
                 [1
 
 
 
 ]
-<images/openadmin/1-escaneo.png, id=185, 623.32875pt x 244.66406pt>
+<images/openadmin/1-escaneo.png, id=186, 623.32875pt x 244.66406pt>
 File: images/openadmin/1-escaneo.png Graphic file (type png)
 <use images/openadmin/1-escaneo.png>
-Package pdftex.def Info: images/openadmin/1-escaneo.png  used on input line 55.
+Package pdftex.def Info: images/openadmin/1-escaneo.png  used on input line 57.
 (pdftex.def)             Requested size: 346.89731pt x 136.16348pt.
-<images/openadmin/2-paginaweb.png, id=186, 622.57594pt x 533.74406pt>
+<images/openadmin/2-paginaweb.png, id=187, 622.57594pt x 533.74406pt>
 File: images/openadmin/2-paginaweb.png Graphic file (type png)
 <use images/openadmin/2-paginaweb.png>
-Package pdftex.def Info: images/openadmin/2-paginaweb.png  used on input line 62.
+Package pdftex.def Info: images/openadmin/2-paginaweb.png  used on input line 64.
 (pdftex.def)             Requested size: 346.89731pt x 297.40424pt.
-<images/openadmin/3-artwork.png, id=187, 622.57594pt x 533.74406pt>
+<images/openadmin/3-artwork.png, id=188, 622.57594pt x 533.74406pt>
 File: images/openadmin/3-artwork.png Graphic file (type png)
 <use images/openadmin/3-artwork.png>
-Package pdftex.def Info: images/openadmin/3-artwork.png  used on input line 69.
-(pdftex.def)             Requested size: 346.89731pt x 297.40424pt.
-LaTeX Info: Redefining \. on input line 72.
-LaTeX Info: Redefining \% on input line 72.
- [2
-
- <./images/openadmin/1-escaneo.png> <./images/openadmin/2-paginaweb.png>]
-<images/openadmin/4-music.png, id=196, 622.57594pt x 532.23843pt>
+Package pdftex.def Info: images/openadmin/3-artwork.png  used on input line 73.
+(pdftex.def)             Requested size: 216.81pt x 185.87662pt.
+<images/openadmin/4-music.png, id=189, 622.57594pt x 532.23843pt>
 File: images/openadmin/4-music.png Graphic file (type png)
 <use images/openadmin/4-music.png>
 Package pdftex.def Info: images/openadmin/4-music.png  used on input line 75.
-(pdftex.def)             Requested size: 346.89731pt x 296.56528pt.
+(pdftex.def)             Requested size: 216.81pt x 185.35228pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 73--76
+[][]  [] 
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (12.00002pt too wide) in paragraph at lines 71--78
+ [] 
+ []
 
-<images/openadmin/4-musicdetalles.png, id=197, 622.57594pt x 536.75531pt>
+LaTeX Info: Redefining \. on input line 79.
+LaTeX Info: Redefining \% on input line 79.
+[2
+
+ <./images/openadmin/1-escaneo.png> <./images/openadmin/2-paginaweb.png>]
+<images/openadmin/4-musicdetalles.png, id=198, 622.57594pt x 536.75531pt>
 File: images/openadmin/4-musicdetalles.png Graphic file (type png)
 <use images/openadmin/4-musicdetalles.png>
-Package pdftex.def Info: images/openadmin/4-musicdetalles.png  used on input line 81.
-(pdftex.def)             Requested size: 346.89731pt x 299.0821pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/openadmin/5-ona.png, id=198, 620.3175pt x 529.98pt>
+Package pdftex.def Info: images/openadmin/4-musicdetalles.png  used on input line 84.
+(pdftex.def)             Requested size: 216.81pt x 186.9253pt.
+<images/openadmin/5-ona.png, id=199, 620.3175pt x 529.98pt>
 File: images/openadmin/5-ona.png Graphic file (type png)
 <use images/openadmin/5-ona.png>
-Package pdftex.def Info: images/openadmin/5-ona.png  used on input line 87.
-(pdftex.def)             Requested size: 346.89731pt x 296.37433pt.
+Package pdftex.def Info: images/openadmin/5-ona.png  used on input line 85.
+(pdftex.def)             Requested size: 216.81pt x 185.2289pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 84--86
+[][] [] 
+ []
 
-<images/openadmin/6-exploit.png, id=199, 1134.48843pt x 348.55219pt>
+<images/openadmin/6-exploit.png, id=200, 1134.48843pt x 348.55219pt>
 File: images/openadmin/6-exploit.png Graphic file (type png)
 <use images/openadmin/6-exploit.png>
-Package pdftex.def Info: images/openadmin/6-exploit.png  used on input line 94.
+Package pdftex.def Info: images/openadmin/6-exploit.png  used on input line 93.
 (pdftex.def)             Requested size: 346.89731pt x 106.57683pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/openadmin/7-script.png, id=200, 622.57594pt x 140.77594pt>
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+[3 <./images/openadmin/3-artwork.png> <./images/openadmin/4-music.png> <./images/openadmin/4-musicdetalles.png> <./images/openadmin/5-ona.png>]
+<images/openadmin/7-script.png, id=211, 622.57594pt x 140.77594pt>
 File: images/openadmin/7-script.png Graphic file (type png)
 <use images/openadmin/7-script.png>
-Package pdftex.def Info: images/openadmin/7-script.png  used on input line 103.
+Package pdftex.def Info: images/openadmin/7-script.png  used on input line 102.
 (pdftex.def)             Requested size: 346.89731pt x 78.44087pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/openadmin/8-credencialesjimmy.png, id=201, 623.32875pt x 273.27094pt>
+<images/openadmin/8-credencialesjimmy.png, id=212, 623.32875pt x 273.27094pt>
 File: images/openadmin/8-credencialesjimmy.png Graphic file (type png)
 <use images/openadmin/8-credencialesjimmy.png>
-Package pdftex.def Info: images/openadmin/8-credencialesjimmy.png  used on input line 112.
+Package pdftex.def Info: images/openadmin/8-credencialesjimmy.png  used on input line 111.
 (pdftex.def)             Requested size: 346.89731pt x 152.08412pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/openadmin/9-usuariosycarpetas.png, id=202, 622.57594pt x 133.24782pt>
+<images/openadmin/9-usuariosycarpetas.png, id=213, 622.57594pt x 133.24782pt>
 File: images/openadmin/9-usuariosycarpetas.png Graphic file (type png)
 <use images/openadmin/9-usuariosycarpetas.png>
-Package pdftex.def Info: images/openadmin/9-usuariosycarpetas.png  used on input line 119.
+Package pdftex.def Info: images/openadmin/9-usuariosycarpetas.png  used on input line 118.
 (pdftex.def)             Requested size: 346.89731pt x 74.24619pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/10-sshjimmy.png, id=203, 622.57594pt x 340.27126pt>
+<images/openadmin/10-sshjimmy.png, id=214, 622.57594pt x 340.27126pt>
 File: images/openadmin/10-sshjimmy.png Graphic file (type png)
 <use images/openadmin/10-sshjimmy.png>
-Package pdftex.def Info: images/openadmin/10-sshjimmy.png  used on input line 126.
+Package pdftex.def Info: images/openadmin/10-sshjimmy.png  used on input line 125.
 (pdftex.def)             Requested size: 346.89731pt x 189.60043pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/11-tcp.png, id=204, 622.57594pt x 121.20282pt>
+<images/openadmin/11-tcp.png, id=215, 622.57594pt x 121.20282pt>
 File: images/openadmin/11-tcp.png Graphic file (type png)
 <use images/openadmin/11-tcp.png>
-Package pdftex.def Info: images/openadmin/11-tcp.png  used on input line 134.
+Package pdftex.def Info: images/openadmin/11-tcp.png  used on input line 133.
 (pdftex.def)             Requested size: 346.89731pt x 67.53467pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-[3 <./images/openadmin/3-artwork.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/openadmin/12-indexphp.png, id=211, 620.3175pt x 487.06969pt>
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+[4 <./images/openadmin/6-exploit.png> <./images/openadmin/7-script.png> <./images/openadmin/8-credencialesjimmy.png>]
+<images/openadmin/12-indexphp.png, id=226, 620.3175pt x 487.06969pt>
 File: images/openadmin/12-indexphp.png Graphic file (type png)
 <use images/openadmin/12-indexphp.png>
-Package pdftex.def Info: images/openadmin/12-indexphp.png  used on input line 143.
+Package pdftex.def Info: images/openadmin/12-indexphp.png  used on input line 142.
 (pdftex.def)             Requested size: 346.89731pt x 272.37811pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/13-crackstation.png, id=212, 782.925pt x 318.43968pt>
+<images/openadmin/13-crackstation.png, id=227, 782.925pt x 318.43968pt>
 File: images/openadmin/13-crackstation.png Graphic file (type png)
 <use images/openadmin/13-crackstation.png>
-Package pdftex.def Info: images/openadmin/13-crackstation.png  used on input line 150.
+Package pdftex.def Info: images/openadmin/13-crackstation.png  used on input line 149.
 (pdftex.def)             Requested size: 346.89731pt x 141.0954pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/14-mainphp.png, id=213, 622.57594pt x 134.00063pt>
+<images/openadmin/14-mainphp.png, id=228, 622.57594pt x 134.00063pt>
 File: images/openadmin/14-mainphp.png Graphic file (type png)
 <use images/openadmin/14-mainphp.png>
-Package pdftex.def Info: images/openadmin/14-mainphp.png  used on input line 156.
+Package pdftex.def Info: images/openadmin/14-mainphp.png  used on input line 155.
 (pdftex.def)             Requested size: 346.89731pt x 74.66565pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/15-joannarsa.png, id=214, 623.32875pt x 422.32782pt>
+<images/openadmin/15-joannarsa.png, id=229, 623.32875pt x 422.32782pt>
 File: images/openadmin/15-joannarsa.png Graphic file (type png)
 <use images/openadmin/15-joannarsa.png>
-Package pdftex.def Info: images/openadmin/15-joannarsa.png  used on input line 162.
+Package pdftex.def Info: images/openadmin/15-joannarsa.png  used on input line 161.
 (pdftex.def)             Requested size: 346.89731pt x 235.03912pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/16-sshjoanna.png, id=215, 623.32875pt x 366.61969pt>
+<images/openadmin/16-sshjoanna.png, id=230, 623.32875pt x 366.61969pt>
 File: images/openadmin/16-sshjoanna.png Graphic file (type png)
 <use images/openadmin/16-sshjoanna.png>
-Package pdftex.def Info: images/openadmin/16-sshjoanna.png  used on input line 170.
+Package pdftex.def Info: images/openadmin/16-sshjoanna.png  used on input line 169.
 (pdftex.def)             Requested size: 346.89731pt x 204.03575pt.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+[5 <./images/openadmin/9-usuariosycarpetas.png> <./images/openadmin/10-sshjimmy.png> <./images/openadmin/11-tcp.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/17-alternativa.png, id=216, 622.57594pt x 162.6075pt>
+<images/openadmin/17-alternativa.png, id=241, 622.57594pt x 162.6075pt>
 File: images/openadmin/17-alternativa.png Graphic file (type png)
 <use images/openadmin/17-alternativa.png>
-Package pdftex.def Info: images/openadmin/17-alternativa.png  used on input line 177.
+Package pdftex.def Info: images/openadmin/17-alternativa.png  used on input line 176.
 (pdftex.def)             Requested size: 346.89731pt x 90.60551pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/17-alternativa2.png, id=217, 623.32875pt x 136.25906pt>
+<images/openadmin/17-alternativa2.png, id=242, 623.32875pt x 136.25906pt>
 File: images/openadmin/17-alternativa2.png Graphic file (type png)
 <use images/openadmin/17-alternativa2.png>
-Package pdftex.def Info: images/openadmin/17-alternativa2.png  used on input line 183.
+Package pdftex.def Info: images/openadmin/17-alternativa2.png  used on input line 182.
 (pdftex.def)             Requested size: 346.89731pt x 75.83258pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/17-alternativa3.png, id=218, 621.07031pt x 50.43843pt>
+<images/openadmin/17-alternativa3.png, id=243, 621.07031pt x 50.43843pt>
 File: images/openadmin/17-alternativa3.png Graphic file (type png)
 <use images/openadmin/17-alternativa3.png>
-Package pdftex.def Info: images/openadmin/17-alternativa3.png  used on input line 189.
+Package pdftex.def Info: images/openadmin/17-alternativa3.png  used on input line 188.
 (pdftex.def)             Requested size: 346.89731pt x 28.1722pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/18-sudol.png, id=219, 621.07031pt x 109.91063pt>
+<images/openadmin/18-sudol.png, id=244, 621.07031pt x 109.91063pt>
 File: images/openadmin/18-sudol.png Graphic file (type png)
 <use images/openadmin/18-sudol.png>
-Package pdftex.def Info: images/openadmin/18-sudol.png  used on input line 198.
+Package pdftex.def Info: images/openadmin/18-sudol.png  used on input line 197.
 (pdftex.def)             Requested size: 346.89731pt x 61.39018pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/19-gtfobins.png, id=220, 626.34pt x 137.7647pt>
+<images/openadmin/19-gtfobins.png, id=245, 626.34pt x 137.7647pt>
 File: images/openadmin/19-gtfobins.png Graphic file (type png)
 <use images/openadmin/19-gtfobins.png>
-Package pdftex.def Info: images/openadmin/19-gtfobins.png  used on input line 205.
+Package pdftex.def Info: images/openadmin/19-gtfobins.png  used on input line 204.
 (pdftex.def)             Requested size: 346.89731pt x 76.30264pt.
-LaTeX Info: Redefining \. on input line 208.
-LaTeX Info: Redefining \% on input line 208.
-LaTeX Info: Redefining \. on input line 208.
-LaTeX Info: Redefining \% on input line 208.
-[4 <./images/openadmin/4-music.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/openadmin/20-privilegio.png, id=227, 622.57594pt x 127.97812pt>
+<images/openadmin/20-privilegio.png, id=246, 622.57594pt x 127.97812pt>
 File: images/openadmin/20-privilegio.png Graphic file (type png)
 <use images/openadmin/20-privilegio.png>
-Package pdftex.def Info: images/openadmin/20-privilegio.png  used on input line 212.
+Package pdftex.def Info: images/openadmin/20-privilegio.png  used on input line 211.
 (pdftex.def)             Requested size: 346.89731pt x 71.30989pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-[5 <./images/openadmin/4-musicdetalles.png>]
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
- [6 <./images/openadmin/5-ona.png> <./images/openadmin/6-exploit.png> <./images/openadmin/7-script.png>]
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
- [7 <./images/openadmin/8-credencialesjimmy.png> <./images/openadmin/9-usuariosycarpetas.png> <./images/openadmin/10-sshjimmy.png> <./images/openadmin/11-tcp.png>]
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
- [8 <./images/openadmin/12-indexphp.png> <./images/openadmin/13-crackstation.png> <./images/openadmin/14-mainphp.png>]
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
- [9 <./images/openadmin/15-joannarsa.png> <./images/openadmin/16-sshjoanna.png> <./images/openadmin/17-alternativa.png>]
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
- [10 <./images/openadmin/17-alternativa2.png> <./images/openadmin/17-alternativa3.png> <./images/openadmin/18-sudol.png> <./images/openadmin/19-gtfobins.png> <./images/openadmin/20-privilegio.png>]
-<images/remote/nmap_remote.png, id=291, 768.8725pt x 329.23pt>
+<images/openadmin/21-reverseshellperl.png, id=247, 623.32875pt x 48.93282pt>
+File: images/openadmin/21-reverseshellperl.png Graphic file (type png)
+<use images/openadmin/21-reverseshellperl.png>
+Package pdftex.def Info: images/openadmin/21-reverseshellperl.png  used on input line 221.
+(pdftex.def)             Requested size: 346.89731pt x 27.23268pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/openadmin/22-conexionreverse.png, id=248, 620.3175pt x 145.29282pt>
+File: images/openadmin/22-conexionreverse.png Graphic file (type png)
+<use images/openadmin/22-conexionreverse.png>
+Package pdftex.def Info: images/openadmin/22-conexionreverse.png  used on input line 228.
+(pdftex.def)             Requested size: 346.89731pt x 81.25034pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/openadmin/23-covermyass.png, id=249, 622.57594pt x 270.25969pt>
+File: images/openadmin/23-covermyass.png Graphic file (type png)
+<use images/openadmin/23-covermyass.png>
+Package pdftex.def Info: images/openadmin/23-covermyass.png  used on input line 235.
+(pdftex.def)             Requested size: 346.89731pt x 150.58972pt.
+LaTeX Info: Redefining \. on input line 238.
+LaTeX Info: Redefining \% on input line 238.
+LaTeX Info: Redefining \. on input line 238.
+LaTeX Info: Redefining \% on input line 238.
+[6 <./images/openadmin/12-indexphp.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+[7 <./images/openadmin/13-crackstation.png> <./images/openadmin/14-mainphp.png>]
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+ [8 <./images/openadmin/15-joannarsa.png> <./images/openadmin/16-sshjoanna.png> <./images/openadmin/17-alternativa.png>]
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+ [9 <./images/openadmin/17-alternativa2.png> <./images/openadmin/17-alternativa3.png> <./images/openadmin/18-sudol.png> <./images/openadmin/19-gtfobins.png> <./images/openadmin/20-privilegio.png> <./images/openadmin/21-reverseshellperl.png> <./images/openadmin/22-conexionreverse.png>]
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+ [10 <./images/openadmin/23-covermyass.png>]
+<images/remote/nmap_remote.png, id=299, 768.8725pt x 329.23pt>
 File: images/remote/nmap_remote.png Graphic file (type png)
 <use images/remote/nmap_remote.png>
-Package pdftex.def Info: images/remote/nmap_remote.png  used on input line 226.
+Package pdftex.def Info: images/remote/nmap_remote.png  used on input line 247.
 (pdftex.def)             Requested size: 346.89731pt x 148.54396pt.
-<images/remote/nmap_vuln.png, id=292, 561.09625pt x 497.86pt>
+<images/remote/nmap_vuln.png, id=300, 561.09625pt x 497.86pt>
 File: images/remote/nmap_vuln.png Graphic file (type png)
 <use images/remote/nmap_vuln.png>
-Package pdftex.def Info: images/remote/nmap_vuln.png  used on input line 236.
+Package pdftex.def Info: images/remote/nmap_vuln.png  used on input line 257.
 (pdftex.def)             Requested size: 303.53267pt x 269.31898pt.
-<images/remote/ftp.png, id=293, 787.94376pt x 248.93pt>
+<images/remote/ftp.png, id=301, 787.94376pt x 248.93pt>
 File: images/remote/ftp.png Graphic file (type png)
 <use images/remote/ftp.png>
-Package pdftex.def Info: images/remote/ftp.png  used on input line 244.
+Package pdftex.def Info: images/remote/ftp.png  used on input line 265.
 (pdftex.def)             Requested size: 433.62pt x 136.98788pt.
-LaTeX Info: Redefining \. on input line 247.
-LaTeX Info: Redefining \% on input line 247.
+LaTeX Info: Redefining \. on input line 268.
+LaTeX Info: Redefining \% on input line 268.
  [11
 
  <./images/remote/nmap_remote.png> <./images/remote/nmap_vuln.png>]
-<images/remote/index_pagina.png, id=302, 1324.95pt x 537.00626pt>
+<images/remote/index_pagina.png, id=310, 1324.95pt x 537.00626pt>
 File: images/remote/index_pagina.png Graphic file (type png)
 <use images/remote/index_pagina.png>
-Package pdftex.def Info: images/remote/index_pagina.png  used on input line 251.
+Package pdftex.def Info: images/remote/index_pagina.png  used on input line 272.
 (pdftex.def)             Requested size: 433.62pt x 175.74588pt.
-LaTeX Info: Redefining \. on input line 255.
-LaTeX Info: Redefining \% on input line 255.
-LaTeX Info: Redefining \. on input line 255.
-LaTeX Info: Redefining \% on input line 255.
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
  [12 <./images/remote/ftp.png> <./images/remote/index_pagina.png>]
-<images/remote/wappalizer.png, id=312, 1035.87pt x 577.15625pt>
+<images/remote/wappalizer.png, id=320, 1035.87pt x 577.15625pt>
 File: images/remote/wappalizer.png Graphic file (type png)
 <use images/remote/wappalizer.png>
-Package pdftex.def Info: images/remote/wappalizer.png  used on input line 260.
+Package pdftex.def Info: images/remote/wappalizer.png  used on input line 281.
 (pdftex.def)             Requested size: 390.25534pt x 217.43701pt.
-<images/remote/dirb.png, id=313, 480.79625pt x 291.0875pt>
+<images/remote/dirb.png, id=321, 480.79625pt x 291.0875pt>
 File: images/remote/dirb.png Graphic file (type png)
 <use images/remote/dirb.png>
-Package pdftex.def Info: images/remote/dirb.png  used on input line 267.
+Package pdftex.def Info: images/remote/dirb.png  used on input line 288.
 (pdftex.def)             Requested size: 390.25534pt x 236.27704pt.
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
+LaTeX Info: Redefining \. on input line 292.
+LaTeX Info: Redefining \% on input line 292.
  [13
 
  <./images/remote/wappalizer.png> <./images/remote/dirb.png>]
-<images/remote/nfs.png, id=322, 245.91875pt x 58.2175pt>
+<images/remote/nfs.png, id=330, 245.91875pt x 58.2175pt>
 File: images/remote/nfs.png Graphic file (type png)
 <use images/remote/nfs.png>
-Package pdftex.def Info: images/remote/nfs.png  used on input line 276.
+Package pdftex.def Info: images/remote/nfs.png  used on input line 297.
 (pdftex.def)             Requested size: 260.17464pt x 61.59476pt.
-<images/remote/backup.png, id=323, 630.355pt x 89.33376pt>
+<images/remote/backup.png, id=331, 630.355pt x 89.33376pt>
 File: images/remote/backup.png Graphic file (type png)
 <use images/remote/backup.png>
-Package pdftex.def Info: images/remote/backup.png  used on input line 284.
+Package pdftex.def Info: images/remote/backup.png  used on input line 305.
 (pdftex.def)             Requested size: 433.62pt x 61.45224pt.
-<images/remote/strings_pass.png, id=324, 668.4975pt x 280.04625pt>
+<images/remote/strings_pass.png, id=332, 668.4975pt x 280.04625pt>
 File: images/remote/strings_pass.png Graphic file (type png)
 <use images/remote/strings_pass.png>
-Package pdftex.def Info: images/remote/strings_pass.png  used on input line 291.
+Package pdftex.def Info: images/remote/strings_pass.png  used on input line 312.
 (pdftex.def)             Requested size: 433.62pt x 181.65613pt.
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
  [14
 
  <./images/remote/nfs.png> <./images/remote/backup.png> <./images/remote/strings_pass.png>]
-<images/remote/strings_admin.png, id=336, 674.52pt x 322.20375pt>
+<images/remote/strings_admin.png, id=344, 674.52pt x 322.20375pt>
 File: images/remote/strings_admin.png Graphic file (type png)
 <use images/remote/strings_admin.png>
-Package pdftex.def Info: images/remote/strings_admin.png  used on input line 300.
+Package pdftex.def Info: images/remote/strings_admin.png  used on input line 321.
 (pdftex.def)             Requested size: 433.62pt x 207.13397pt.
-<images/remote/sha1.png, id=337, 586.19pt x 315.1775pt>
+<images/remote/sha1.png, id=345, 586.19pt x 315.1775pt>
 File: images/remote/sha1.png Graphic file (type png)
 <use images/remote/sha1.png>
-Package pdftex.def Info: images/remote/sha1.png  used on input line 308.
+Package pdftex.def Info: images/remote/sha1.png  used on input line 329.
 (pdftex.def)             Requested size: 433.62pt x 233.14113pt.
-LaTeX Info: Redefining \. on input line 312.
-LaTeX Info: Redefining \% on input line 312.
-LaTeX Info: Redefining \. on input line 312.
-LaTeX Info: Redefining \% on input line 312.
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
+LaTeX Info: Redefining \. on input line 333.
+LaTeX Info: Redefining \% on input line 333.
  [15
 
  <./images/remote/strings_admin.png> <./images/remote/sha1.png>]
-<images/remote/admin-panel.png, id=347, 1353.055pt x 558.085pt>
+<images/remote/admin-panel.png, id=355, 1353.055pt x 558.085pt>
 File: images/remote/admin-panel.png Graphic file (type png)
 <use images/remote/admin-panel.png>
-Package pdftex.def Info: images/remote/admin-panel.png  used on input line 317.
+Package pdftex.def Info: images/remote/admin-panel.png  used on input line 338.
 (pdftex.def)             Requested size: 433.62pt x 178.85483pt.
-<images/remote/script-1.png, id=349, 817.0525pt x 436.63126pt>
+<images/remote/script-1.png, id=357, 817.0525pt x 436.63126pt>
 File: images/remote/script-1.png Graphic file (type png)
 <use images/remote/script-1.png>
-Package pdftex.def Info: images/remote/script-1.png  used on input line 328.
+Package pdftex.def Info: images/remote/script-1.png  used on input line 349.
 (pdftex.def)             Requested size: 433.62pt x 231.7266pt.
-LaTeX Info: Redefining \. on input line 332.
-LaTeX Info: Redefining \% on input line 332.
-LaTeX Info: Redefining \. on input line 332.
-LaTeX Info: Redefining \% on input line 332.
+LaTeX Info: Redefining \. on input line 353.
+LaTeX Info: Redefining \% on input line 353.
+LaTeX Info: Redefining \. on input line 353.
+LaTeX Info: Redefining \% on input line 353.
  [16
 
  <./images/remote/admin-panel.png> <./images/remote/script-1.png>]
-<images/remote/exploit.png, id=359, 846.16125pt x 214.8025pt>
+<images/remote/exploit.png, id=367, 846.16125pt x 214.8025pt>
 File: images/remote/exploit.png Graphic file (type png)
 <use images/remote/exploit.png>
-Package pdftex.def Info: images/remote/exploit.png  used on input line 339.
+Package pdftex.def Info: images/remote/exploit.png  used on input line 360.
 (pdftex.def)             Requested size: 390.25534pt x 99.066pt.
-<images/remote/server-python.png, id=360, 723.70375pt x 177.66376pt>
+<images/remote/server-python.png, id=368, 723.70375pt x 177.66376pt>
 File: images/remote/server-python.png Graphic file (type png)
 <use images/remote/server-python.png>
-Package pdftex.def Info: images/remote/server-python.png  used on input line 345.
+Package pdftex.def Info: images/remote/server-python.png  used on input line 366.
 (pdftex.def)             Requested size: 390.25534pt x 95.80415pt.
-<images/remote/payload.png, id=362, 559.08875pt x 277.035pt>
+<images/remote/payload.png, id=370, 559.08875pt x 277.035pt>
 File: images/remote/payload.png Graphic file (type png)
 <use images/remote/payload.png>
-Package pdftex.def Info: images/remote/payload.png  used on input line 351.
+Package pdftex.def Info: images/remote/payload.png  used on input line 372.
 (pdftex.def)             Requested size: 390.25534pt x 193.38208pt.
-LaTeX Info: Redefining \. on input line 354.
-LaTeX Info: Redefining \% on input line 354.
-LaTeX Info: Redefining \. on input line 354.
-LaTeX Info: Redefining \% on input line 354.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
  [17
 
  <./images/remote/exploit.png> <./images/remote/server-python.png> <./images/remote/payload.png>]
-<images/remote/netcat.png, id=377, 643.40375pt x 391.4625pt>
+<images/remote/netcat.png, id=385, 643.40375pt x 391.4625pt>
 File: images/remote/netcat.png Graphic file (type png)
 <use images/remote/netcat.png>
-Package pdftex.def Info: images/remote/netcat.png  used on input line 358.
+Package pdftex.def Info: images/remote/netcat.png  used on input line 379.
 (pdftex.def)             Requested size: 390.25534pt x 237.44778pt.
-<images/remote/flag-usuario.png, id=378, 491.8375pt x 326.21875pt>
+<images/remote/flag-usuario.png, id=386, 491.8375pt x 326.21875pt>
 File: images/remote/flag-usuario.png Graphic file (type png)
 <use images/remote/flag-usuario.png>
-Package pdftex.def Info: images/remote/flag-usuario.png  used on input line 364.
+Package pdftex.def Info: images/remote/flag-usuario.png  used on input line 385.
 (pdftex.def)             Requested size: 390.25534pt x 258.85484pt.
-LaTeX Info: Redefining \. on input line 370.
-LaTeX Info: Redefining \% on input line 370.
-LaTeX Info: Redefining \. on input line 370.
-LaTeX Info: Redefining \% on input line 370.
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
+LaTeX Info: Redefining \. on input line 391.
+LaTeX Info: Redefining \% on input line 391.
  [18
 
  <./images/remote/netcat.png> <./images/remote/flag-usuario.png>]
-<images/remote/privilegios.png, id=390, 655.44875pt x 242.9075pt>
+<images/remote/privilegios.png, id=398, 655.44875pt x 242.9075pt>
 File: images/remote/privilegios.png Graphic file (type png)
 <use images/remote/privilegios.png>
-Package pdftex.def Info: images/remote/privilegios.png  used on input line 376.
+Package pdftex.def Info: images/remote/privilegios.png  used on input line 397.
 (pdftex.def)             Requested size: 433.62pt x 160.6975pt.
-<images/remote/systeminfo.png, id=391, 758.835pt x 357.335pt>
+<images/remote/systeminfo.png, id=399, 758.835pt x 357.335pt>
 File: images/remote/systeminfo.png Graphic file (type png)
 <use images/remote/systeminfo.png>
-Package pdftex.def Info: images/remote/systeminfo.png  used on input line 382.
+Package pdftex.def Info: images/remote/systeminfo.png  used on input line 403.
 (pdftex.def)             Requested size: 433.62pt x 204.19559pt.
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
  [19
 
  <./images/remote/privilegios.png> <./images/remote/systeminfo.png>]
-<images/remote/fallo-exploit.png, id=401, 840.13875pt x 97.36375pt>
+<images/remote/fallo-exploit.png, id=409, 840.13875pt x 97.36375pt>
 File: images/remote/fallo-exploit.png Graphic file (type png)
 <use images/remote/fallo-exploit.png>
-Package pdftex.def Info: images/remote/fallo-exploit.png  used on input line 394.
+Package pdftex.def Info: images/remote/fallo-exploit.png  used on input line 415.
 (pdftex.def)             Requested size: 433.62pt x 50.25208pt.
-<images/remote/fallo-escucha.png, id=402, 312.16624pt x 84.315pt>
+<images/remote/fallo-escucha.png, id=410, 312.16624pt x 84.315pt>
 File: images/remote/fallo-escucha.png Graphic file (type png)
 <use images/remote/fallo-escucha.png>
-Package pdftex.def Info: images/remote/fallo-escucha.png  used on input line 400.
+Package pdftex.def Info: images/remote/fallo-escucha.png  used on input line 421.
 (pdftex.def)             Requested size: 173.44534pt x 46.84811pt.
-<images/remote/proceso-encontrado.png, id=403, 554.07pt x 189.70876pt>
+<images/remote/proceso-encontrado.png, id=411, 554.07pt x 189.70876pt>
 File: images/remote/proceso-encontrado.png Graphic file (type png)
 <use images/remote/proceso-encontrado.png>
-Package pdftex.def Info: images/remote/proceso-encontrado.png  used on input line 407.
+Package pdftex.def Info: images/remote/proceso-encontrado.png  used on input line 428.
 (pdftex.def)             Requested size: 303.53267pt x 103.92618pt.
-LaTeX Info: Redefining \. on input line 413.
-LaTeX Info: Redefining \% on input line 413.
-LaTeX Info: Redefining \. on input line 413.
-LaTeX Info: Redefining \% on input line 413.
+LaTeX Info: Redefining \. on input line 434.
+LaTeX Info: Redefining \% on input line 434.
+LaTeX Info: Redefining \. on input line 434.
+LaTeX Info: Redefining \% on input line 434.
  [20
 
  <./images/remote/fallo-exploit.png> <./images/remote/fallo-escucha.png> <./images/remote/proceso-encontrado.png>]
-<images/remote/confirmación-hash.png, id=415, 840.13875pt x 532.99126pt>
+<images/remote/confirmación-hash.png, id=423, 840.13875pt x 532.99126pt>
 File: images/remote/confirmación-hash.png Graphic file (type png)
 <use images/remote/confirmación-hash.png>
-Package pdftex.def Info: images/remote/confirmación-hash.png  used on input line 418.
+Package pdftex.def Info: images/remote/confirmación-hash.png  used on input line 439.
 (pdftex.def)             Requested size: 346.89731pt x 220.07306pt.
-<images/remote/dumpeo-hash.png, id=416, 400.49625pt x 522.95375pt>
+<images/remote/dumpeo-hash.png, id=424, 400.49625pt x 522.95375pt>
 File: images/remote/dumpeo-hash.png Graphic file (type png)
 <use images/remote/dumpeo-hash.png>
-Package pdftex.def Info: images/remote/dumpeo-hash.png  used on input line 425.
+Package pdftex.def Info: images/remote/dumpeo-hash.png  used on input line 446.
 (pdftex.def)             Requested size: 216.81pt x 283.10898pt.
-LaTeX Info: Redefining \. on input line 429.
-LaTeX Info: Redefining \% on input line 429.
-LaTeX Info: Redefining \. on input line 429.
-LaTeX Info: Redefining \% on input line 429.
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
  [21
 
  <./images/remote/confirmación-hash.png> <./images/remote/dumpeo-hash.png>]
-<images/remote/script-python-hash.png, id=425, 840.13875pt x 299.1175pt>
+<images/remote/script-python-hash.png, id=433, 840.13875pt x 299.1175pt>
 File: images/remote/script-python-hash.png Graphic file (type png)
 <use images/remote/script-python-hash.png>
-Package pdftex.def Info: images/remote/script-python-hash.png  used on input line 434.
+Package pdftex.def Info: images/remote/script-python-hash.png  used on input line 455.
 (pdftex.def)             Requested size: 433.62pt x 154.38269pt.
-<images/remote/exito-administrator.png, id=427, 963.6pt x 322.20375pt>
+<images/remote/exito-administrator.png, id=435, 963.6pt x 322.20375pt>
 File: images/remote/exito-administrator.png Graphic file (type png)
 <use images/remote/exito-administrator.png>
-Package pdftex.def Info: images/remote/exito-administrator.png  used on input line 441.
+Package pdftex.def Info: images/remote/exito-administrator.png  used on input line 462.
 (pdftex.def)             Requested size: 433.62pt x 144.99034pt.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 445.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 466.
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 445.
-LaTeX Info: Redefining \. on input line 447.
-LaTeX Info: Redefining \% on input line 447.
-LaTeX Info: Redefining \. on input line 447.
-LaTeX Info: Redefining \% on input line 447.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 466.
+LaTeX Info: Redefining \. on input line 468.
+LaTeX Info: Redefining \% on input line 468.
+LaTeX Info: Redefining \. on input line 468.
+LaTeX Info: Redefining \% on input line 468.
  [22
 
  <./images/remote/script-python-hash.png> <./images/remote/exito-administrator.png>]
-<images/remote/umbraco-version.png, id=437, 276.03125pt x 104.39pt>
+<images/remote/umbraco-version.png, id=445, 276.03125pt x 104.39pt>
 File: images/remote/umbraco-version.png Graphic file (type png)
 <use images/remote/umbraco-version.png>
-Package pdftex.def Info: images/remote/umbraco-version.png  used on input line 458.
+Package pdftex.def Info: images/remote/umbraco-version.png  used on input line 479.
 (pdftex.def)             Requested size: 130.08731pt x 49.19868pt.
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 470.
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 491.
  (C:\Users\Alfonso Suarez\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 474.
-LaTeX Info: Redefining \. on input line 491.
-LaTeX Info: Redefining \% on input line 491.
-LaTeX Info: Redefining \. on input line 491.
-LaTeX Info: Redefining \% on input line 491.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 495.
+LaTeX Info: Redefining \. on input line 512.
+LaTeX Info: Redefining \% on input line 512.
+LaTeX Info: Redefining \. on input line 512.
+LaTeX Info: Redefining \% on input line 512.
  [23
 
  <./images/remote/umbraco-version.png>]
-<images/fuse/fuse_logo.png, id=461, 887.56593pt x 505.13719pt>
+<images/fuse/fuse_logo.png, id=469, 887.56593pt x 505.13719pt>
 File: images/fuse/fuse_logo.png Graphic file (type png)
 <use images/fuse/fuse_logo.png>
-Package pdftex.def Info: images/fuse/fuse_logo.png  used on input line 500.
+Package pdftex.def Info: images/fuse/fuse_logo.png  used on input line 521.
 (pdftex.def)             Requested size: 260.17464pt x 148.06612pt.
-<images/fuse/services.png, id=462, 956.07187pt x 462.97969pt>
+<images/fuse/services.png, id=470, 956.07187pt x 462.97969pt>
 File: images/fuse/services.png Graphic file (type png)
 <use images/fuse/services.png>
-Package pdftex.def Info: images/fuse/services.png  used on input line 511.
+Package pdftex.def Info: images/fuse/services.png  used on input line 532.
 (pdftex.def)             Requested size: 346.89731pt x 167.98654pt.
-LaTeX Info: Redefining \. on input line 524.
-LaTeX Info: Redefining \% on input line 524.
+LaTeX Info: Redefining \. on input line 545.
+LaTeX Info: Redefining \% on input line 545.
  [24
 
  <./images/fuse/fuse_logo.png> <./images/fuse/services.png>]
-<images/fuse/image2.png, id=472, 906.38625pt x 433.62pt>
+<images/fuse/image2.png, id=480, 906.38625pt x 433.62pt>
 File: images/fuse/image2.png Graphic file (type png)
 <use images/fuse/image2.png>
-Package pdftex.def Info: images/fuse/image2.png  used on input line 531.
+Package pdftex.def Info: images/fuse/image2.png  used on input line 552.
 (pdftex.def)             Requested size: 346.89731pt x 165.95505pt.
-<images/fuse/image3.png, id=474, 847.66687pt x 76.78688pt>
+<images/fuse/image3.png, id=482, 847.66687pt x 76.78688pt>
 File: images/fuse/image3.png Graphic file (type png)
 <use images/fuse/image3.png>
-Package pdftex.def Info: images/fuse/image3.png  used on input line 539.
+Package pdftex.def Info: images/fuse/image3.png  used on input line 560.
 (pdftex.def)             Requested size: 346.89731pt x 31.42422pt.
-<images/fuse/image4.png, id=476, 903.375pt x 558.58687pt>
+<images/fuse/image4.png, id=484, 903.375pt x 558.58687pt>
 File: images/fuse/image4.png Graphic file (type png)
 <use images/fuse/image4.png>
-Package pdftex.def Info: images/fuse/image4.png  used on input line 548.
+Package pdftex.def Info: images/fuse/image4.png  used on input line 569.
 (pdftex.def)             Requested size: 303.53267pt x 187.6839pt.
-LaTeX Info: Redefining \. on input line 553.
-LaTeX Info: Redefining \% on input line 553.
-LaTeX Info: Redefining \. on input line 553.
-LaTeX Info: Redefining \% on input line 553.
+LaTeX Info: Redefining \. on input line 574.
+LaTeX Info: Redefining \% on input line 574.
+LaTeX Info: Redefining \. on input line 574.
+LaTeX Info: Redefining \% on input line 574.
  [25
 
  <./images/fuse/image2.png> <./images/fuse/image3.png> <./images/fuse/image4.png>]
-<images/fuse/image5.png, id=487, 769.37437pt x 181.42781pt>
+<images/fuse/image5.png, id=495, 769.37437pt x 181.42781pt>
 File: images/fuse/image5.png Graphic file (type png)
 <use images/fuse/image5.png>
-Package pdftex.def Info: images/fuse/image5.png  used on input line 559.
+Package pdftex.def Info: images/fuse/image5.png  used on input line 580.
 (pdftex.def)             Requested size: 346.89731pt x 81.80508pt.
-<images/fuse/image6.png, id=488, 875.52094pt x 233.37187pt>
+<images/fuse/image6.png, id=496, 875.52094pt x 233.37187pt>
 File: images/fuse/image6.png Graphic file (type png)
 <use images/fuse/image6.png>
-Package pdftex.def Info: images/fuse/image6.png  used on input line 565.
+Package pdftex.def Info: images/fuse/image6.png  used on input line 586.
 (pdftex.def)             Requested size: 346.89731pt x 92.46753pt.
-<images/fuse/image7.png, id=489, 1172.12906pt x 341.02406pt>
+<images/fuse/image7.png, id=497, 1172.12906pt x 341.02406pt>
 File: images/fuse/image7.png Graphic file (type png)
 <use images/fuse/image7.png>
-Package pdftex.def Info: images/fuse/image7.png  used on input line 582.
+Package pdftex.def Info: images/fuse/image7.png  used on input line 603.
 (pdftex.def)             Requested size: 346.89731pt x 100.92384pt.
-LaTeX Info: Redefining \. on input line 588.
-LaTeX Info: Redefining \% on input line 588.
-LaTeX Info: Redefining \. on input line 588.
-LaTeX Info: Redefining \% on input line 588.
+LaTeX Info: Redefining \. on input line 609.
+LaTeX Info: Redefining \% on input line 609.
+LaTeX Info: Redefining \. on input line 609.
+LaTeX Info: Redefining \% on input line 609.
  [26
 
  <./images/fuse/image5.png> <./images/fuse/image6.png> <./images/fuse/image7.png>]
-<images/fuse/image8.png, id=500, 982.42032pt x 427.5975pt>
+<images/fuse/image8.png, id=508, 982.42032pt x 427.5975pt>
 File: images/fuse/image8.png Graphic file (type png)
 <use images/fuse/image8.png>
-Package pdftex.def Info: images/fuse/image8.png  used on input line 593.
+Package pdftex.def Info: images/fuse/image8.png  used on input line 614.
 (pdftex.def)             Requested size: 346.89731pt x 150.98586pt.
-<images/fuse/image9.png, id=501, 756.57657pt x 88.83188pt>
+<images/fuse/image9.png, id=509, 756.57657pt x 88.83188pt>
 File: images/fuse/image9.png Graphic file (type png)
 <use images/fuse/image9.png>
-Package pdftex.def Info: images/fuse/image9.png  used on input line 602.
+Package pdftex.def Info: images/fuse/image9.png  used on input line 623.
 (pdftex.def)             Requested size: 346.89731pt x 40.73032pt.
-<images/fuse/image10.png, id=502, 971.88094pt x 171.64125pt>
+<images/fuse/image10.png, id=510, 971.88094pt x 171.64125pt>
 File: images/fuse/image10.png Graphic file (type png)
 <use images/fuse/image10.png>
-Package pdftex.def Info: images/fuse/image10.png  used on input line 611.
+Package pdftex.def Info: images/fuse/image10.png  used on input line 632.
 (pdftex.def)             Requested size: 346.89731pt x 61.26436pt.
-LaTeX Info: Redefining \. on input line 619.
-LaTeX Info: Redefining \% on input line 619.
-LaTeX Info: Redefining \. on input line 619.
-LaTeX Info: Redefining \% on input line 619.
+LaTeX Info: Redefining \. on input line 640.
+LaTeX Info: Redefining \% on input line 640.
+LaTeX Info: Redefining \. on input line 640.
+LaTeX Info: Redefining \% on input line 640.
  [27
 
  <./images/fuse/image8.png> <./images/fuse/image9.png> <./images/fuse/image10.png>]
-<images/fuse/image11.png, id=515, 935.74594pt x 51.94406pt>
+<images/fuse/image11.png, id=523, 935.74594pt x 51.94406pt>
 File: images/fuse/image11.png Graphic file (type png)
 <use images/fuse/image11.png>
-Package pdftex.def Info: images/fuse/image11.png  used on input line 624.
+Package pdftex.def Info: images/fuse/image11.png  used on input line 645.
 (pdftex.def)             Requested size: 346.89731pt x 19.25703pt.
-<images/fuse/image12.png, id=516, 777.65532pt x 59.47218pt>
+<images/fuse/image12.png, id=524, 777.65532pt x 59.47218pt>
 File: images/fuse/image12.png Graphic file (type png)
 <use images/fuse/image12.png>
-Package pdftex.def Info: images/fuse/image12.png  used on input line 634.
+Package pdftex.def Info: images/fuse/image12.png  used on input line 655.
 (pdftex.def)             Requested size: 346.89731pt x 26.5299pt.
-<images/fuse/image13.png, id=517, 326.72063pt x 251.43938pt>
+<images/fuse/image13.png, id=525, 326.72063pt x 251.43938pt>
 File: images/fuse/image13.png Graphic file (type png)
 <use images/fuse/image13.png>
-Package pdftex.def Info: images/fuse/image13.png  used on input line 642.
+Package pdftex.def Info: images/fuse/image13.png  used on input line 663.
 (pdftex.def)             Requested size: 260.17464pt x 200.22713pt.
-<images/fuse/image14.png, id=518, 974.89218pt x 103.88812pt>
+<images/fuse/image14.png, id=526, 974.89218pt x 103.88812pt>
 File: images/fuse/image14.png Graphic file (type png)
 <use images/fuse/image14.png>
-Package pdftex.def Info: images/fuse/image14.png  used on input line 650.
+Package pdftex.def Info: images/fuse/image14.png  used on input line 671.
 (pdftex.def)             Requested size: 346.89731pt x 36.96692pt.
-LaTeX Info: Redefining \. on input line 655.
-LaTeX Info: Redefining \% on input line 655.
-LaTeX Info: Redefining \. on input line 655.
-LaTeX Info: Redefining \% on input line 655.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
  [28
 
  <./images/fuse/image11.png> <./images/fuse/image12.png> <./images/fuse/image13.png> <./images/fuse/image14.png>]
-<images/fuse/image15.png, id=530, 913.91437pt x 216.05719pt>
+<images/fuse/image15.png, id=538, 913.91437pt x 216.05719pt>
 File: images/fuse/image15.png Graphic file (type png)
 <use images/fuse/image15.png>
-Package pdftex.def Info: images/fuse/image15.png  used on input line 658.
+Package pdftex.def Info: images/fuse/image15.png  used on input line 679.
 (pdftex.def)             Requested size: 346.89731pt x 82.00696pt.
-<images/fuse/image16.png, id=531, 896.59969pt x 195.73125pt>
+<images/fuse/image16.png, id=539, 896.59969pt x 195.73125pt>
 File: images/fuse/image16.png Graphic file (type png)
 <use images/fuse/image16.png>
-Package pdftex.def Info: images/fuse/image16.png  used on input line 666.
+Package pdftex.def Info: images/fuse/image16.png  used on input line 687.
 (pdftex.def)             Requested size: 346.89731pt x 75.72859pt.
-<images/fuse/image17.png, id=532, 520.19344pt x 70.01157pt>
+<images/fuse/image17.png, id=540, 520.19344pt x 70.01157pt>
 File: images/fuse/image17.png Graphic file (type png)
 <use images/fuse/image17.png>
-Package pdftex.def Info: images/fuse/image17.png  used on input line 674.
+Package pdftex.def Info: images/fuse/image17.png  used on input line 695.
 (pdftex.def)             Requested size: 303.53267pt x 40.85136pt.
-<images/fuse/image18.png, id=534, 782.17218pt x 356.83313pt>
+<images/fuse/image18.png, id=542, 782.17218pt x 356.83313pt>
 File: images/fuse/image18.png Graphic file (type png)
 <use images/fuse/image18.png>
-Package pdftex.def Info: images/fuse/image18.png  used on input line 685.
+Package pdftex.def Info: images/fuse/image18.png  used on input line 706.
 (pdftex.def)             Requested size: 346.89731pt x 158.25937pt.
-LaTeX Info: Redefining \. on input line 689.
-LaTeX Info: Redefining \% on input line 689.
-LaTeX Info: Redefining \. on input line 689.
-LaTeX Info: Redefining \% on input line 689.
+LaTeX Info: Redefining \. on input line 710.
+LaTeX Info: Redefining \% on input line 710.
+LaTeX Info: Redefining \. on input line 710.
+LaTeX Info: Redefining \% on input line 710.
  [29
 
  <./images/fuse/image15.png> <./images/fuse/image16.png> <./images/fuse/image17.png> <./images/fuse/image18.png>]
-<images/fuse/image19.png, id=547, 980.91469pt x 483.30562pt>
+<images/fuse/image19.png, id=555, 980.91469pt x 483.30562pt>
 File: images/fuse/image19.png Graphic file (type png)
 <use images/fuse/image19.png>
-Package pdftex.def Info: images/fuse/image19.png  used on input line 694.
+Package pdftex.def Info: images/fuse/image19.png  used on input line 715.
 (pdftex.def)             Requested size: 346.89731pt x 170.91466pt.
-<images/fuse/image20.png, id=548, 684.30656pt x 271.0125pt>
+<images/fuse/image20.png, id=556, 684.30656pt x 271.0125pt>
 File: images/fuse/image20.png Graphic file (type png)
 <use images/fuse/image20.png>
-Package pdftex.def Info: images/fuse/image20.png  used on input line 702.
+Package pdftex.def Info: images/fuse/image20.png  used on input line 723.
 (pdftex.def)             Requested size: 346.89731pt x 137.38747pt.
-<images/fuse/image21.png, id=550, 540.51938pt x 66.2475pt>
+<images/fuse/image21.png, id=558, 540.51938pt x 66.2475pt>
 File: images/fuse/image21.png Graphic file (type png)
 <use images/fuse/image21.png>
-Package pdftex.def Info: images/fuse/image21.png  used on input line 710.
+Package pdftex.def Info: images/fuse/image21.png  used on input line 731.
 (pdftex.def)             Requested size: 346.89731pt x 42.51752pt.
-LaTeX Info: Redefining \. on input line 714.
-LaTeX Info: Redefining \% on input line 714.
-LaTeX Info: Redefining \. on input line 714.
-LaTeX Info: Redefining \% on input line 714.
+LaTeX Info: Redefining \. on input line 735.
+LaTeX Info: Redefining \% on input line 735.
+LaTeX Info: Redefining \. on input line 735.
+LaTeX Info: Redefining \% on input line 735.
  [30
 
  <./images/fuse/image19.png> <./images/fuse/image20.png> <./images/fuse/image21.png>]
-<images/fuse/sam.png, id=562, 1239.88219pt x 234.8775pt>
+<images/fuse/sam.png, id=570, 1239.88219pt x 234.8775pt>
 File: images/fuse/sam.png Graphic file (type png)
 <use images/fuse/sam.png>
-Package pdftex.def Info: images/fuse/sam.png  used on input line 722.
+Package pdftex.def Info: images/fuse/sam.png  used on input line 743.
 (pdftex.def)             Requested size: 346.89731pt x 65.71149pt.
-LaTeX Info: Redefining \. on input line 742.
-LaTeX Info: Redefining \% on input line 742.
-LaTeX Info: Redefining \. on input line 742.
-LaTeX Info: Redefining \% on input line 742.
+LaTeX Info: Redefining \. on input line 763.
+LaTeX Info: Redefining \% on input line 763.
+LaTeX Info: Redefining \. on input line 763.
+LaTeX Info: Redefining \% on input line 763.
  [31
 
  <./images/fuse/sam.png>]
-<images/magic/nmap.png, id=569, 775.89874pt x 282.05376pt>
+<images/magic/nmap.png, id=577, 775.89874pt x 282.05376pt>
 File: images/magic/nmap.png Graphic file (type png)
 <use images/magic/nmap.png>
-Package pdftex.def Info: images/magic/nmap.png  used on input line 750.
+Package pdftex.def Info: images/magic/nmap.png  used on input line 771.
 (pdftex.def)             Requested size: 433.62pt x 157.63054pt.
-<images/magic/wfuzz.png, id=570, 958.58125pt x 358.33875pt>
+<images/magic/wfuzz.png, id=578, 958.58125pt x 358.33875pt>
 File: images/magic/wfuzz.png Graphic file (type png)
 <use images/magic/wfuzz.png>
-Package pdftex.def Info: images/magic/wfuzz.png  used on input line 756.
+Package pdftex.def Info: images/magic/wfuzz.png  used on input line 777.
 (pdftex.def)             Requested size: 433.62pt x 162.09845pt.
-LaTeX Info: Redefining \. on input line 760.
-LaTeX Info: Redefining \% on input line 760.
+LaTeX Info: Redefining \. on input line 781.
+LaTeX Info: Redefining \% on input line 781.
  [32
 
  <./images/magic/nmap.png> <./images/magic/wfuzz.png>]
-<images/magic/index.png, id=579, 1358.07375pt x 631.35875pt>
+<images/magic/index.png, id=587, 1358.07375pt x 631.35875pt>
 File: images/magic/index.png Graphic file (type png)
 <use images/magic/index.png>
-Package pdftex.def Info: images/magic/index.png  used on input line 765.
+Package pdftex.def Info: images/magic/index.png  used on input line 786.
 (pdftex.def)             Requested size: 433.62pt x 201.58614pt.
-<images/magic/login.png, id=580, 606.265pt x 397.485pt>
+<images/magic/login.png, id=588, 606.265pt x 397.485pt>
 File: images/magic/login.png Graphic file (type png)
 <use images/magic/login.png>
-Package pdftex.def Info: images/magic/login.png  used on input line 771.
+Package pdftex.def Info: images/magic/login.png  used on input line 792.
 (pdftex.def)             Requested size: 433.62pt x 284.29666pt.
-LaTeX Info: Redefining \. on input line 775.
-LaTeX Info: Redefining \% on input line 775.
-LaTeX Info: Redefining \. on input line 775.
-LaTeX Info: Redefining \% on input line 775.
+LaTeX Info: Redefining \. on input line 796.
+LaTeX Info: Redefining \% on input line 796.
+LaTeX Info: Redefining \. on input line 796.
+LaTeX Info: Redefining \% on input line 796.
  [33
 
  <./images/magic/index.png> <./images/magic/login.png>]
-<images/magic/nmap-vuln.png, id=589, 776.9025pt x 202.7575pt>
+<images/magic/nmap-vuln.png, id=597, 776.9025pt x 202.7575pt>
 File: images/magic/nmap-vuln.png Graphic file (type png)
 <use images/magic/nmap-vuln.png>
-Package pdftex.def Info: images/magic/nmap-vuln.png  used on input line 782.
+Package pdftex.def Info: images/magic/nmap-vuln.png  used on input line 803.
 (pdftex.def)             Requested size: 433.62pt x 113.16907pt.
-<images/magic/login-existoso.png, id=590, 769.87625pt x 546.04pt>
+<images/magic/login-existoso.png, id=598, 769.87625pt x 546.04pt>
 File: images/magic/login-existoso.png Graphic file (type png)
 <use images/magic/login-existoso.png>
-Package pdftex.def Info: images/magic/login-existoso.png  used on input line 793.
+Package pdftex.def Info: images/magic/login-existoso.png  used on input line 814.
 (pdftex.def)             Requested size: 433.62pt x 307.55501pt.
-LaTeX Info: Redefining \. on input line 797.
-LaTeX Info: Redefining \% on input line 797.
-LaTeX Info: Redefining \. on input line 797.
-LaTeX Info: Redefining \% on input line 797.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
+LaTeX Info: Redefining \. on input line 818.
+LaTeX Info: Redefining \% on input line 818.
  [34
 
  <./images/magic/nmap-vuln.png> <./images/magic/login-existoso.png>]
-<images/magic/fallo-subida-php.png, id=599, 873.2625pt x 247.92625pt>
+<images/magic/fallo-subida-php.png, id=607, 873.2625pt x 247.92625pt>
 File: images/magic/fallo-subida-php.png Graphic file (type png)
 <use images/magic/fallo-subida-php.png>
-Package pdftex.def Info: images/magic/fallo-subida-php.png  used on input line 803.
+Package pdftex.def Info: images/magic/fallo-subida-php.png  used on input line 824.
 (pdftex.def)             Requested size: 433.62pt x 123.10785pt.
-<images/magic/intento-burpsuit.png, id=600, 777.90625pt x 601.24625pt>
+<images/magic/intento-burpsuit.png, id=608, 777.90625pt x 601.24625pt>
 File: images/magic/intento-burpsuit.png Graphic file (type png)
 <use images/magic/intento-burpsuit.png>
-Package pdftex.def Info: images/magic/intento-burpsuit.png  used on input line 811.
+Package pdftex.def Info: images/magic/intento-burpsuit.png  used on input line 832.
 (pdftex.def)             Requested size: 433.62pt x 335.15431pt.
-LaTeX Info: Redefining \. on input line 815.
-LaTeX Info: Redefining \% on input line 815.
-LaTeX Info: Redefining \. on input line 815.
-LaTeX Info: Redefining \% on input line 815.
+LaTeX Info: Redefining \. on input line 836.
+LaTeX Info: Redefining \% on input line 836.
+LaTeX Info: Redefining \. on input line 836.
+LaTeX Info: Redefining \% on input line 836.
  [35
 
  <./images/magic/fallo-subida-php.png> <./images/magic/intento-burpsuit.png>]
-<images/magic/fallo-burpsuite.png, id=610, 767.86874pt x 526.96875pt>
+<images/magic/fallo-burpsuite.png, id=618, 767.86874pt x 526.96875pt>
 File: images/magic/fallo-burpsuite.png Graphic file (type png)
 <use images/magic/fallo-burpsuite.png>
-Package pdftex.def Info: images/magic/fallo-burpsuite.png  used on input line 822.
+Package pdftex.def Info: images/magic/fallo-burpsuite.png  used on input line 843.
 (pdftex.def)             Requested size: 433.62pt x 297.58511pt.
-<images/magic/muestra-bits.png, id=611, 763.85374pt x 223.83624pt>
+<images/magic/muestra-bits.png, id=619, 763.85374pt x 223.83624pt>
 File: images/magic/muestra-bits.png Graphic file (type png)
 <use images/magic/muestra-bits.png>
-Package pdftex.def Info: images/magic/muestra-bits.png  used on input line 830.
+Package pdftex.def Info: images/magic/muestra-bits.png  used on input line 851.
 (pdftex.def)             Requested size: 433.62pt x 127.06541pt.
-LaTeX Info: Redefining \. on input line 834.
-LaTeX Info: Redefining \% on input line 834.
-LaTeX Info: Redefining \. on input line 834.
-LaTeX Info: Redefining \% on input line 834.
+LaTeX Info: Redefining \. on input line 855.
+LaTeX Info: Redefining \% on input line 855.
+LaTeX Info: Redefining \. on input line 855.
+LaTeX Info: Redefining \% on input line 855.
  [36
 
  <./images/magic/fallo-burpsuite.png> <./images/magic/muestra-bits.png>]
-<images/magic/cambio-bits.png, id=622, 584.1825pt x 313.17pt>
+<images/magic/cambio-bits.png, id=630, 584.1825pt x 313.17pt>
 File: images/magic/cambio-bits.png Graphic file (type png)
 <use images/magic/cambio-bits.png>
-Package pdftex.def Info: images/magic/cambio-bits.png  used on input line 840.
+Package pdftex.def Info: images/magic/cambio-bits.png  used on input line 861.
 (pdftex.def)             Requested size: 433.62pt x 232.46373pt.
-<images/magic/subida-exitosa.png, id=623, 517.935pt x 148.555pt>
+<images/magic/subida-exitosa.png, id=631, 517.935pt x 148.555pt>
 File: images/magic/subida-exitosa.png Graphic file (type png)
 <use images/magic/subida-exitosa.png>
-Package pdftex.def Info: images/magic/subida-exitosa.png  used on input line 848.
+Package pdftex.def Info: images/magic/subida-exitosa.png  used on input line 869.
 (pdftex.def)             Requested size: 433.62pt x 124.37732pt.
-<images/magic/apuntando-reverse1.png, id=624, 487.8225pt x 62.2325pt>
+<images/magic/apuntando-reverse1.png, id=632, 487.8225pt x 62.2325pt>
 File: images/magic/apuntando-reverse1.png Graphic file (type png)
 <use images/magic/apuntando-reverse1.png>
-Package pdftex.def Info: images/magic/apuntando-reverse1.png  used on input line 857.
+Package pdftex.def Info: images/magic/apuntando-reverse1.png  used on input line 878.
 (pdftex.def)             Requested size: 433.62pt x 55.31837pt.
-LaTeX Info: Redefining \. on input line 862.
-LaTeX Info: Redefining \% on input line 862.
-LaTeX Info: Redefining \. on input line 862.
-LaTeX Info: Redefining \% on input line 862.
+LaTeX Info: Redefining \. on input line 883.
+LaTeX Info: Redefining \% on input line 883.
+LaTeX Info: Redefining \. on input line 883.
+LaTeX Info: Redefining \% on input line 883.
  [37
 
  <./images/magic/cambio-bits.png> <./images/magic/subida-exitosa.png> <./images/magic/apuntando-reverse1.png>]
-<images/magic/acceso-maquina.png, id=635, 960.58875pt x 218.8175pt>
+<images/magic/acceso-maquina.png, id=643, 960.58875pt x 218.8175pt>
 File: images/magic/acceso-maquina.png Graphic file (type png)
 <use images/magic/acceso-maquina.png>
-Package pdftex.def Info: images/magic/acceso-maquina.png  used on input line 868.
+Package pdftex.def Info: images/magic/acceso-maquina.png  used on input line 889.
 (pdftex.def)             Requested size: 433.62pt x 98.77747pt.
-<images/magic/fallo-lectura-flag.png, id=636, 420.57124pt x 247.92625pt>
+<images/magic/fallo-lectura-flag.png, id=644, 420.57124pt x 247.92625pt>
 File: images/magic/fallo-lectura-flag.png Graphic file (type png)
 <use images/magic/fallo-lectura-flag.png>
-Package pdftex.def Info: images/magic/fallo-lectura-flag.png  used on input line 876.
+Package pdftex.def Info: images/magic/fallo-lectura-flag.png  used on input line 897.
 (pdftex.def)             Requested size: 303.53267pt x 178.93425pt.
-LaTeX Info: Redefining \. on input line 880.
-LaTeX Info: Redefining \% on input line 880.
-LaTeX Info: Redefining \. on input line 880.
-LaTeX Info: Redefining \% on input line 880.
+LaTeX Info: Redefining \. on input line 901.
+LaTeX Info: Redefining \% on input line 901.
+LaTeX Info: Redefining \. on input line 901.
+LaTeX Info: Redefining \% on input line 901.
  [38
 
  <./images/magic/acceso-maquina.png> <./images/magic/fallo-lectura-flag.png>]
-<images/magic/credenciales-mysql.png, id=645, 667.49374pt x 343.2825pt>
+<images/magic/credenciales-mysql.png, id=653, 667.49374pt x 343.2825pt>
 File: images/magic/credenciales-mysql.png Graphic file (type png)
 <use images/magic/credenciales-mysql.png>
-Package pdftex.def Info: images/magic/credenciales-mysql.png  used on input line 890.
+Package pdftex.def Info: images/magic/credenciales-mysql.png  used on input line 911.
 (pdftex.def)             Requested size: 390.25534pt x 200.70682pt.
-<images/magic/descargar-chisel.png, id=647, 882.29625pt x 395.4775pt>
+<images/magic/descargar-chisel.png, id=655, 882.29625pt x 395.4775pt>
 File: images/magic/descargar-chisel.png Graphic file (type png)
 <use images/magic/descargar-chisel.png>
-Package pdftex.def Info: images/magic/descargar-chisel.png  used on input line 900.
+Package pdftex.def Info: images/magic/descargar-chisel.png  used on input line 921.
 (pdftex.def)             Requested size: 390.25534pt x 174.92787pt.
-LaTeX Info: Redefining \. on input line 904.
-LaTeX Info: Redefining \% on input line 904.
-LaTeX Info: Redefining \. on input line 904.
-LaTeX Info: Redefining \% on input line 904.
+LaTeX Info: Redefining \. on input line 925.
+LaTeX Info: Redefining \% on input line 925.
+LaTeX Info: Redefining \. on input line 925.
+LaTeX Info: Redefining \% on input line 925.
  [39
 
  <./images/magic/credenciales-mysql.png> <./images/magic/descargar-chisel.png>]
-<images/magic/chisel-server.png, id=656, 885.3075pt x 108.405pt>
+<images/magic/chisel-server.png, id=664, 885.3075pt x 108.405pt>
 File: images/magic/chisel-server.png Graphic file (type png)
 <use images/magic/chisel-server.png>
-Package pdftex.def Info: images/magic/chisel-server.png  used on input line 910.
+Package pdftex.def Info: images/magic/chisel-server.png  used on input line 931.
 (pdftex.def)             Requested size: 433.62pt x 53.0974pt.
-<images/magic/chisel-cliente.png, id=657, 806.01125pt x 93.34875pt>
+<images/magic/chisel-cliente.png, id=665, 806.01125pt x 93.34875pt>
 File: images/magic/chisel-cliente.png Graphic file (type png)
 <use images/magic/chisel-cliente.png>
-Package pdftex.def Info: images/magic/chisel-cliente.png  used on input line 917.
+Package pdftex.def Info: images/magic/chisel-cliente.png  used on input line 938.
 (pdftex.def)             Requested size: 433.62pt x 50.21954pt.
-<images/magic/conexion-mysql.png, id=658, 894.34125pt x 288.07625pt>
+<images/magic/conexion-mysql.png, id=666, 894.34125pt x 288.07625pt>
 File: images/magic/conexion-mysql.png Graphic file (type png)
 <use images/magic/conexion-mysql.png>
-Package pdftex.def Info: images/magic/conexion-mysql.png  used on input line 924.
+Package pdftex.def Info: images/magic/conexion-mysql.png  used on input line 945.
 (pdftex.def)             Requested size: 433.62pt x 139.67725pt.
-<images/magic/mostrando-tablas.png, id=659, 278.03876pt x 166.6225pt>
+<images/magic/mostrando-tablas.png, id=667, 278.03876pt x 166.6225pt>
 File: images/magic/mostrando-tablas.png Graphic file (type png)
 <use images/magic/mostrando-tablas.png>
-Package pdftex.def Info: images/magic/mostrando-tablas.png  used on input line 931.
+Package pdftex.def Info: images/magic/mostrando-tablas.png  used on input line 952.
 (pdftex.def)             Requested size: 173.44534pt x 103.94302pt.
-LaTeX Info: Redefining \. on input line 935.
-LaTeX Info: Redefining \% on input line 935.
-LaTeX Info: Redefining \. on input line 935.
-LaTeX Info: Redefining \% on input line 935.
+LaTeX Info: Redefining \. on input line 956.
+LaTeX Info: Redefining \% on input line 956.
+LaTeX Info: Redefining \. on input line 956.
+LaTeX Info: Redefining \% on input line 956.
  [40
 
  <./images/magic/chisel-server.png> <./images/magic/chisel-cliente.png> <./images/magic/conexion-mysql.png> <./images/magic/mostrando-tablas.png>]
-<images/magic/obtención-credenciales.png, id=672, 405.515pt x 296.10625pt>
+<images/magic/obtención-credenciales.png, id=680, 405.515pt x 296.10625pt>
 File: images/magic/obtención-credenciales.png Graphic file (type png)
 <use images/magic/obtención-credenciales.png>
-Package pdftex.def Info: images/magic/obtención-credenciales.png  used on input line 940.
+Package pdftex.def Info: images/magic/obtención-credenciales.png  used on input line 961.
 (pdftex.def)             Requested size: 216.81pt x 158.31813pt.
-<images/magic/ingreso-existoso.png, id=673, 406.51875pt x 308.15125pt>
+<images/magic/ingreso-existoso.png, id=681, 406.51875pt x 308.15125pt>
 File: images/magic/ingreso-existoso.png Graphic file (type png)
 <use images/magic/ingreso-existoso.png>
-Package pdftex.def Info: images/magic/ingreso-existoso.png  used on input line 951.
+Package pdftex.def Info: images/magic/ingreso-existoso.png  used on input line 972.
 (pdftex.def)             Requested size: 303.53267pt x 230.09251pt.
-LaTeX Info: Redefining \. on input line 955.
-LaTeX Info: Redefining \% on input line 955.
-LaTeX Info: Redefining \. on input line 955.
-LaTeX Info: Redefining \% on input line 955.
+LaTeX Info: Redefining \. on input line 976.
+LaTeX Info: Redefining \% on input line 976.
+LaTeX Info: Redefining \. on input line 976.
+LaTeX Info: Redefining \% on input line 976.
  [41
 
  <./images/magic/obtención-credenciales.png> <./images/magic/ingreso-existoso.png>]
-LaTeX Info: Redefining \. on input line 961.
-LaTeX Info: Redefining \% on input line 961.
-LaTeX Info: Redefining \. on input line 961.
-LaTeX Info: Redefining \% on input line 961.
+LaTeX Info: Redefining \. on input line 982.
+LaTeX Info: Redefining \% on input line 982.
+LaTeX Info: Redefining \. on input line 982.
+LaTeX Info: Redefining \% on input line 982.
  [42
 
 ] (main.aux (caratula/Caratula.aux)
@@ -1286,17 +1330,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EF7BB89C596E5B04A4DC292D11F37AA8;5049.
  ) 
 Here is how much of TeX's memory you used:
- 14499 strings out of 478927
- 228794 string characters out of 2848232
- 648789 words of memory out of 3000000
- 31862 multiletter control sequences out of 15000+600000
+ 15782 strings out of 478927
+ 255428 string characters out of 2848232
+ 671800 words of memory out of 3000000
+ 33133 multiletter control sequences out of 15000+600000
  406671 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,75p,655b,1420s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,15n,75p,655b,1422s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\Alfonso Suarez\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt0800.pk><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Alfonso Suarez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main.pdf (43 pages, 12861889 bytes).
+Output written on main.pdf (43 pages, 12925044 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 193 named destinations out of 1000 (max. 500000)
- 755 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 783 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 770 words of extra memory for PDF output out of 10000 (max. 10000000)
 
