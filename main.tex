@@ -68,13 +68,12 @@ Accediendo a la página web comprobamos que efectivamente esta máquina está un
 Inspeccionando las rutas y su contenido no observamos nada interesante excepto /ona. Observamos que es OpenNetAdmin, googleando encontramos con esta descripción del servicio: “OpenNetAdmin proporciona un inventario administrado de base de datos de su red IP”.
 \begin{figure}[H]
 	\center
-	\begin{tabular}[c]{cc}
+	%\begin{tabular}[c]{cc}
 		\begin{subfigure}[c]{\linewidth}
 		\includegraphics[width=0.5\textwidth]{images/openadmin/3-artwork.png}
-		\hfill
 		\includegraphics[width=0.5\textwidth]{images/openadmin/4-music.png}
 		\end{subfigure}\par\medskip
-	\end{tabular}
+	%\end{tabular}
 	\caption{De izquierda a derecha: /artwork, /music}
 \end{figure}
 
@@ -97,7 +96,7 @@ Buscando vulnerabilidades de este servicio, observamos en su página que es la v
 \subsection{Explotación}
 
 Utilizando el script proporcionado logramos obtener acceso al servidor y observamos que somos el usuario www-data.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/7-script.png}
 	\caption{Script del exploit}
@@ -106,21 +105,21 @@ Utilizando el script proporcionado logramos obtener acceso al servidor y observa
 \subsubsection{Obtención de Acceso como usuario jimmy}
 
 Inspeccionando los archivos de configuración del servicio ONA, encontramos una credencial. Observamos además que hay dos usuarios jimmy y Joanna.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/8-credencialesjimmy.png}
 	\caption{archivo de configuración}
 \end{figure}
 
 Además, encontramos que en /var/www hay una carpeta llamada internal que solo puede ser accedida por jimmy.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/9-usuariosycarpetas.png}
 	\caption{Usuarios y carpetas en /var/www}
 \end{figure}
 
 Procedemos a probar la contraseña encontrada anteriormente mediante ssh y vemos que funciona para el usuario jimmy y no joanna.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/10-sshjimmy.png}
 	\caption{Conexión SSH a jimmy}
@@ -128,7 +127,7 @@ Procedemos a probar la contraseña encontrada anteriormente mediante ssh y vemos
 
 Revisando el contenido de /home/jimmy observamos que no se encuentra el archivo con la flag del usuario por lo que sugiere que el usuario que debemos tener control es joanna.
 Utilizando la herramienta LinEnum, el cual es un script que realiza enumeración y chequeos para el escalamiento de privilegios. (https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh) Vemos que tiene coneciones TCP. Sospechamos que debe ser el contenido que se encuentra en /var/www/internal.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/11-tcp.png}
 	\caption{Conexiones TCP}
@@ -137,26 +136,26 @@ Utilizando la herramienta LinEnum, el cual es un script que realiza enumeración
 \subsubsection{Obtención de Acceso como usuario joanna}
 
 Realizamos curl http://127.0.0.1:52846 para ver el contenido de la página web y comprobamos que es el mismo que se encuentra en index.php, una página de login. Inspeccionando el archivo nos damos cuenta que está hardcodeado una contraseña hasheada con el algoritmo SHA512. 
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/12-indexphp.png}
 	\caption{index.php}
 \end{figure}
 
 Utilizando crackstation o John the Ripper se puede crackear el hash y el resultado es `Revealed'. El cual podemos utilizarlo para logearnos. Una vez logeado nos muestra una llave SSH encriptada que podría ser utilizada para alguna conexión ssh el cual podría ser la de joanna. Esto lo comprobamos al revisar el archivo main.php que ejecuta el comando `cat /home/joanna/.ssh/id\_rsa'.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/13-crackstation.png}
 	\caption{Crackeo del hash}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/14-mainphp.png}
 	\caption{index.php}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/15-joannarsa.png}
 	\caption{Llave RSA de joanna}
@@ -164,26 +163,26 @@ Utilizando crackstation o John the Ripper se puede crackear el hash y el resulta
 
 Utilizando ssh2john y john logramos encontrar que la contraseña del hash es: bloodninjas
 Como ya tenemos la contraseña y la llave RSA podemos establecer una conexión SSH a la máquina con el usuario joanna.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/16-sshjoanna.png}
 	\caption{Conexión SSH con el usuario joanna}
 \end{figure}
 
 Aunque como tenemos acceso a los archivos de la página web podemos simplemente agregar una reverse Shell y de esta forma obtener acceso a la máquina como el usuario joanna. Y esta vez vemos que tiene el archivo user.txt que es la flag del user
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa.png}
 	\caption{main.php}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa2.png}
-	\caption{Llave RSA de joanna}
+	\caption{Mejora de la shell con Python pty}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa3.png}
 	\caption{Flag del usuario}
@@ -192,21 +191,21 @@ Aunque como tenemos acceso a los archivos de la página web podemos simplemente 
 \subsection{Escalamiento de privilegios}
 
 Una vez obtenido el acceso como joanna procederemos a revisar qué comandos podemos ejecutar como root.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/18-sudol.png}
 	\caption{Comandos que puede ejecutar como root}
 \end{figure}
 
 Observamos que podemos ejecutar /bin/nano /opt/priv. Revisando GTFOBins, encontramos que podemos utilizar los siguientes comandos para generar un Shell de sistema interactivo mediante nano.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/19-gtfobins.png}
 	\caption{Exploit mediante sudo nano}
 \end{figure}
 
 Y de esta forma logramos obtener la flag del usuario root.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/20-privilegio.png}
 	\caption{Obtención del flag root}
@@ -216,21 +215,21 @@ Y de esta forma logramos obtener la flag del usuario root.
 
 Utilizamos perl para lograr una Shell reversa en nuestra máquina ya que es limitado y difícil de manejar en nano.
 La Shell que obtenemos mediante la vulnerabilidad de sudo nano es simple por lo que es limitado y difícil de manejar. Por lo tanto, mediante una reverse Shell vamos a obtener la conexión en nuestra máquina configurando el puerto en escucha con NetCat. En este caso utilizaremos la reverse Shell de Perl.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/21-reverseshellperl.png}
 	\caption{Código de la reverse shell con Perl}
 \end{figure}
 
 Una vez obtenida la Shell, podemos utilizar Python para mejorar la Shell a una completamente interactiva.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/22-conexionreverse}
 	\caption{Mejora de la shell con python}
 \end{figure}
 
 Procederemos a borrar nuestras huellas, limpiando los logs el cual podremos hacerlo manualmente o un script como por ejemplo “Cover my ass tool” (https://github.com/sundowndev/covermyass) que nos facilita la limpieza. Principalmente el log que buscamos limpiar es el auth.log el cual contiene los registros de todas las actividades que implican un proceso de autenticación.
-\begin{figure}[h]
+\begin{figure}[H]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/23-covermyass}
 	\caption{Limpieza de logs con covermyass}
