@@ -53,14 +53,14 @@ Realizando el escaneo de puertos abiertos encontramos el servicio HTTP en el pue
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/1-escaneo.png}
-	\caption{Escaneo}
+	\caption{}
 \end{figure}
 
 Accediendo a la página web comprobamos que efectivamente esta máquina está un servidor Apache2. Por lo tanto, hacemos una búsqueda de directorio con dirb, entonramos /artwork/, /music/, y /ona.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/2-paginaweb.png}
-	\caption{Página Web del puerto 80}
+	\caption{}
 \end{figure}
 
 Inspeccionando las rutas y su contenido no observamos nada interesante excepto /ona. Observamos que es OpenNetAdmin, googleando encontramos con esta descripción del servicio: “OpenNetAdmin proporciona un inventario administrado de base de datos de su red IP”.
@@ -92,7 +92,7 @@ Buscando vulnerabilidades de este servicio, observamos en su página que es la v
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/6-exploit.png}
-	\caption{Exploit del OpenNetAdmin v18.1.1}
+	\caption{}
 \end{figure}
 
 \subsection{Explotación}
@@ -101,7 +101,7 @@ Utilizando el script proporcionado logramos obtener acceso al servidor y observa
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/7-script.png}
-	\caption{Script del exploit}
+	\caption{}
 \end{figure}
 
 \subsubsection{Obtención de Acceso como usuario jimmy}
@@ -110,21 +110,21 @@ Inspeccionando los archivos de configuración del servicio ONA, encontramos una 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/8-credencialesjimmy.png}
-	\caption{archivo de configuración}
+	\caption{}
 \end{figure}
 
 Además, encontramos que en /var/www hay una carpeta llamada internal que solo puede ser accedida por jimmy.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/9-usuariosycarpetas.png}
-	\caption{Usuarios y carpetas en /var/www}
+	\caption{}
 \end{figure}
 
 Procedemos a probar la contraseña encontrada anteriormente mediante ssh y vemos que funciona para el usuario jimmy y no joanna.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/10-sshjimmy.png}
-	\caption{Conexión SSH a jimmy}
+	\caption{}
 \end{figure}
 
 Revisando el contenido de /home/jimmy observamos que no se encuentra el archivo con la flag del usuario por lo que sugiere que el usuario que debemos tener control es joanna.
@@ -132,7 +132,7 @@ Utilizando la herramienta LinEnum, el cual es un script que realiza enumeración
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/11-tcp.png}
-	\caption{Conexiones TCP}
+	\caption{}
 \end{figure}
 
 \subsubsection{Obtención de Acceso como usuario joanna}
@@ -141,26 +141,26 @@ Realizamos curl http://127.0.0.1:52846 para ver el contenido de la página web y
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/12-indexphp.png}
-	\caption{index.php}
+	\caption{}
 \end{figure}
 
 Utilizando crackstation o John the Ripper se puede crackear el hash y el resultado es `Revealed'. El cual podemos utilizarlo para logearnos. Una vez logeado nos muestra una llave SSH encriptada que podría ser utilizada para alguna conexión ssh el cual podría ser la de joanna. Esto lo comprobamos al revisar el archivo main.php que ejecuta el comando `cat /home/joanna/.ssh/id\_rsa'.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/13-crackstation.png}
-	\caption{Crackeo del hash}
+	\caption{}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/14-mainphp.png}
-	\caption{index.php}
+	\caption{}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/15-joannarsa.png}
-	\caption{Llave RSA de joanna}
+	\caption{}
 \end{figure}
 
 Utilizando ssh2john y john logramos encontrar que la contraseña del hash es: bloodninjas
@@ -168,26 +168,26 @@ Como ya tenemos la contraseña y la llave RSA podemos establecer una conexión S
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/16-sshjoanna.png}
-	\caption{Conexión SSH con el usuario joanna}
+	\caption{}
 \end{figure}
 
 Aunque como tenemos acceso a los archivos de la página web podemos simplemente agregar una reverse Shell y de esta forma obtener acceso a la máquina como el usuario joanna. Y esta vez vemos que tiene el archivo user.txt que es la flag del user
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa.png}
-	\caption{main.php}
+	\caption{}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa2.png}
-	\caption{Llave RSA de joanna}
+	\caption{}
 \end{figure}
 
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/17-alternativa3.png}
-	\caption{Flag del usuario}
+	\caption{}
 \end{figure}
 
 \subsection{Escalamiento de privilegios}
@@ -196,21 +196,21 @@ Una vez obtenido el acceso como joanna procederemos a revisar qué comandos pode
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/18-sudol.png}
-	\caption{Comandos que puede ejecutar como root}
+	\caption{}
 \end{figure}
 
 Observamos que podemos ejecutar /bin/nano /opt/priv. Revisando GTFOBins, encontramos que podemos utilizar los siguientes comandos para generar un Shell de sistema interactivo mediante nano.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/19-gtfobins.png}
-	\caption{Exploit mediante sudo nano}
+	\caption{}
 \end{figure}
 
 Y de esta forma logramos obtener la flag del usuario root.
 \begin{figure}[h]
 	\center
 	\includegraphics[width=0.8\textwidth]{images/openadmin/20-privilegio.png}
-	\caption{Obtención del flag root}
+	\caption{}
 \end{figure}
 
 \subsection{Post Explotación}
@@ -698,7 +698,7 @@ Obtenemos las credenciales con un simple Select a la tabla en el database "Magic
 	\caption{Obteniendo credenciales en texto claro}
 \end{figure}
 
-Y con esto podemos acceder al Usuario "theseus", pero para esto tenemos que tratar un poco la terminal con el siguiente comando en python:
+Y con esto podemos acceder al Usuario "theseus" con las credenciales Th3s3usW4sK1ng, pero para esto tenemos que tratar un poco la terminal con el siguiente comando en python:
 \begin{lstlisting}
 python3 -c "import pty; pty.spawn('/bin/bash');"
 \end{lstlisting}
@@ -713,6 +713,73 @@ python3 -c "import pty; pty.spawn('/bin/bash');"
 
 \subsubsection{Escalamiento de Privilegios a root}
 
+Para el escalamiento de privilegios primero probamos con ver los permisos que tenemos en sudo, pero "sudo -l" no nos dió nada.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/magic/prueba-sudo-l.png}
+	\caption{Prueba de permisos sudo}
+\end{figure}
+
+Entonces vi los procesos que corrían pero tampoco se encontró exploits realmente
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/vista-procesos.png}
+	\caption{Procesos Corriendo}
+\end{figure}
+
+Ahora queda buscar algún binario SUID, a ver si encontramos algo que nos sirva 
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/busqueda-find.png}
+	\caption{Comando Find}
+\end{figure}
+
+\clearpage
+
+Descomponemos este binario sysinfo que se ve curioso, ya que normalmente no lo encuentras como binario suid en las máquinas, otros como sudo o ping son completamente normales, así que haciendo un "strings" vemos que ejecuta el comando "cat".
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/strings-sysinfo.png}
+	\caption{Reversing al sysinfo}
+\end{figure}
+
+Además vemos que este "cat" se ejecuta sin ruta absoluta, esto nos permitiría un path hijacking, entonces preparamos un archivo cat malicioso y abrimos una reverse shell con netcat escuchando por el puerto 1245.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/modificacion-path.png}
+	\caption{Modificando el PATH}
+\end{figure}
+
+Una vez exportado el PATH ya solo quedaría ejecutar el sysinfo y estaría listo.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=\textwidth]{images/magic/ejecutando-sysinfo.png}
+	\caption{Ejecutando el sysinfo}
+\end{figure}
+
+\clearpage
+
+Ya con esto tendríamos acceso a la máquina escuchando por el puerto 1245 que establecimos en la reverse shell.
+
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.8\textwidth]{images/magic/acceso-root.png}
+	\caption{Procesos Corriendo}
+\end{figure}
+
 \subsection{Hardening}
+
+Tenemos acceso a root, ahora lo que queda es tratar de parchar los distintos vectores que tendría la máquina vulnerables.
+
+\subsubsection{Prevención de subida de archivos maliciosos}
+
+
+
 
 \end{document}
