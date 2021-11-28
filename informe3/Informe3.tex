@@ -425,6 +425,54 @@ Finalmente, solo tendríamos que localizar el archivo importante e imprimir su c
 
 
 \subsection{Post Explotación}
+Una de las actividades post explotación es lograr mantener el acceso, y para dicha actividad se propone relaizar un RID HIjacking. 
+
+En líneas generales, el RID Hijacking busca asignar el RID de un usario de altos privilegios (como lo sería el administrador) a un usuario el cual no debería tener ese nivel de accesos. 
+
+Una de las principales virtudes que tiene este procedimiento es que puede llegar a pasar desapercibido si es que se asigna dichos privilegios a una cuenta de usuario preexistente, puesto que Windows no alerta cuando un usuario tiene el RID del administrador. 
+
+Para realizar este ejercicio utlizaremos un módulo de Metasploit Framework, ya que simplifica esta actividad. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/Post_Msf_latool.png}
+	\caption{Opciones del módulo RID HIJACKING.}
+\end{figure}
+
+Como se puede ver en el gráfico anterior, es necesario tener una sesión en segundo plano para para esta actividad. Para crear la sesión usaremos el módulo windows/smb/psexec. También se debería usar meterpreter como payload.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/creando la sesion.png}
+	\caption{Opciones del módulo PSEXEC.}
+\end{figure}
+
+Al completar los campos, ejecutamos el módulo y como resultado tenemos una sesión, la cual colocaremos en background.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/sesion_creada.png}
+	\caption{Sesión creada con PSEXEC y meterpreter.}
+\end{figure}
+
+Volviendo al módulo de de hijacking, procedemos a indicar la sesión creada que fue creada recientmeente.
+
+
+Realizaremos una prueba con el usuario Guest.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/Gues_como_admin.png}
+	\caption{Asignando RID de Administrador a Guest}
+\end{figure}
+
+Finalmente, si iniciamos sesión con Guest, deberíamos tener los privilegios del superusuario. Esto permitirá tener un usuario con accesos de administrador, el cual si conocemos la contraseña, podemos mantener nuestro acceso mediante dicho usuario.
 
 \subsection{Hardening}
+
+\begin{itemize}
+	\item Restringir el acceso con usuario anónimo vía RPC.
+	\item Habilitar la pre autenticación al usuario svc-alfresco.
+\end{itemize}
+
 \end{document}

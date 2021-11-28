@@ -16,4 +16,4 @@
 \contentsline {subsection}{\numberline {3.2}Explotación}{8}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Escalamiento de privilegios}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Post Explotación}{17}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Hardening}{17}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Hardening}{18}{subsection.3.5}%
