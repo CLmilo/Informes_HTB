@@ -196,4 +196,235 @@ Ya dentro del usuario lo que tenemos que hacer es ver cuantos privilegios tenemo
 \subsection{Hardening}
 
 
+% ----------------------------Forest-----------------------------------
+\clearpage 
+
+\section{Forest}
+\subsection{Enumeración}
+Iniciamos realizando un escaneo a la máquina objetivo, para lo cual usaremos NMAP. En este caso usaremos los siguientes parámetros:
+
+\begin{itemize}
+	\item -sV: Usado para mostrar las versiones de los servicios que corren en cada puerto.
+	\item -p-: Usado para indicar que escanee todos los puertos existentes.
+	\item -Pn: Usado para indicar al programa que no realice resolución DNS.
+\end{itemize}
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/escaneo_nmap.png}
+	\caption{Escaneo de la máquina Forest usando NMAP.}
+\end{figure}
+A partir de lo que muestra la herramienta, se tienen disponibles 24 puertos, entre los cuales, solo algunos nos serán realmente útiles. Entre los puertos más importantes a considerar son:
+\begin{itemize}
+	\item Puerto 80: Kerberos
+	\item Puero 135: Servicio RPC. 
+	\item Puerto 445: Servicio SAMBA.
+	\item Puerto 389: LDAP.
+	\item Puerto 5985: Windows Remote Management (WinRM) 
+\end{itemize}
+A partir de estos, podemos empezar a deducir que la máquina a la cual vamos a realizar las pruebas contiene un Domain Controller, por la presencia de Kerberos así como LDAP. 
+
+Otra característica a notar es la presencia del servicio SAMBA, el cual nos puede apoyar en caso se hayan compartido archivos de forma pública. 
+
+Finalmente, otro puerto a considerar es el RPC, ya que si se tiene uno no protegido podría tenerse acceso a información muy valiosa del DC.
+
+Se decidió iniciar por SAMBA, sin embargo, no se obtuvo nada de información relevante, así que decidimos proceder con RPC, a lo cual obtuvimos nuestro primer acceso, ya que encontramos que la máquina estaba permitiendo conexiones anonimas.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/conexion_rpc.png}
+	\caption{Conexión anónima vía RPC usando RPCCLient.}
+\end{figure}
+
+Ya dentro, procedimos a listar los usuarios que se encontraban registrados en dicho DC. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/usuarios_rpc.png}
+	\caption{Listadod de usuarios mostrados por RPCCLIENT.}
+\end{figure}
+
+\subsection{Explotación}
+
+Teniendo en cuenta los usuarios encontrados, los almacenamos en un archivo plano para usarlo como entrada en fuerza bruta.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/archivo_userForest.txt.png}
+	\caption{Usuarios identificados en el DC.}
+\end{figure}
+
+Ahora, con el listado de usuarios del DC, podemos probar una de las vulnerabilidades más comunes, la cual es la de tener usuarios que no requieren pre autenticación con Kerberos, a lo cual es relativamente fácil obtener el TGT de dichos usuarios usando la herramienta GetNPUsers.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/ticket-NPUsers-.png}
+	\caption{Obteniendo los TGT de usuarios sin autenticación en Kerberos.}
+\end{figure}
+
+A continuación, con el apoyo de John The Riper, podemos intentar obtener la contraseña del usuario svc-alfresco.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/crackeado.png}
+	\caption{Utilizando John para romper la contraseña.}
+\end{figure}
+
+Ahora probamos que las credenciales obtenidas funcionen con dicho usuario, para ello la usamos en Samba. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/probando_creds.png}
+	\caption{Probando las credenciales de svc-alfresco en samba.}
+\end{figure}
+
+Tras la validación, buscamos obtener una shell que nos permita interactuar directamente con el equipo, para ello usamos WinRM, ya que se había identificado inicialmente que estaba disponible. En este caso usamos la herramienta Evil-WinRM para conectarnos.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/conexionConWinRM.png}
+	\caption{Conectándonos vía WinRM usando el usuario svc-alfresco.}
+\end{figure}
+
+Ahora buscamos el archivo importante, el cual lo encontramos en la carpeta del usuario, específicamente en su escritorio.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/obtenida la hash de alfresco.png}
+	\caption{Archivo importante del usuario svc-alfresco.}
+\end{figure}
+
+
+\subsection{Escalamiento de privilegios}
+
+Teniendo en cuenta que estamos frente a un DC, buscamos identificar la forma en cómo llegar hasta el usuario administrador aprovechando los permisos que tiene la cuenta de svc-alfresco. Para facilitar este trabajo, utilizamos la herramienta BloodHound. 
+
+Para utilizar la herramienta BloodHound, primero debemos tener instalada la base de datos Neo4j. Ya instalada, se deberá ejecutar como se muestra a continuación.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/iniciando_neo4j.png}
+	\caption{Iniciando Neo4j.}
+\end{figure}
+
+Si es la primera vez, será necesario primero iniciar sesión en la dirección web que se muestra en la imagen, e ingresar con las credenciales neo4j:neo4j. Se nos solicitará cambiar la contraseña, cosa que deberemos hacer.
+
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/primeraconexionNeo4j.png}
+	\caption{Iniciando sesión por primera vez en Neo4j.}
+\end{figure}
+
+Posterior a esto, deberemos descargar una herramienta que nos permita obtener los archivos de entrada para BloodHound, dicho archivo es BloodHound.py, ubicado en el siguiente repositorio: https://github.com/fox-it/BloodHound.py.
+
+También será necesario descargar la intefaz gráfica (GUI), para ello nos dirigimos al repositorio: https://github.com/BloodHoundAD/BloodHound/releases. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/descargando-elgui.png}
+	\caption{Repositorio de BloodHound GUI}
+\end{figure}
+
+En este caso, trabajaremos con la versión para Linux, y se debe haber iniciado Neo4j previamente para evitar problemas. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/interfaz_bloodhound.png}
+	\caption{Interfaz inicial de BloodHound GUI.}
+\end{figure}
+
+Iniciamos sesión y ya tendremos la herramienta lista para usar. Ahora, lo que debemos hacer es utilizar BloodHound.py para obtener los archivos que usaremos de entrada para BloodHound. Para ello generaremos lo necesario con dicha herramienta.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/ejecutandobloodhound.py.png}
+	\caption{Ejecutando BloodHound.py para obtener la información de svc-alfresco.}
+\end{figure}
+
+Tras la ejecución tendremos algunos archivos .json que se han creado en el directorio de BloodHound.py, dichos archivos los importaremos en la interfaz gráfica que abrimos anteriormente.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/CargandoLosJson.png}
+	\caption{Cargando la información a BloodHound GUI}
+\end{figure}
+
+Cuando haya finalizado la carga podremos buscar a svc-alfresco, y con él podremos ver información que nos será de utilidad, tal como en a pestaña Nodo, en la cual podremos ver los objetivos de alto valor que son alcanzables. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/pertenencia_al_grupo_operators.png}
+	\caption{Información identificada de svc-alfresco.}
+\end{figure}
+
+Además, si revisamos el gráfico, podemos ver que la cuenta svc-alfresco es miembro del grupo operadores de cuentas que tiene todos los permisos para el grupo de permisos de exchange Windows, lo cual nos permite crear un usuario y otorgarle derechos de Windows Exchange y DCSync ACL, esto último con una herramienta llamada PowerView.
+
+Podemos obtener PowerView del siguiente repositorio: https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1. Descargado, nos conectamos vía Evil-WinRM nuevamente y cargamos el archivo donde nos sea más accesible.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/cargamos_powerviewwer.png}
+	\caption{Cargando PowerView}
+\end{figure}
+
+Como indicamos, procedemos a crear un nuevo usuario, que en este caso sus credenciales serán: ASMunknown:G@@@@@@@@
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/creando-usuario-nuevo-chetao.png}
+	\caption{Creando un nuevo usuario.}
+\end{figure}
+
+Lo siguiente será modificar la shell que estamos usando, la cual será el Evil-WinRM. Para ello escribirmos "menu" e indicamos "Bypass-4MSI"
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/modificnadoWinRM-Bypoass.png}
+	\caption{Modificando Evil-WinRM}
+\end{figure}
+
+Ahora procederemos a brindarle los privilegios al nuevo usuario creado, y para ello iniciamos almacenando los parámetros en variables para su futura asignación.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/definiendo_variables_para_permisosusuarionuevo.png}
+	\caption{Definiendo variables de usuario a incrementar privilegios.}
+\end{figure}
+
+Antes de asignar los privilegios, deberemos cargar el PowerView que descargamos anteriormente. Para ello usamos Import-Module. Luego ya asignamos los privilegios.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/importando el powerview.png}
+	\caption{Cargando PowerView y asignando privilegios.}
+\end{figure}
+
+Tras esto, ya tenemos un usuario con lo privilegios suficientes para obtenerlos los hash de los demás usuarios. Para ello usamos una herramienta de Impacket para obtener dichos hash, la cual es Secretsdump.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/usando_secretsdump_hashes.png}
+	\caption{Obteniendo los hashes usando el usuario creado y Secretsdump.}
+\end{figure}
+
+Ahora, no es necesario romper el hash, sino que podemos usar la herramienta PSExec para poder conectarnos a un usuario únicamente usando su hash.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/forest/escalado_a_root.png}
+	\caption{Ingresando como Administrador usando el Hash obtenido anteriormente.}
+\end{figure}
+
+Finalmente, solo tendríamos que localizar el archivo importante e imprimir su contenido. Dicho archivo se localiza en la carpeta del administrador y en su carpeta Desktop.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth/2]{images/forest/rootflag.png}
+	\caption{Archivo importante para Administrator.}
+\end{figure}
+
+
+\subsection{Post Explotación}
+
+\subsection{Hardening}
 \end{document}

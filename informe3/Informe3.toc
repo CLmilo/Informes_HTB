@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \contentsline {section}{\numberline {1}Time}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Enumeración}{2}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Explotación}{4}{subsection.1.2}%
@@ -11,3 +11,9 @@
 \contentsline {subsection}{\numberline {2.3}Escalamiento de privilegios}{6}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Post Explotación}{6}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Hardening}{6}{subsection.2.5}%
+\contentsline {section}{\numberline {3}Forest}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Enumeración}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Explotación}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Escalamiento de privilegios}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Post Explotación}{17}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Hardening}{17}{subsection.3.5}%
