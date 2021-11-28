@@ -178,9 +178,62 @@ Con esto regresando al netcat podemos ver que ya tenemos acceso a la máquina, s
 
 Ya dentro del usuario lo que tenemos que hacer es ver cuantos privilegios tenemos. Esto podemos hacerlo con un 
 
-\subsection{Post Explotación}
+Para hacer post explotación hay unas cuantas formas que siempre se tienen que probar, el orden no importa tanto.
+\begin{itemize}
+	\item Procesos corriendo en segundo plano.
+	\item Permisos que tiene nuestro usuario.
+	\item Binarios SUID mal hechos.
+	\item Buscando archivos con backups de forma manual en algunos directorios o con comandos de búsqueda.
+	\item Procesos periódicos en el cron.
+	\item Versiones antiguas de los programas con potenciales vulnerabilidades.
+\end{itemize}
 
-\subsection{Hardening}
+los permisos sudo asociados queda descartado porque no se cuenta con una contraseña, entonces probamos con los procesos en segundo plano pero no se encontrpo nada potencialmente sospechoso que esté siendo ejecutado por root.
+
+Entonces intentamos con algún proceso SUID con un comando que sirve para encontrarlos, este es "find / -perm -u=s -type f 2\>/dev/null"
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/perms.png}
+	\caption{Buscando SUIDS}
+\end{figure}
+
+Luego de no encontrar nada relevante o sospechoso, buscamos en los procesos y encontramos un script que corría.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/cron.png}
+	\caption{Visualizando el CRON}
+\end{figure}
+
+Con ese proceso corriendo en cron, decidí visualizarlo y examinar qué es lo que hacía y si podía encontrar alguna vulnerabilidad en su ejecución.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.7\textwidth]{images/time/proceso_cron.png}
+	\caption{Examinando proceso}
+\end{figure}
+Entonces este declaraba su path al inicio lo cual evitaba el path hijacking además de usar scripts de sbin, lo cual es inaccesible de modificar.
+
+Otra opción que se tiene cuando no encuentras nada visible ni buscando en las carpetas, puedes probar subiendo un linpeas.sh, que es un programa que busca automáticamente formas de escalar privilegios en la máquina, subimos este mediante wget y lo corremos.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/linpeas.png}
+	\caption{Ejecutando linpeas}
+\end{figure}
+Con esto encontramos un archivo que nos pertenece muy interesante con un nombre muy particular, el nombre del servidor nos da una pista.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/time.png}
+	\caption{Encontrando timer-backup}
+\end{figure}
+Visualizamos para ver qué es lo que hace este script con cat y vemos esto.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/timerscript.png}
+	\caption{Analizando timerscript}
+\end{figure}
+
+\subsection{Post Explotación}
 
 % ----------------------------Jarvis-----------------------------------
 \section{Jarvis}

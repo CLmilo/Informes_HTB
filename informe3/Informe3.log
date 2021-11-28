@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2021.11.14)  27 NOV 2021 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2021.11.14)  28 NOV 2021 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -417,7 +417,7 @@ LaTeX Info: Redefining \nameref on input line 43.
 \openout2 = `caratula/Caratula.aux'.
 
  (/home/jmt/repos/HTB_Informes/informe3/caratula/Caratula.tex
-<images/CiberSecFIIS.png, id=52, 512.66531pt x 438.8897pt>
+<images/CiberSecFIIS.png, id=48, 512.66531pt x 438.8897pt>
 File: images/CiberSecFIIS.png Graphic file (type png)
 <use images/CiberSecFIIS.png>
 Package pdftex.def Info: images/CiberSecFIIS.png  used on input line 11.
@@ -449,12 +449,12 @@ l.48 \clearpage
 
 
 ]
-<images/time/nmap.png, id=82, 701.62125pt x 196.735pt>
+<images/time/nmap.png, id=77, 701.62125pt x 196.735pt>
 File: images/time/nmap.png Graphic file (type png)
 <use images/time/nmap.png>
 Package pdftex.def Info: images/time/nmap.png  used on input line 61.
 (pdftex.def)             Requested size: 433.62pt x 121.59018pt.
-<images/time/nmap_version.png, id=83, 971.63pt x 174.6525pt>
+<images/time/nmap_version.png, id=78, 971.63pt x 174.6525pt>
 File: images/time/nmap_version.png Graphic file (type png)
 <use images/time/nmap_version.png>
 Package pdftex.def Info: images/time/nmap_version.png  used on input line 68.
@@ -464,12 +464,12 @@ LaTeX Info: Redefining \% on input line 77.
  [2
 
  </home/jmt/repos/HTB_Informes/informe3/images/time/nmap.png> </home/jmt/repos/HTB_Informes/informe3/images/time/nmap_version.png>]
-<images/time/gobuster.png, id=92, 975.645pt x 483.8075pt>
+<images/time/gobuster.png, id=87, 975.645pt x 483.8075pt>
 File: images/time/gobuster.png Graphic file (type png)
 <use images/time/gobuster.png>
 Package pdftex.def Info: images/time/gobuster.png  used on input line 81.
 (pdftex.def)             Requested size: 433.62pt x 215.0242pt.
-<images/time/index.png, id=93, 1144.275pt x 634.37pt>
+<images/time/index.png, id=88, 1144.275pt x 634.37pt>
 File: images/time/index.png Graphic file (type png)
 <use images/time/index.png>
 Package pdftex.def Info: images/time/index.png  used on input line 87.
@@ -483,7 +483,7 @@ LaTeX Info: Redefining \% on input line 90.
  </home/jmt/repos/HTB_Informes/informe3/images/time/gobuster.png> </home/jmt/repos/HTB_Informes/informe3/images/time/index.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 114.
-<images/time/injection.png, id=104, 855.195pt x 213.79875pt>
+<images/time/injection.png, id=99, 855.195pt x 213.79875pt>
 File: images/time/injection.png Graphic file (type png)
 <use images/time/injection.png>
 Package pdftex.def Info: images/time/injection.png  used on input line 135.
@@ -495,22 +495,22 @@ LaTeX Info: Redefining \% on input line 141.
  [4
 
  </home/jmt/repos/HTB_Informes/informe3/images/time/injection.png>]
-<images/time/reverse_shell.png, id=132, 1267.73625pt x 561.09625pt>
+<images/time/reverse_shell.png, id=127, 1267.73625pt x 561.09625pt>
 File: images/time/reverse_shell.png Graphic file (type png)
 <use images/time/reverse_shell.png>
 Package pdftex.def Info: images/time/reverse_shell.png  used on input line 144.
 (pdftex.def)             Requested size: 433.62pt x 191.91745pt.
-<images/time/server.png, id=133, 771.88374pt x 165.61874pt>
+<images/time/server.png, id=128, 771.88374pt x 165.61874pt>
 File: images/time/server.png Graphic file (type png)
 <use images/time/server.png>
 Package pdftex.def Info: images/time/server.png  used on input line 152.
 (pdftex.def)             Requested size: 433.62pt x 93.039pt.
-<images/time/comando.png, id=134, 705.63625pt x 79.29625pt>
+<images/time/comando.png, id=129, 705.63625pt x 79.29625pt>
 File: images/time/comando.png Graphic file (type png)
 <use images/time/comando.png>
 Package pdftex.def Info: images/time/comando.png  used on input line 161.
 (pdftex.def)             Requested size: 433.62pt x 48.72878pt.
-<images/time/ejecucion.png, id=135, 385.44pt x 217.81375pt>
+<images/time/ejecucion.png, id=130, 385.44pt x 217.81375pt>
 File: images/time/ejecucion.png Graphic file (type png)
 <use images/time/ejecucion.png>
 Package pdftex.def Info: images/time/ejecucion.png  used on input line 166.
@@ -520,35 +520,80 @@ LaTeX Info: Redefining \% on input line 169.
 LaTeX Info: Redefining \. on input line 169.
 LaTeX Info: Redefining \% on input line 169.
  [5 </home/jmt/repos/HTB_Informes/informe3/images/time/reverse_shell.png> </home/jmt/repos/HTB_Informes/informe3/images/time/server.png> </home/jmt/repos/HTB_Informes/informe3/images/time/comando.png>]
-<images/time/acceso.png, id=146, 560.0925pt x 180.675pt>
+<images/time/acceso.png, id=141, 560.0925pt x 180.675pt>
 File: images/time/acceso.png Graphic file (type png)
 <use images/time/acceso.png>
 Package pdftex.def Info: images/time/acceso.png  used on input line 172.
 (pdftex.def)             Requested size: 433.62pt x 139.88382pt.
-LaTeX Info: Redefining \. on input line 199.
-LaTeX Info: Redefining \% on input line 199.
-LaTeX Info: Redefining \. on input line 199.
-LaTeX Info: Redefining \% on input line 199.
- [6 </home/jmt/repos/HTB_Informes/informe3/images/time/ejecucion.png> </home/jmt/repos/HTB_Informes/informe3/images/time/acceso.png>] (/home/jmt/repos/HTB_Informes/informe3/Informe3.aux (/home/jmt/repos/HTB_Informes/informe3/caratula/Caratula.aux)
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+ [6 </home/jmt/repos/HTB_Informes/informe3/images/time/ejecucion.png> </home/jmt/repos/HTB_Informes/informe3/images/time/acceso.png>]
+<images/time/perms.png, id=151, 630.355pt x 444.66125pt>
+File: images/time/perms.png Graphic file (type png)
+<use images/time/perms.png>
+Package pdftex.def Info: images/time/perms.png  used on input line 197.
+(pdftex.def)             Requested size: 433.62pt x 305.88026pt.
+<images/time/cron.png, id=152, 833.1125pt x 168.63pt>
+File: images/time/cron.png Graphic file (type png)
+<use images/time/cron.png>
+Package pdftex.def Info: images/time/cron.png  used on input line 205.
+(pdftex.def)             Requested size: 433.62pt x 87.77043pt.
+<images/time/proceso_cron.png, id=153, 428.60126pt x 136.51pt>
+File: images/time/proceso_cron.png Graphic file (type png)
+<use images/time/proceso_cron.png>
+Package pdftex.def Info: images/time/proceso_cron.png  used on input line 212.
+(pdftex.def)             Requested size: 303.53267pt x 96.6749pt.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+ [7 </home/jmt/repos/HTB_Informes/informe3/images/time/perms.png> </home/jmt/repos/HTB_Informes/informe3/images/time/cron.png>]
+<images/time/linpeas.png, id=162, 825.0825pt x 484.81125pt>
+File: images/time/linpeas.png Graphic file (type png)
+<use images/time/linpeas.png>
+Package pdftex.def Info: images/time/linpeas.png  used on input line 220.
+(pdftex.def)             Requested size: 433.62pt x 254.79602pt.
+<images/time/time.png, id=163, 896.34875pt x 284.06125pt>
+File: images/time/time.png Graphic file (type png)
+<use images/time/time.png>
+Package pdftex.def Info: images/time/time.png  used on input line 226.
+(pdftex.def)             Requested size: 433.62pt x 137.41844pt.
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+LaTeX Info: Redefining \. on input line 229.
+LaTeX Info: Redefining \% on input line 229.
+ [8 </home/jmt/repos/HTB_Informes/informe3/images/time/proceso_cron.png> </home/jmt/repos/HTB_Informes/informe3/images/time/linpeas.png>]
+<images/time/timerscript.png, id=173, 814.04124pt x 134.5025pt>
+File: images/time/timerscript.png Graphic file (type png)
+<use images/time/timerscript.png>
+Package pdftex.def Info: images/time/timerscript.png  used on input line 232.
+(pdftex.def)             Requested size: 433.62pt x 71.64513pt.
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+ [9 </home/jmt/repos/HTB_Informes/informe3/images/time/time.png> </home/jmt/repos/HTB_Informes/informe3/images/time/timerscript.png>] (/home/jmt/repos/HTB_Informes/informe3/Informe3.aux (/home/jmt/repos/HTB_Informes/informe3/caratula/Caratula.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 Package rerunfilecheck Info: File `Informe3.out' has not changed.
-(rerunfilecheck)             Checksum: CE11832DA482AA4D2B08EC62BE2505A3;739.
+(rerunfilecheck)             Checksum: 8ABB4C4C7C148C36E37C8290D61CFB4F;680.
  ) 
 Here is how much of TeX's memory you used:
- 11797 strings out of 479294
- 180465 string characters out of 5869569
- 637060 words of memory out of 5000000
- 28749 multiletter control sequences out of 15000+600000
+ 11843 strings out of 479294
+ 181476 string characters out of 5869569
+ 638060 words of memory out of 5000000
+ 28782 multiletter control sequences out of 15000+600000
  406374 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,75p,560b,1208s stack positions out of 5000i,500n,10000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on /home/jmt/repos/HTB_Informes/informe3/Informe3.pdf (7 pages, 740440 bytes).
+Output written on /home/jmt/repos/HTB_Informes/informe3/Informe3.pdf (10 pages, 1322266 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 50 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
