@@ -183,13 +183,162 @@ Ya dentro del usuario lo que tenemos que hacer es ver cuantos privilegios tenemo
 \subsection{Hardening}
 
 % ----------------------------Jarvis-----------------------------------
+\clearpage 
 \section{Jarvis}
 \subsection{Enumeración}
+Realizando el escaneo de puertos abiertos encontramos el servicio HTTP en el puerto 80 y SSH, en el puerto 22. El sistema operativo de la máquina observamos que es Linux.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/1.png}
+	\caption{Escaneo de puertos}
+\end{figure}
+
+Accediendo a la página web, a simple inspección no observamos nada interesante excepto cuando se accede a la información de los rooms o cuartos, el cual en el URL se observa el parámetro cod indicando una posible inyección SQL.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/jarvis/2.png}
+	\caption{Página principal}
+\end{figure}
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.5\textwidth]{images/jarvis/3.png}
+	\caption{Rooms}
+\end{figure}
+
+Luego hacemos un escaneo de los directorios para encontrar nuevas rutas mediante Gobuster.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/4.png}
+	\caption{Resultados del gobuster}
+\end{figure}
+
+Esto nos devuelve que hay una carpeta de phpmyadmin, accediendo observamos que es el servicio phpMyAdmin, el cual es una herramienta de administración para MySQL y MariaDB. Sospechamos que puede ser de la misma base de datos que tiene la información de los rooms. Pero para accederlo necesitamos credenciales que no tenemos, por lo tanto, trataremos de obtenerlos mediante la posible vulnerabilidad SQLi.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/5.png}
+	\caption{phpMyAdmin}
+\end{figure}
 
 \subsection{Explotación}
+Para el SQLi podemos utilizar sqlmap o de forma manual, de forma manual haremos ataques mediante UNION para determinar la cantidad de columnas del resultado del query y mediante esto explorar los database que contiene, luego a tablas y finalmente a las filas y columnas.
+Descubrimos que tiene 7 columnas, para saber qué DBMS (Database Management Systems) es reemplazamos el valor de una columna donde la información es visible en la página web por @@version y nos devuelve que el DBMS es MariaDB, el cual es similar al MySQL.  Y luego para obtener las credenciales del usuario reemplazando en las columnas 4 y 5 se obtuvo la información de las columnas user y password de la tabla user del database mysql.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/6.png}
+	\caption{SQLi mediante UNION para recuperar las credenciales}
+\end{figure}
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.5\textwidth]{images/jarvis/7.png}
+	\caption{Resultados del SQLi}
+\end{figure}
+
+La contraseña nos aparece hasheada pero podemos crackearlo con crackstation y nos devuelve que es imissyou.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/8.png}
+	\caption{Crackeo de la contraseña hasheada}
+\end{figure}
+
+Esto nos podría servir para acceder al phpMyAdmin y buscar vulnerabilidades ahí, pero podemos insertar una reverse shell simple en php que nos permite ejecutar código remoto directamente mediante la vulnerabilidad de SQLi.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/9.png}
+	\caption{Inserción de una web shell - parte 1}
+\end{figure}
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/10.png}
+	\caption{Inserción de una web shell - parte 2}
+\end{figure}
+
+En este caso lo guardamos en la ruta /var/www/html/prueba.php, y lo único que debemos hacer es ingresar los valores del comando que deseamos ejecutar a la variable cmd, en este caso utilizaremos netcat para lograr una reverse Shell en nuestra máquina.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/11.png}
+	\caption{Obtención de reverse shell mediante la web shell insertada}
+\end{figure}
+
+Pero primero debemos levantar el netcat en nuestra máquina en el mismo puerto que vamos a hacer el reverse Shell.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/jarvis/12.png}
+	\caption{Acceso obtenido como www-data}
+\end{figure}
+
+Y listo, tenemos acceso a la máquina como usuario www-data pero este usuario del servidor web es limitado ya que no puede acceder a los datos de los demás usuarios y mucho menos root. Observamos que en la máquina se encuentra el usuario pepper.
+
+Mediante el comando sudo -l, podemos ver que nos permite ejecutar un script como usuario pepper e inspeccionando el archivo observamos que ejecuta el comando ping cuando lo ejecutamos con la opción -p. Esto nos podría permitir ejecutar el código que anteriormente utilizamos para obtener la reverse Shell pero realiza un checkeo para que no contenga ciertos caracteres especiales. 
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/jarvis/13.png}
+	\caption{Parte del script simpler.py}
+\end{figure}
+
+Esto puede ser fácilmente hacer bypass, ya que podríamos poner ese comando en un archivo Bash y darle como de entrada el archivo.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/14.png}
+	\caption{Creación del archivo bash para bypassear la revisión}
+\end{figure}\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/15.png}
+	\caption{Ejecución del script bash mediante el script python simpler}
+\end{figure}
+
+Levantamos el netcat en modo escucha como lo hicimos anteriormente, pero en un puerto diferente ya que el otro está en uso.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/jarvis/16.png}
+	\caption{Obtención del acceso como pepper}
+\end{figure}
+
+Y listo, tenemos acceso como el usuario pepper.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.6\textwidth]{images/jarvis/17.png}
+	\caption{Flag del user.txt}
+\end{figure}
 
 \subsection{Escalamiento de privilegios}
+Buscamos por binarios SUID mediante la herramienta LinEnum, el cual tendremos que levantar un servidor http en nuestra máquina y descargarla en la del box.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/18.png}
+	\caption{Levantamiento del http.server mediante python}
+\end{figure}
 
+Entre los archivos SUID encontrados, nos indica que /bin/systemctl es posiblemente de nuestro interés y lo es. Systemctl es una utilidad que nos permite examinar y controlar los servicios que se ejecutan en la máquina por lo general está limitado a solo usuarios root.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/19.png}
+	\caption{Archivos SUID}
+\end{figure}
+
+En GTFObins se encuentra los comandos que debemos de correr para crear un servicio y que ejecute comandos, en este caso haremos que ejecute la que nos permita obtener una reverse Shell.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/jarvis/20.png}
+	\caption{Configuración del servicio para systemctl}
+\end{figure}
+
+Y listo, tenemos conexión mediante usuario root.
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.8\textwidth]{images/jarvis/21.png}
+	\caption{Obtención del acceso como usuario root}
+\end{figure}
+
+Ahora solo queda obtener las flag que se encuentra en el archivo root.txt
+\begin{figure}[H]
+	\center
+	\includegraphics[width=0.7\textwidth]{images/jarvis/22.png}
+	\caption{Acceso como usuario root}
+\end{figure}\begin{figure}[H]
+	\center
+	\includegraphics[width=0.7\textwidth]{images/jarvis/23.png}
+	\caption{Flag del root.txt}
+\end{figure}
 
 \subsection{Post Explotación}
 
@@ -316,7 +465,6 @@ Si es la primera vez, será necesario primero iniciar sesión en la dirección w
 \end{figure}
 
 Posterior a esto, deberemos descargar una herramienta que nos permita obtener los archivos de entrada para BloodHound, dicho archivo es BloodHound.py, ubicado en el siguiente repositorio: https://github.com/fox-it/BloodHound.py.
-
 También será necesario descargar la intefaz gráfica (GUI), para ello nos dirigimos al repositorio: https://github.com/BloodHoundAD/BloodHound/releases. 
 
 \begin{figure}[H]
