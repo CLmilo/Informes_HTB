@@ -216,168 +216,163 @@ Ya con esto es suficiente para leer el "user.txt" del usuario friendzone, lo cua
 Primero se realizó un escaneo de los puertos abiertos con Nmap, con los parámetros “-Pn -A -p-“.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/jarvis/1.png}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/1.png}
+	\caption{Escaneo de Puertos}
 \end{figure}
 
 Se llegó a encontrar 5 puertos abiertos, los cuales el 135 y 8080 nos llama la atención. En el puerto 135 está corriendo el servicio de Microsoft Windows RPC (msrpc) y en el 8080 Microsoft IIS http (npnp), el cual es un servicio web. El servicio msrpc implementa el protocolo RPC, una forma de comunicación entre procesos de bajo nivel en la que un proceso de cliente puede realizar solicitudes de un proceso de servidor.  Probamos conectarnos con rpcclient de forma anónima pero no permite.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/jarvis/1.png}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/2.png}
+	\caption{RPCCLIENT}
 \end{figure}
 
 Por lo que accedemos mediante el navegador al 10.10.10.204:8080 y nos arroja una ventana que nos pide autenticarnos para “Windows Device Portal”.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/3.png}
+	\caption{Autenticación 10.10.10.204:8080}
 \end{figure}
 
 \subsection{Explotación}
 
 Según la documentación de Microsoft, Windows Device Portal o Portal de dispositivos Windows (WDP) es un servidor web que se incluye con los dispositivos Windows, y que le permite configurar y administrar la configuración del dispositivo a través de una red o una conexión USB (también se admiten conexiones locales en dispositivos con un explorador web).
 Buscando vulnerabilidades y exploits del WDP nos encontramos con SirepRAT (\href{https://github.com/SafeBreach-Labs/SirepRAT}), el cual es una vulnerabilidad del servicio de Sirep Test y expone la ejecución de comandos de forma remota. Mediante esto nos permite descargar archivos de la máquina víctima, subir archivos, correr programas, obtener información del sistema y obtener información de archivos.
-\begin{figure}[H]
-	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
-\end{figure}
 
 En este caso subiremos un archivo, específicamente netcat (\href{https://github.com/int0x33/nc.exe/}) para lograr una reverse Shell en nuestra máquina.
 Para lograr esto se levantó un servidor simplehttp con Python y mediante la opción de ejecutar comandos utilizamos powershell (\href{https://academy.hackthebox.com/course/preview/file-transfers/windows-file-transfer-methods}) para descargar el binario.
 Primero se probó con la versión de 32 bits, pero nos arroja error que se solucionó utilizando la de 64 bits.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/5.png}
+	\caption{Descarga del nc64.exe}
 \end{figure}
 
 Pero antes de ejecutar el netcat debemos levantar en nuestra máquina el servicio netcat con un puerto en modo escucha que debe de coincidir con el comando que se ejecutará en la máquina victima con el nc.exe.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/6.png}
+	\caption{Netcat en modo de escucha}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/7.png}
+	\caption{Ejecución del nc64.exe}
 \end{figure}
 
 Y listo, tenemos acceso a la máquina, pero somos el usuario “omni”.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/8.png}
+	\caption{Acceso obtenido en el netcat}
 \end{figure}
 
 Inspeccionando los archivos encontramos el archivo flag “user.txt” pero al ver su contenido se vió lo siguiente, un archivo PSCredential. Los archivos PSCredential son generados cuando se encripta información sensible mediante PowerShell, pero para poder recuperar esto es necesario estar logeado con el usuario dueño.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/9.png}
+	\caption{user.txt}
 \end{figure}
 
 Para ello necesitamos tener las credenciales del usuario, esto lo podemos hacer dumpeando los archivos .hiv de system, sam y security, y luego mediante secretsdump.py obtener los hashes de las credenciales.
 Primero levantaremos un servidor Samba en nuestra máquina mediante smbserver.py para copiar estos archivos requeridos. La máquina víctima nos pide usar el protocolo SMB2, esto lo arreglamos añadiendo la opción de -smb2support a la hora de correr el smbserver.py además añadimos credenciales. (https://pure.security/dumping-windows-credentials/)
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/10.png}
+	\caption{Error de conexión al SMB1}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/11.png}
+	\caption{Arreglo con soporte al SMB2 y autenticación}
 \end{figure}
 
 Montamos la carpeta compartida mediante el smbserver.py y procederemos a copiar los archivos .hiv hacia ahí.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/12.png}
+	\caption{Montado de la carpeta compartida}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/13.png}
+	\caption{Extracción de los hives}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/14.png}
+	\caption{Copiado de los hives a la carpeta compartida}
 \end{figure}
 
 Una vez copiado utilizamos secretsdump.py para obtener los hashes.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/15.png}
+	\caption{Obtención de los hashes con secretsdump.py}
 \end{figure}
 
 Una vez obtenido los hashes lo copiamos a un archivo, en este caso llamando “hashes” y con JohnTheRipper (john) procederemos a crackearlo.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/16.png}
+	\caption{Crackeo del hash con JohnTheRipper (john)}
 \end{figure}
 
 Nos arroja que para el usuario app su contraseña es “mesh5143”. Con estas credenciales podemos acceder al WDP.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/17.png}
+	\caption{Autenticación con los credenciales del usuario app}
 \end{figure}
 
 Una vez dentro nos encontramos en la pantalla principal del WDP donde nos permite manejar y administrar el dispositivo IoT.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=0.8\textwidth]{images/omni/18.png}
+	\caption{Screenshot de la pantalla del dispositivo IoT}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/19.png}
+	\caption{Pantalla principal del WDP}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=0.3\textwidth]{images/omni/20.png}
+	\caption{Opciones del WDP}
 \end{figure}
 
 Una vez dentro en la categoría de Procesos vemos una opción para ejecutar comandos, con esto podemos obtener una reverse Shell del usuario “app”. Para ello levantaremos el netcat en modo escucha y ejecutamos los mismos comandos anteriormente.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=0.7\textwidth]{images/omni/21.png}
+	\caption{Usuario app}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/22.png}
+	\caption{Mensaje de error de ejecución del comando}
 \end{figure}
 
 A pesar que nos bota error que falló en ejecutar el comando, en el terminal podemos ver que ya se estableció conexión y ya tenemos acceso mediante el usuario “app”.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=0.9\textwidth]{images/omni/23.png}
+	\caption{Conexión establecida}
 \end{figure}
 
 Con el acceso podremos recuperar la información del archivo PSCredential mediante PowerShell y Import-CliXml.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/24.png}
+	\caption{Obtención de la flag en user.txt}
 \end{figure}
 
 Y listo tenemos la flag del user.txt. Inspeccionando los demás archivos que se encuentran en la misma carpeta destaca “hardening.txt” y “iot-admin.xml”.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=0.8\textwidth]{images/omni/25.png}
+	\caption{Directorio del usuario app}
 \end{figure}
 
 \subsection{Escalamiento de privilegios}
@@ -385,42 +380,42 @@ Y listo tenemos la flag del user.txt. Inspeccionando los demás archivos que se 
 Inspeccionando el contenido de ambos archivos vemos que en hardening está algunas acciones realizadas y el iot-admin.xml es otro archivo PSCredential, por lo que ejecutamos el mismo comando anterior y obtendremos la contraseña, el cual resulta ser la contraseña del usuario administrator para ser utilizado en el WDP.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/26.png}
+	\caption{Archivo hardening.txt}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/27.png}
+	\caption{Flag del iot-admin.xml}
 \end{figure}
 
-Hacemos lo mismo realizado para lograr una reverse Shell mediante el usuario "app" pero ahora como administrator.
+Hacemos lo mismo realizado para lograr una reverse Shell mediante el usuario “app“ pero ahora como administrator.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/28.png}
+	\caption{Pantalla principal del WDP del usuario administrator}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/29.png}
+	\caption{Mensaje de error de ejecución del comando}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/30.png}
+	\caption{Establecimiento de la conexión}
 \end{figure}
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=0.9\textwidth]{images/omni/31.png}
+	\caption{Usuario administrator}
 \end{figure}
 
 Y listo, tenemos acceso como el usuario administrator, ahora solo queda abrir el archivo root.txt, el cual es otro archivo PSCredential y con el mismo comando tendremos su contraseña o flag en este caso.
 \begin{figure}[H]
 	\center
-	%\includegraphics[width=\textwidth]{images/omni}
-	\caption{}
+	\includegraphics[width=\textwidth]{images/omni/32.png}
+	\caption{Flag del root.txt}
 \end{figure}
 
 \end{document}
